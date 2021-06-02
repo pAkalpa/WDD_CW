@@ -1,9 +1,8 @@
+name: 🚀Build and Deploy
 on:
   push:
     branches:
       - pagesDeploy
-      
-name: 🚀 Deploy website to Github Pages
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
