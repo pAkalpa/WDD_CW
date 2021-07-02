@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoalIN</title>
+</head>
+
+<body>
+    <div class="row">
+
+        <form action="mailto:pasindu.20200608@iit.ac.lk" method="post" enctype="text/plain">
+
+            <h1 id="queryHeader" class="qHead">Customer Query Form</h1>
+
+            <fieldset>
+
+                <legend><span class="number">1</span>Contact Details</legend>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="nameField" name="user_name" placeholder="Enter Your Full Name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="mailField" name="user_email" placeholder="Enter Your Email">
+
+            </fieldset>
+            <fieldset>
+
+                <legend><span class="number">2</span>Query Info</legend>
+
+                <label>Query About:</label>
+                <input type="radio" id="sub1" value="sub1" name="query_subject"><label for="sub1"
+                    class="radButtons">Send Overseas</label><br>
+                <input type="radio" id="sub2" value="sub2" name="query_subject"><label for="sub2"
+                    class="radButtons">Package & Postal Cost</label><br>
+                <input type="radio" id="sub3" value="sub3" name="query_subject"><label for="sub3"
+                    class="radButtons">Taxes and Laws</label>
+
+                <div>
+                    <label for="details">Details</label>
+                    <textarea name="query_details" id="details" cols="30" rows="10"></textarea>
+                </div>
+
+            </fieldset>
+
+            <input class="check_button" type="button" value="check" name="Check">
+
+        </form>
+    </div>
+</body>
+
+</html>
