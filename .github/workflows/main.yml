@@ -18,7 +18,7 @@ jobs:
           FTP_SERVER: compute0.wmin.ac.uk
           FTP_USERNAME: ${{ secrets.ftp_username }}
           FTP_PASSWORD: ${{ secrets.ftp_password }}
-          REMOTE_DIR: /public_html/
+          REMOTE_DIR: public_html/
           METHOD: sftp
           PORT: 22
           ARGS: --delete
