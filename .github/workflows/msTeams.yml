@@ -1,10 +1,6 @@
 name: MS Teams Github Actions integration
 
-on:
-  push:
-    branches:
-      - FTP
-      - pagesDeploy
+on: [push]
 
 jobs:
   build:
