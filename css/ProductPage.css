@@ -1,30 +1,91 @@
-.navbarContent{
-    display: flex;
-	align-items: center;   
-    width: 100%;
-    border-style: solid;
-    border-width: 2px;   
-    border-image: linear-gradient(120deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.555)) 1;
-    background: linear-gradient(126.6deg, rgba(255, 255, 255, 0.12) 28.69%, rgba(255, 255, 255, 0) 100%);
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  margin: auto 0;
+  background-color: #373737;
+  
 }
-.logoMain{
-    flex-grow: 10;
-    padding-left: 5%;
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
-.alllinks{
-    flex-grow:1;
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
-#links li{
-    display: inline;
-    padding-right: 30px;
-    list-style-type: none;
+
+.container-fluid {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
 }
-.Image1withSneakers{
-    max-width: 100%;
-    height: 1250px;
-    background-image: url("../img/slime.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    opacity: 1;
+
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  border-width: 2px;
+  max-width: 100%;
+  border-radius: 0 0 30px 30px;
+  padding-right: 2.5%;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-width: 2px;
+  /* border-color: white; */
+  background: linear-gradient(
+    25.6deg,
+    rgba(255, 255, 255, 0.192) 28.69%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.links {
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.links li {
+  display: inline-block;
+  padding-right: 30px;
+  
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+}
+.navImg {
+  padding-left: 1.5%;
+}
+.nav-logo {
+  max-width: 65%;
+  height: auto;
+}
+
+.Image1withSneakers {
+  max-width: 100%;
+  height: 1250px;
+  background-image: url("../img/slime.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.5;
 }
