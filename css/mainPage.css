@@ -1,0 +1,46 @@
+.mPageContainer {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+.featuredProducts {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.fPImageCollection {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.mainpage_image{
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.FPimageBackground, .TPimageBackground{
+    height:350px;
+    width : 250px;
+    border-radius: 40px;
+    background-color: white;
+    
+}
+
+h3{
+    font-size: 44px;
+    color : white;
+    text-align: center;
+
+}
+
+.FPLabels , .TPLabels {
+    font-size:24px;
+    display: inline;
+    color: white;
+}
