@@ -1,93 +1,155 @@
 .mPageContainer {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .featuredProducts {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .fPImageCollection {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.mainpage_image{
-    max-width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.mainpage_image {
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
-
-.FPimageBackground, .TPimageBackground{
-    height:350px;
-    width : 250px;
-    border-radius: 40px;
-    background-color: white;
-    
+h3 {
+  font-size: 44px;
+  color: white;
+  text-align: center;
 }
 
-h3{
-    font-size: 44px;
-    color : white;
-    text-align: center;
-
+.FPLabels,
+.TPLabels {
+  font-size: 24px;
+  display: inline;
+  color: white;
 }
 
-.FPLabels , .TPLabels {
-    font-size:24px;
-    display: inline;
-    color: white;
+.footer{
+  background-color: black;
 }
 
-/* ---------------------------------------------------------------------------------------------------------- */
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-   }
-    100% {
-        transform: translateX(calc(-250px * 7));
-   }
-}
-.slider {
-    background: white;
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-    height: 100px;
-    margin: auto;
-    overflow: hidden;
+/* -------------------------------------------------------------------------------------------------- */
+.container {
     position: relative;
-    width: 100%;
-    
 }
-.slider::before, .slider::after {
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+
+.container .card {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container .card:before {
     content: "";
-    height: 100px;
     position: absolute;
-    width: 200px;
-    z-index: 2;
-}
-.slider::after {
-    right: 0;
     top: 0;
-    transform: rotateZ(180deg);
-}
-.slider::before {
     left: 0;
-    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #e9c31b;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
 }
-.slider .slide-track {
-    animation: scroll 42s linear infinite;
-    display: flex;
-    width: calc(250px * 14);
-   
+
+.container .card:hover:before {
+    clip-path: circle(300px at 80% -20%);
 }
-.slider .slide {
+
+.container .card:after {
+    content: "Nike";
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 10em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+
+}
+
+.container .card .imgBx {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-30%);
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+.container .card:hover .imgBx {
+    top: 0%;
+    transform: translateY(-25%);
+    /* bug  */
+}
+
+.container .card .imgBx img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 270px;
+}
+
+.container .card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     height: 100px;
-    width: 250px;
+    text-align: center;
+    transition: 1s;
+    z-index: 90;
 }
+
+.container .card:hover .contentBx {
+    height: 210px;
+}
+
+.container .card .contentBx h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.container .card .contentBx .size,
+.container .card .contentBx .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container .card:hover .contentBx .size {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: .5s;
+}
+
+.container .card:hover .contentBx .color {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: .6s;
+}
+
+.container .card .contentBx .size h3,
+.container .card .contentBx .color h3 {
+    color: white;
