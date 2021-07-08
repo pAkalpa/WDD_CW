@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* ----------------------------------------------------------------------------Start of Nav Bar */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
   margin: auto 0;
   background-color: #373737;
-  
 }
 .navbar {
   position: relative;
@@ -35,6 +35,45 @@ body {
   margin-left: auto;
 }
 
+nav.fill ul li a {
+  position: relative;
+}
+
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: ".";
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
 nav {
   position: fixed;
   display: flex;
@@ -64,13 +103,13 @@ nav {
 .links li {
   display: inline-block;
   padding-right: 30px;
-  
 }
-nav ul li a{
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    color: white;
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  color: white;
 }
 .navImg {
   padding-left: 1.5%;
@@ -80,6 +119,24 @@ nav ul li a{
   height: auto;
 }
 
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------END of Nav Bar */
 .Image1withSneakers {
   max-width: 100%;
   height: 1250px;

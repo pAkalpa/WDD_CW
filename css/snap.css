@@ -17,6 +17,7 @@ body {
 
 .container{
     display: flex;
+    margin-top: 80px;
     width: 90vw;
 
 }
@@ -32,7 +33,7 @@ body {
     flex:0.5;
     margin:10px;
     position: relative;
-    transition: flex 0.7s ease-in;
+    transition: flex 0.5s ease-in;
 
 }
 
@@ -60,3 +61,16 @@ body {
 
 
 
+.img1{background-image: url('../img/snap/cup.jpg')}
+
+
+.img2{background-image: url('../img/snap/black.jpg')}
+
+
+.img3{background-image: url('../img/snap/car.jpg')}
+
+
+.img4{background-image: url('../img/snap/ronaldo.jpg')}
+
+
+.img5{background-image: url('../img/snap/win.jpg')}
