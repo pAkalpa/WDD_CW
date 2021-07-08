@@ -82,7 +82,7 @@ h3{
     top: 0;
 }
 .slider .slide-track {
-    animation: scroll 40s linear infinite;
+    animation: scroll 42s linear infinite;
     display: flex;
     width: calc(250px * 14);
    
