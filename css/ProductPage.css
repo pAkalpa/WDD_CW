@@ -137,13 +137,874 @@ nav ul li a {
   }
 }
 
-/* ----------------------------------------------------------------------------------------------END of Nav Bar */
-.Image1withSneakers {
-  max-width: 100%;
-  height: 1250px;
-  background-image: url("../img/slime.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+/* ////////////////////////////////////////////////////////// */
+/* slimy catogory part */
+.ProductpageMain{
+  position: absolute;
+  display: flex;  
+}
+.slimyimage {
   opacity: 0.5;
+  position: relative;
+  margin-top: 75px;
+}
+.Image1withSneakers{
+  position: absolute;
+  margin-top: 130px;
+  width: 100%;
+}
+.mainText{
+  font-size: 6vmin;
+  display: flex;
+  justify-content: center;
+}
+.cattext{
+  font-size: 6.5vmin;  
+  margin-left: 9%;
+}
+
+.Catogoriestxt{
+  font-size: 4vmin;
+  margin-left: 9%;
+  list-style: none;
+}
+.Catogoriestxt >li{
+  padding-bottom: 50px;
+  
+}
+/* height is set to 100% for the whole window */
+.productpagecoloums{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+/* adding fles to main div class */
+/* and adding 25% to each class to the 4 main dives */
+.SneakerMain{
+    width: 100%;
+    height: 25%;
+    display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.SocksMain{
+  background-color: #ECFCFF;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    /* flex-flow: column; */
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.TshirtsAndBottomsMain{
+    width: 100%;
+    height: 25%;
+    /* flex-flow: column; */
+    display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.CapsMain{
+  background-color: #ECFCFF;
+    width: 100%;
+    height: 25%;
+    /* flex-flow: column; */
+    display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+/* adding flex to images in div class */
+/* add 50% to sub dives  */
+/* /////////// SNEAKERS/////////// */
+.sneakerMainImg{
+  margin-top: 80px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;    
+}
+.shoesdis{
+  position: absolute;  
+  margin-top: 400px;
+  margin-left: 600px;
+}
+.shoesdis >h1{
+  font-size: 4vmin;
+}
+.DsicriptionSneakers >li{
+  font-size: 3vmin;
+}
+
+/* ////////  SOCKS   /////// */
+.SocksImageMain{
+  margin-top: 80px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: center; 
+}
+.socksdis{
+  position: absolute;  
+  margin-top: 150px;
+  margin-right: 300px;
+}
+.socksdis >h1{
+  font-size: 4vmin;
+}
+.DsicriptionSocks >li{
+  font-size: 3vmin;
+}
+
+/* ////////T Shirts and Bottoms //////// */
+.TshirtAndBottomsImageMain{
+  margin-top: 80px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: center; 
+}
+.tbottomdis{
+  position: absolute;  
+  margin-top: 150px;
+  margin-left: 600px;
+}
+.tbottomdis >h1{
+  font-size: 4vmin;
+}
+.DsicriptionTBottom >li{
+  font-size: 3vmin;
+}
+.TextTshirtandBottom{
+  display: flex;
+  position: absolute;
+  margin-top: 665px;
+}
+.TshirtText{
+  padding-right: 300px;
+  font-size: 5vmin;
+  font-weight: bold;
+  color: aliceblue;
+}
+.BottomsText{
+  padding-left: 300px;
+  font-size: 5vmin;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+/* ////////  CAPS //////// */
+.CapsImageMain{
+  margin-top: 80px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: center; 
+}
+.capsdis{
+  position: absolute;  
+  margin-top: 150px;
+  margin-right: 450px;
+}
+.capsdis >h1{
+  font-size: 4vmin;
+}
+.DsicriptionCaps >li{
+  font-size: 3vmin;
+}
+
+/* //////////////// */
+
+
+/* allingning the boxes */
+.SneakersRow{ 
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding-bottom: 65px;
+  padding-top: 65px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.productsCaps{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding-bottom: 65px;
+  padding-top: 65px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.productsTBottom1{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.productsTBottom2{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding-bottom: 65px;
+  padding-top: 65px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.productsSocks{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding-bottom: 65px;
+  padding-top: 65px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* //////////////////FORM PRODUCT PAGE///////////////// */
+.FormProductPage{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  
+  background-color: #9dedfc;
+}
+#address{
+  width: 300px;
+}
+#country{
+  width: 150px;
+}
+#city{
+  width: 120px;
+}
+#province{
+  width: 120px;
+  left: 170px;
+  bottom: 120px;
+}
+#provincelbl{
+  left: 170px;
+  bottom: 160px;
+}
+#submit{
+  background-color:#7e9dc4;
+}
+#submit:hover{
+  background-color: #ffcf0d;
+}
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #333;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: .5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////// */
+.container {
+  position: relative;
+}
+
+.container .card {
+  position: relative;
+  width: 280px;
+  height: 400px;
+  background: #e8f8ff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 9px 9px 16px rgba(0.6392160058021545, 0.6941180229187012, 0.7764710187911987, 0.6000000238418579);
+}
+
+.container .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff4c5;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container .card:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.container .card:after {
+  content: "Nike";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 10em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+
+}
+
+.container .card .imgBx {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-30%);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+
+.container .card:hover .imgBx {
+  top: 0%;
+  transform: translateY(-25%);
+  /* bug  */
+}
+
+.container .card .imgBx img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 270px;
+}
+
+.container .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 90;
+}
+
+.container .card:hover .contentBx {
+  height: 210px;
+}
+
+.container .card .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgb(0, 0, 0);
+}
+
+.container .card .contentBx .size,
+.container .card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container .card:hover .contentBx .size {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: .5s;
+}
+
+.container .card:hover .contentBx .color {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: .6s;
+}
+
+.container .card .contentBx .size h3,
+.container .card .contentBx .color h3 {
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.container .card .contentBx .size span {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: .5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container .card .contentBx .size span:hover {  /* other bug */
+  background: #B90000;
+}
+
+.container .card .contentBx .color span {
+  width: 20px;
+  height: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.container .card .contentBx .color span:nth-child(2) {
+   background: #1BBFE9;
+}
+
+.container .card .contentBx .color span:nth-child(3) {
+   background: #1B2FE9;
+}
+
+.container .card .contentBx .color span:nth-child(4) {
+   background: #080481;
+}
+
+.container .card .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: .2s;
+}
+
+.container .card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: .2s;
+}
+/* //////////////////////////////////socks//////////////////////////////////////////////// */
+.containerSocks {
+  position: relative;
+}
+
+.containerSocks .cardSocks {
+  position: relative;
+  width: 280px;
+  height: 400px;
+  background: #e8f8ff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 9px 9px 16px rgba(0.6392160058021545, 0.6941180229187012, 0.7764710187911987, 0.6000000238418579);
+}
+
+.containerSocks .cardSocks:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff4c5;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.containerSocks .cardSocks:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.containerSocks .cardSocks:after {
+  content: "Nike";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 10em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+
+}
+
+.containerSocks .cardSocks .imgBxSocks {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-30%);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+
+.containerSocks .cardSocks:hover .imgBxSocks {
+  top: 0%;
+  transform: translateY(-25%);
+  /* bug  */
+}
+
+.containerSocks .cardSocks .imgBxSocks img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 270px;
+}
+
+.containerSocks .cardSocks .contentBxSocks {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 90;
+}
+
+.containerSocks .cardSocks:hover .contentBxSocks {
+  height: 210px;
+}
+
+.containerSocks .cardSocks .contentBxSocks h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgb(0, 0, 0);
+}
+
+.containerSocks .cardSocks .contentBxSocks .size,
+.containerSocks .cardSocks .contentBxSocks .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.containerSocks .cardSocks:hover .contentBxSocks .size {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: .5s;
+}
+
+.containerSocks .cardSocks:hover .contentBxSocks .color {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: .6s;
+}
+
+.containerSocks .cardSocks .contentBxSocks .size h3,
+.containerSocks .cardSocks .contentBxSocks .color h3 {
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.containerSocks .cardSocks .contentBxSocks .size span {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: .5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.containerSocks .cardSocks .contentBxSocks .size span:hover {  /* other bug */
+  background: #B90000;
+}
+
+.containerSocks .cardSocks .contentBxSocks .color span {
+  width: 20px;
+  height: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.containerSocks .cardSocks .contentBxSocks .color span:nth-child(2) {
+   background: #1BBFE9;
+}
+
+.containerSocks .cardSocks .contentBxSocks .color span:nth-child(3) {
+   background: #1B2FE9;
+}
+
+.containerSocks .cardSocks .contentBxSocks .color span:nth-child(4) {
+   background: #080481;
+}
+
+.containerSocks .cardSocks .contentBxSocks a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: .2s;
+}
+
+.containerSocks .cardSocks:hover .contentBxSocks a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: .2s;
+}
+/* ///////////////////////////////Caps/////////////////////////////////////////////////// */
+.containerCaps {
+  position: relative;
+}
+
+.containerCaps .cardCaps {
+  position: relative;
+  width: 280px;
+  height: 400px;
+  background: #00e1ff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 9px 9px 16px rgba(0.6392160058021545, 0.6941180229187012, 0.7764710187911987, 0.6000000238418579);
+}
+
+.containerCaps .cardCaps:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff4c5;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.containerCaps .cardCaps:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.containerCaps .cardCaps:after {
+  content: "Nike";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 10em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+
+}
+
+.containerCaps .cardCaps .imgBxCaps {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-30%);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+
+.containerCaps .cardCaps:hover .imgBxCaps {
+  top: 0%;
+  transform: translateY(-25%);
+  /* bug  */
+}
+
+.containerCaps .cardCaps .imgBxCaps img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 270px;
+}
+
+.containerCaps .cardCaps .contentBxCaps {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 90;
+}
+
+.containerCaps .cardCaps:hover .contentBxCaps {
+  height: 210px;
+}
+
+.containerCaps .cardCaps .contentBxCaps h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgb(0, 0, 0);
+}
+
+.containerCaps .cardCaps .contentBxCaps .size,
+.containerCaps .cardCaps .contentBxCaps .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.containerCaps .cardCaps:hover .contentBxCaps .size {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: .5s;
+}
+
+.containerCaps .cardCaps:hover .contentBxCaps .color {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: .6s;
+}
+
+.containerCaps .cardCaps .contentBxCaps .size h3,
+.containerCaps .cardCaps .contentBxCaps .color h3 {
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.containerCaps .cardCaps .contentBxCaps .size span {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: .5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.containerCaps .cardCaps .contentBxCaps .size span:hover {  /* other bug */
+  background: #B90000;
+}
+
+.containerCaps .cardCaps .contentBxCaps .color span {
+  width: 20px;
+  height: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.containerCaps .cardCaps .contentBxCaps .color span:nth-child(2) {
+   background: #1BBFE9;
+}
+
+.containerCaps .cardCaps .contentBxCaps .color span:nth-child(3) {
+   background: #1B2FE9;
+}
+
+.containerCaps .cardCaps .contentBxCaps .color span:nth-child(4) {
+   background: #080481;
+}
+
+.containerCaps .cardCaps .contentBxCaps a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: .2s;
+}
+
+.containerCaps .cardCaps:hover .contentBxCaps a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: .2s;
 }
