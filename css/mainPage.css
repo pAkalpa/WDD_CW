@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .mPageContainer {
   display: flex;
   flex-direction: column;
@@ -36,264 +40,374 @@ h3 {
   color: white;
 }
 
-.footer{
+.footer {
   background-color: black;
 }
 
 /* -------------------------------------------------------------------------------------------------- */
 .container {
-    position: relative;
+  position: relative;
 }
 
 .container .card {
-    position: relative;
-    width: 320px;
-    height: 450px;
-    background: #232323;
-    border-radius: 20px;
-    overflow: hidden;
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .container .card:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #e9c31b;
-    clip-path: circle(150px at 80% 20%);
-    transition: 0.5s ease-in-out;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e9c31b;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
 }
 
 .container .card:hover:before {
-    clip-path: circle(300px at 80% -20%);
+  clip-path: circle(300px at 80% -20%);
 }
 
 .container .card:after {
-    content: "Nike";
-    position: absolute;
-    top: 30%;
-    left: -20%;
-    font-size: 10em;
-    font-weight: 800;
-    font-style: italic;
-    color: rgba(255, 255, 255, 0.04);
-
+  content: "Nike";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 10em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
 }
 
 .container .card .imgBx {
-    position: absolute;
-    top: 30%;
-    transform: translateY(-30%);
-    z-index: 1000;
-    width: 100%;
-    height: 100%;
-    transition: .5s;
+  position: absolute;
+  top: 30%;
+  transform: translateY(-30%);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
 }
 
 .container .card:hover .imgBx {
-    top: 0%;
-    transform: translateY(-25%);
-    /* bug  */
+  top: 0%;
+  transform: translateY(-25%);
+  /* bug  */
 }
 
-.container .card .imgBx img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 270px;
+.container .card .imgBx img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 270px;
 }
 
 .container .card .contentBx {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    transition: 1s;
-    z-index: 90;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 90;
 }
 
 .container .card:hover .contentBx {
-    height: 210px;
+  height: 210px;
 }
 
 .container .card .contentBx h2 {
-    position: relative;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #fff;
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
 }
 
 .container .card .contentBx .size,
 .container .card .contentBx .color {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 20px;
-    transition: .5s;
-    opacity: 0;
-    visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .container .card:hover .contentBx .size {
-    opacity: 1;
-    visibility: visible;
-    transition-delay: .5s;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
 }
 
 .container .card:hover .contentBx .color {
-    opacity: 1;
-    visibility: visible;
-    transition-delay: .6s;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
 }
 
 .container .card .contentBx .size h3,
 .container .card .contentBx .color h3 {
-    color: white;
-    font-weight: 300;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-right: 10px;
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
 }
 
 .container .card .contentBx .size span {
-    width: 26px;
-    height: 26px;
-    text-align: center;
-    line-height: 26px;
-    font-size: 14px;
-    display: inline-block;
-    color: #111;
-    background: #fff;
-    margin: 0 5px;
-    transition: .5s;
-    color: #111;
-    border-radius: 4px;
-    cursor: pointer;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.container .card .contentBx .size span:hover {  /* other bug */
-    background: #B90000;
+.container .card .contentBx .size span:hover {
+  /* other bug */
+  background: #b90000;
 }
 
 .container .card .contentBx .color span {
-    width: 20px;
-    height: 20px;
-    background: #ff0;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
 }
 
 .container .card .contentBx .color span:nth-child(2) {
-     background: #1BBFE9;
+  background: #1bbfe9;
 }
 
 .container .card .contentBx .color span:nth-child(3) {
-     background: #1B2FE9;
+  background: #1b2fe9;
 }
 
 .container .card .contentBx .color span:nth-child(4) {
-     background: #080481;
+  background: #080481;
 }
 
 .container .card .contentBx a {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #fff;
-    border-radius: 4px;
-    margin-top: 10px;
-    text-decoration: none;
-    font-weight: 600;
-    color: #111;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: .2s;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.2s;
 }
 
 .container .card:hover .contentBx a {
-    opacity: 1;
-    transform: translateY(0px);
-    transition-delay: .2s;
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.2s;
 }
 /* ---------------------------------------------------------------------------------------------------------------*/
 
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
-   }
-    100% {
-        transform: translateX(calc(-250px * 7));
-   }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
 }
 .slider {
-    background: white;
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-    height: 100px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
-.slider::before, .slider::after {
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-    content: "";
-    height: 100px;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
+.slider::before,
+.slider::after {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
 }
 .slider::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
 }
 .slider::before {
-    left: 0;
-    top: 0;
+  left: 0;
+  top: 0;
 }
 .slider .slide-track {
-    animation: scroll 40s linear infinite;
-    display: flex;
-    width: calc(250px * 14);
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
 }
 .slider .slide {
-    height: 100px;
-    width: 250px;
+  height: 100px;
+  width: 250px;
+}
+
+.about {
+  background-color: white;
+  height: 300px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  
+}
+#aboutDiscription{
+  color:#808080;
+  font-weight: bold;
+}
+
+#mainAbout{
+  color:#808080;
+  margin-bottom: none;
 }
 
 /* Footer Styling Start Here ------------------------------------------------------------------- */
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    height: 270px;
-    width: 100%;
-    background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  height: 240px;
+  width: 100%;
+  background-color: black;
 }
 
-.fPart1, .fPart2, .fPart3{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.fPart1 {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 10px;
 }
 
-.fPart1 > .hqa, .pfg {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.fPart2,
+.fPart3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.hqa > a, .pfg > a, .ftext > a {
-    color: white;
-    text-decoration: none;
+.fPart1 > .hqa,
+.pfg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.hqa > a,
+.pfg > a,
+.ftext > a {
+  color: white;
+  text-decoration: none;
+}
+
+.hqa {
+  width: 128px;
 }
 
 .fPart1 > .fLogo {
-    height: 100%;
+  height: 100%;
 }
+
+.fPart2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.fLogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: auto;
+}
+
+#footer-logo {
+  width: 10%;
+  height: auto;
+}
+
+#insta {
+  width: 30px;
+  height: auto;
+}
+
+#facebook {
+  width: 30px;
+  height: auto;
+}
+
+#github {
+  width: 50px;
+  height: auto;
+}
+
+#whatsapp {
+  width: 30px;
+  height: auto;
+}
+
+#twitter {
+  width: 30px;
+  height: auto;
+}
+
+.footerLine {
+  width: 90%;
+}
+/* Footer Styling End Here ------------------------------------------------------------------- */
+
+/* Back to Top Button Style Start Here -------------------------------------------------------- */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px; 
+  right: 30px; 
+  z-index: 99; 
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+#myBtn:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+    /* Back to Top Button Stylr End Here ---------------------------------------------------------- */
