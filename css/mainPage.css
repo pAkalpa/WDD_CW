@@ -266,4 +266,34 @@ h3 {
     width: 250px;
 }
 
+/* Footer Styling Start Here ------------------------------------------------------------------- */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    height: 270px;
+    width: 100%;
+    background-color: black;
+}
 
+.fPart1, .fPart2, .fPart3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fPart1 > .hqa, .pfg {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hqa > a, .pfg > a, .ftext > a {
+    color: white;
+    text-decoration: none;
+}
+
+.fPart1 > .fLogo {
+    height: 100%;
+}
