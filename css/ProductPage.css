@@ -5,6 +5,7 @@ body {
   margin: auto 0;
   background-color: #373737;
 }
+/* navbar starts here */
 .navbar {
   position: relative;
   display: flex;
@@ -468,16 +469,22 @@ nav ul li a {
 /* ////////////////////////////////////////////////////////////////////////////////// */
 .container {
   position: relative;
+  border-radius: 24px;
+  box-shadow: 9px 9px 16px rgba(255, 255, 255, 0.548);
 }
 
 .container .card {
   position: relative;
   width: 280px;
   height: 400px;
-  background: #e8f8ff;
+  background: #E7EEF5;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 9px 9px 16px rgba(0.6392160058021545, 0.6941180229187012, 0.7764710187911987, 0.6000000238418579);
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 24px;
+  border-color: white;
+  box-shadow: 9px 9px 16px rgba(26, 26, 26, 0.603);
 }
 
 .container .card:before {
@@ -487,7 +494,7 @@ nav ul li a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fff4c5;
+  background: #86ddff;
   clip-path: circle(150px at 80% 20%);
   transition: 0.5s ease-in-out;
 }
@@ -504,7 +511,7 @@ nav ul li a {
   font-size: 10em;
   font-weight: 800;
   font-style: italic;
-  color: rgba(255, 255, 255, 0.04);
+  color: rgba(159, 255, 234, 0.651);
 
 }
 
@@ -630,7 +637,7 @@ nav ul li a {
 .container .card .contentBx a {
   display: inline-block;
   padding: 10px 20px;
-  background: #fff;
+  background: rgb(255, 255, 255);
   border-radius: 4px;
   margin-top: 10px;
   text-decoration: none;
@@ -639,6 +646,7 @@ nav ul li a {
   opacity: 0;
   transform: translateY(50px);
   transition: .2s;
+  box-shadow: 4px 4px 8px rgba(1, 1, 1, 0.411);
 }
 
 .container .card:hover .contentBx a {
