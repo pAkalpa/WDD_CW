@@ -1,0 +1,43 @@
+.container1{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}   
+
+.item1{
+    order: 1;
+    position: relative;
+    top: 2cm;
+    justify-content: center;
+    text-align: center;
+    color: rgb(235, 224, 224);
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+
+.item2{
+    position: relative;
+    top: 2cm;
+    order: 2;
+    text-align:center;
+    color: rgb(241, 226, 226);
+    font-family: roboto;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+
+.item3{
+    order: 3;
+    position: relative;
+    top: 2cm;
+}
+
+.title{
+    text-align: center;
+    font-size: 48px;
+    font-family: Roboto;
+    font-weight: normal;
+}
