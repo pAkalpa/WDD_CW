@@ -1,0 +1,77 @@
+.img_top {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.img_bottom {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0;
+  top: 412px;
+  z-index: -1;
+}
+
+.form_container {
+  display: flex;
+  justify-content: center;
+}
+
+.number {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 30px;
+  display: inline-block;
+  margin: 5px 10px 20px 0px;
+}
+
+.row {
+  position: absolute;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 200px;
+  backdrop-filter: blur(16px);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cd_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.l_label {
+  display: flex;
+  width: 300px;
+}
+
+.qa_label {
+	display: flex;
+	flex-direction: row;
+	margin-left: 233px;
+}
+
+.qa_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 2%;
+	margin-bottom: 10px;
+}
+
+#nameField, #mailField {
+  width: 300px;
+
+}
