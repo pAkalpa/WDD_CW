@@ -19,6 +19,7 @@
 .form_container {
   display: flex;
   justify-content: center;
+  font-family: Roboto;
 }
 
 .number {
@@ -31,11 +32,12 @@
   line-height: 30px;
   display: inline-block;
   margin: 5px 10px 20px 0px;
+  font-family: Roboto;
 }
 
 .row {
   position: absolute;
-  width: 1000px;
+  width: 700px;
   margin-left: auto;
   margin-right: auto;
   top: 200px;
@@ -44,6 +46,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 0px 10px 30px 10px;
 }
 
 .cd_container {
@@ -52,26 +55,85 @@
   align-items: center;
 }
 
+.qHead {
+  text-decoration: underline;
+}
 .l_label {
   display: flex;
-  width: 300px;
+  width: 500px;
+  margin-bottom: 5px;
+  z-index: 100;
 }
 
 .qa_label {
-	display: flex;
-	flex-direction: row;
-	margin-left: 233px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 8px;
 }
 
 .qa_container {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	gap: 2%;
-	margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2%;
+  margin-bottom: 30px;
+  z-index: 100;
 }
 
-#nameField, #mailField {
-  width: 300px;
+legend {
+  font-size: 25px;
+}
 
+label {
+  font-size: 20px;
+}
+
+input {
+  background: #e7eef5;
+  border: none;
+  box-shadow: 6px 4px 6px #a3b1c6, -9px -9px 20px #ffffff;
+  border-radius: 37px;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+
+.check_button {
+  font-size: 20px;
+  color: white;
+  padding: 0px 20px 0px 20px;
+  background: #5c5c5c;
+  box-shadow: 6px 4px 14px #a3b1c6, -9px -9px 16px #ffffff;
+  border-radius: 37px;
+}
+
+.check_button:hover {
+  background-color: white;
+  color: #1a1a1a86;
+}
+
+.check_button:active {
+  color: black;
+}
+
+textarea {
+  resize: vertical;
+  width: 500px;
+  border-radius: 37px;
+  padding: 20px;
+  background: #e7eef5;
+  box-shadow: 6px 4px 14px #a3b1c6, -9px -9px 16px #ffffff;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+#nameField,
+#mailField {
+  width: 500px;
+  height: 30px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  font-size: 20px;
 }
