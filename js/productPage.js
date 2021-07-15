@@ -84,5 +84,9 @@ function setItems(product,no)
 }
 function displayCart()
 {
-  
+  let productContainer = document.querySelector(".Products-Container");
+  if(productContainer)
+  {
+    console.log("running");
+  }
 }
