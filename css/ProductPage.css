@@ -362,15 +362,16 @@ nav ul li a {
 /* //////////////////FORM PRODUCT PAGE///////////////// */
 .FormProductPage{
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row;
   justify-content: space-between;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   
   background-color: #9dedfc;
 }
+
 #address{
   width: 300px;
 }
@@ -400,8 +401,43 @@ nav ul li a {
   font-size: 1.25em;
   color: #333;
 }
-
-.cart-column {
+/* ------------------------------ CART SECTION ------------------------- */
+.Products-Container{
+  width: 70%;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.Product-header{
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid lightgrey;
+  margin: 0 auto;
+}
+.Product-title{
+  width: 45%;
+}
+.Product-price{
+  width: 15%;
+  
+  /* border-bottom: 4px solid lightgrey; */
+  display: flex;
+  align-items: center;
+}
+.Product-quantity{
+  width: 15%;
+  /* border-bottom: 4px solid lightgrey; */
+  display: flex;
+  align-items: center;
+}
+.Product-total{
+  width: 15%;
+  /* border-bottom: 4px solid lightgrey; */
+  display: flex;
+  align-items: center;
+}
+/* .cart-column {
   display: flex;
   align-items: center;
   border-bottom: 1px solid black;
@@ -464,7 +500,7 @@ nav ul li a {
 .cart-total-price {
   color: #333;
   font-size: 1.1em;
-}
+} */
 
 /* ////////////////////////////////////////////////////////////////////////////////// */
 .container {
@@ -517,7 +553,7 @@ nav ul li a {
 
 .container .card .imgBx {
   position: absolute;
-  top: 30%;
+  top: 20%;
   transform: translateY(-30%);
   z-index: 1000;
   width: 100%;
@@ -527,7 +563,8 @@ nav ul li a {
 
 .container .card:hover .imgBx {
   top: 0%;
-  transform: translateY(-25%);
+  transform: translateY(-34%);
+  
   /* bug  */
 }
 
@@ -535,7 +572,7 @@ nav ul li a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -30%);
   width: 270px;
 }
 
@@ -650,6 +687,26 @@ nav ul li a {
 }
 
 .container .card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: .2s;
+}
+.container .card .contentBx button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: .2s;
+  box-shadow: 4px 4px 8px rgba(1, 1, 1, 0.411);
+}
+
+.container .card:hover .contentBx button {
   opacity: 1;
   transform: translateY(0px);
   transition-delay: .2s;
