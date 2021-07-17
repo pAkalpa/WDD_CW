@@ -95,7 +95,7 @@
             
                         <h2>Nike Shoes</h2>
             
-                        <a href="#">Buy Now</a>
+                        <a class="addto-cart cart1" href="#">Buy Now</a>
                     </div>
             
                 </div>
@@ -111,7 +111,7 @@
             
                         <h2>Nike Shoes</h2>
             
-                        <a href="#">Buy Now</a>
+                        <a class="addto-cart cart2" href="#">Buy Now</a>
                     </div>
             
                 </div>
@@ -127,7 +127,7 @@
             
                         <h2>Nike Shoes</h2>
             
-                        <a href="#">Buy Now</a>
+                        <a class="addto-cart cart3" href="#">Buy Now</a>
                     </div>
             
                 </div>
@@ -143,7 +143,7 @@
             
                         <h2>Nike Shoes</h2>
             
-                        <a href="#">Buy Now</a>
+                        <a class="addto-cart cart4" href="#">Buy Now</a>
                     </div>
             
                 </div>
@@ -442,7 +442,19 @@
     </div>    
 </div>
 <div class="FormProductPage">
-    <div id="form">
+     <!--cart section start here it include name,price and quntity cloumns-->
+     <div class="Products-Container">
+         <div class="Product-header">
+             <h5 class="Product-title">PRODUCT</h5>
+             <h5 class="Product-price">PRICE</h5>
+             <h5 class="Product-quantity">QUANTITY</h5>
+             <h5 class="Product-total">TOTAL</h5>
+         </div>
+         <div class="products">
+
+         </div>
+    </div>
+    <div id="Productform">
         <form name="details" class="details-form">
            <h3>Billing Details</h3>
            <label for="fname">First name:</label><br>
@@ -466,21 +478,12 @@
            <input type="button" id="submit" value="Place order">
         </form>
     </div>
-     <!--cart section start here it include name,price and quntity cloumns-->
-    <div class="cart-section">
-        <div class="cart-row">
-           <span class="cart-item cart-header cart-column">ITEM</span>
-           <span class="cart-price cart-header cart-column">PRICE</span>
-           <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-        </div>
-        <div class="cart-items">
-        </div>
-        <div class="cart-total">
-           <strong class="cart-total-title">Total</strong>
-           <span class="cart-total-price">$0</span>
-        </div>
-    </div>
+    
 </div>
+<div>
+    <span class="cart-total-price">huggjhgj</span>
+</div>
+<script src="../js//productPage.js"></script> 
 </body>
 
 </html>
