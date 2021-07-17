@@ -437,6 +437,32 @@ nav ul li a {
   display: flex;
   align-items: center;
 }
+.cart-item-image{
+  height: 100%;
+  width: 45%;
+}
+.products{
+  background-color: #a7f5ffc2;
+  color: #030000;
+  font-weight: bold;
+  font-size: 1.7vmin;
+}
+.cart-item-image{
+  width: 20%;
+}
+.cart-itemS{
+  width: 100px;
+}
+.cart-price{
+  width:  100px;
+  margin-left: 15%;
+}
+.cart-price-div{
+  width: 50%;
+}
+.quantity-in-down{
+  width: 100px;
+}
 /* .cart-column {
   display: flex;
   align-items: center;
