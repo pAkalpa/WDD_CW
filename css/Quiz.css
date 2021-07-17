@@ -88,9 +88,10 @@ body{
 }
 
 h2{
-    padding: 1rem;
+    /* padding: 1rem; */
     text-align: center;
     margin: 0;
+    padding-bottom: 10px;
 }
 
 ul{
@@ -140,4 +141,23 @@ button:focus{
 .QUIZ-footer{
     padding-top: 50px;
     width: 100%;
+}
+
+#display-time{
+    padding-left: 10px;
+    margin:0;
+    display:flex;
+}
+
+#time-Left{
+    display: flex;
+    margin:0;
+    font-size: 15px;
+}
+
+.timer{
+    display: flex;
+    flex-flow: row;
+    padding-left: 42%;
+
 }
