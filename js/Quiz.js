@@ -83,25 +83,30 @@ const  quizData = [
 
 ];
 
-const quiz = document.getElementById('quiz')
-const answerElements = document.querySelectorAll('.answer')
-const questionElements = document.getElementById('question')
-const a_text = document.getElementById('a_text')
-const b_text = document.getElementById('b_text')
-const c_text = document.getElementById('c_text')
-const d_text = document.getElementById('d_text')
-const submitButton = document.getElementById('submit')
+const quiz = document.getElementById('quiz');
+const answerElements = document.querySelectorAll('.answer');
+const questionElements = document.getElementById('question');
+const a_text = document.getElementById('a_text');
+const b_text = document.getElementById('b_text');
+const c_text = document.getElementById('c_text');
+const d_text = document.getElementById('d_text');
+const submitButton = document.getElementById('submit');
 
 
-let currentQuestion = 0
-let correct = 0
-let score = 0
+let currentQuestion = 0;
+let correct = 0;
+let score = 0;
+let timeSecond = 60;
+
+const  times = document.querySelector("h4")
 
 loadQuestions();
 
 
 function loadQuestions(){
     deselectAnswers();
+    timeSecond = 60;
+    showTime(60);
     document.getElementById("quiz").classList.remove("quiz-container-wrong");
     document.getElementById("quiz").classList.remove("quiz-container-right");
     document.getElementById("quiz").classList.add("quiz-container");
@@ -158,11 +163,11 @@ submitButton.addEventListener('click',()=>{
             score -= 1
            
         }
-
+        checkScore();
         currentQuestion++
 
         if(currentQuestion < quizData.length){
-            loadQuestions()
+            loadQuestions();
         }else{
             quiz.innerHTML =`
                 <h2> You answered correctly at ${correct}
@@ -175,3 +180,48 @@ submitButton.addEventListener('click',()=>{
 
     }
 })
+
+
+function checkScore(){
+    if (score < 0){
+        score = 0;
+    }
+}
+
+
+
+const countDown = setInterval(()=>{
+    timeSecond--;
+    showTime(timeSecond);
+    if (timeSecond == 0 || timeSecond < 1){
+        endCount();
+        clearInterval(countDown);
+    }
+},1000);
+ 
+function showTime(second) {
+    const min = Math.floor(second / 60);
+    const sec = Math.floor(second % 60);
+    times.innerHTML =`
+    ${(min < 10)? '0' : ''}${min}:${(sec < 10)? '0' : ''}${sec}
+    `;
+}
+
+function endCount(){
+    score-=1;
+    currentQuestion++;
+    checkScore();
+    if(currentQuestion < quizData.length){
+        loadQuestions();
+        timeSecond = 60;
+
+    }else{
+        quiz.innerHTML =`
+            <h2> You answered correctly at ${correct}
+            /${quizData.length} questions </h2>
+            <h3>Finale Score = ${score}</h3>
+
+            <button onclick="location.reload()">Reload</button>
+        `
+    }
+}
