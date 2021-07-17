@@ -99,6 +99,7 @@ let score = 0;
 let timeSecond = 60;
 
 const  times = document.querySelector("h4")
+// const times = document.getElementById("display-time");
 
 loadQuestions();
 

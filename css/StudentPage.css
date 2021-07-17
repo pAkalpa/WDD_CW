@@ -1,6 +1,7 @@
 .container1{
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
     justify-content: center;
 }   
 
@@ -18,6 +19,7 @@
 }
 
 .item2{
+    display: flex;
     position: relative;
     top: 2cm;
     order: 2;
@@ -30,19 +32,22 @@
 }
 
 .item3{
+    display: flex;
     order: 3;
     position: relative;
     top: 2cm;
 }
 .item4{
+    padding-top: 100px;
+    display: flex;
     order: 4;
     position: relative;
     top: 2cm;
 }
 
 .title{
-    text-align: center;
+
     font-size: 48px;
     font-family: Roboto;
-    font-weight: normal;
+    
 }
