@@ -1,144 +1,95 @@
-let carts = document.querySelectorAll(".addto-cart");
-const storage = [];
-const storageNo = [];
-const cartItemsArray = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-const productValueArray = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-const cartItemsttt = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-let Total = 0;
-
-
-var total;
-var count;
-
-let products = [{
-    name: "Gray Tshirt",
-    tag: "smallmaleCloth",
-    price: 20,
-    inCart: 0,
-    no: 1
-  },
-  {
-    name: "Gray Tsdsfsdhirt",
-    tag: "smallmaleCloth",
-    price: 200,
-    inCart: 0,
-    no: 2
-  },
-  {
-    name: "Gray Taaaaaaaaashirt",
-    tag: "smallmaleCloth",
-    price: 20,
-    inCart: 0,
-    no: 3
-  },
-  {
-    name: "Gray Tsssssshirt",
-    tag: "smallmaleCloth",
-    price: 278,
-    inCart: 0,
-    no: 4
-  },
-]
-
-for (let i = 0; i < carts.length; i++) {
-  carts[i].addEventListener("click", () => {
-    cartNumbers(products[i]);
-    setItems(products[i], i);
-    //cartUpdate(products[i])
-  })
-}
-document.addEventListener("click", cartUpdate)
-
-function cartNumbers(product) {
-
-  let productNumbers;
-  for (let i = 0; i < storage.length; i++) {
-    productNumbers = storage.values
-  }
-
-  // let productNumbers = storage.values();
-  if (productNumbers) {
-    storage.push('cartNumbers');
-    storageNo.push(1);
-    //document.querySelector('.cart span').textContent = storageNo.length;
-  } else {
-    storage.push('cartNumbers');
-    storageNo.push(1);
-
-    //make a text content in the html with a div .cart and in a span
-    //document.querySelector('.cart span').textContent = 1;
-  }
-  //console.log(storage);
-  //console.log(storageNo);
-
-  //setItems(product);
-
+var total = 0
+// when the add cart button is clicked bellow event listner calls the additems function
+var addToCartButtons = document.getElementsByClassName('add-to-cart')
+for(var i = 0; i < addToCartButtons.length;i++){
+    var button = addToCartButtons[i];
+    button.addEventListener('click',additems);
 }
 
-function setItems(product, no) {
-  cartItemsArray[no] += 1;
- 
-  product.inCart = cartItemsArray[no];
+//this event listner update the price of the cart every time mouse is clicked
+document.addEventListener("click",cartUpdate)
+//after the submit button is clicked filed validation is done by below event listner
+document.getElementById('submit').addEventListener('click',fieldsValidation)
 
-  Total += product.price;
+var itemNames = []
+//this function collect the item name and price,and passed to addTocart function
+function additems(event){
+    var button = event.target
+    var product = button.parentElement.parentElement
+    var itemName = product.getElementsByClassName('product-title')[0].innerText
+    //all the names and inserted into itemnames array to be used after place order button is clicked
+    itemNames.push(itemName)
+    var price = product.getElementsByClassName('product-price')[0].innerText
+    addToCart(itemName,price);
+}
 
-  // console.log("addingone"+cartItemsArray);
-  // console.log("price"+productValueArray);
-  // console.log("Total"+Total);
-  // console.log(typeof Total);
-  // console.log('sdfdsfsgdfgsjdgfjsdgfhsgdjh',product);
-
-
-  if (cartItemsArray[no] == 1) {
-    var value = cartItemsArray[no] * product.price;
-    productValueArray[no] += product.price;
+//this function insert the price,name,item quantity the cart section
+function addToCart(itemName,price){
     var cartRow = document.createElement('div')
-    cartRow.classList.add('Product-header');
-    var cartItems = document.getElementsByClassName('products')[0]
+    cartRow.classList.add('cart-row')
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    //console.log(cartItems)
 
-    //console.log(product.tag);
-
-    var cartRowShow =
-      `
-        <div class="cart-item-image">
-          <img src="../img/${product.tag}.png">
+    var cartRowdetails = `
+        <div class="cart-item cart-column">
+            <span class="cart-item-title">${itemName}</span>
         </div>
-        <div class="cart-itemS">
-            <span class="cart-item-title">${product.name}</span>
-        </div class ="cart-price-div">
-          <span class="cart-price">${product.price}</span>
-        <div class="cart-quantity">
-            <input class="quantity-in-down" type="number" value=${cartItemsArray[no]}>
-        </div>
-        <div class="pricetot">
-          <span>$${value}</span>
-        </div>
-        `
-    cartRow.innerHTML += cartRowShow;
-    //console.log(cartRow);
-    cartItems.append(cartRow);
-  } else {
-    console.log("sdfdfsd");
-    productValueArray[no] += product.price;
-    var newVal = productValueArray[no];
-    console.log(newVal);
-    //var newnewVal = parseFloat(newVal)
-    document.getElementsByClassName("cart-total-price").innerHTML="aaaaaaaaaaa";
+        <span class="cart-price cart-column">${price}</span>
+        <div class="cart-quantity cart-column">
+            <input class="cart-quantity-input" type="number" value="1">
+        </div>`
+        cartRow.innerHTML = cartRowdetails
+    cartItems.append(cartRow)
+}
+//this function upadate the cart price by going through every cart row
+function cartUpdate(){
+    var cartItemContainer = document.getElementsByClassName('cart-items')[0]
+    var cartRows = cartItemContainer.getElementsByClassName('cart-row')
     
-  }
+    total = 0
+    for (var i = 0; i < cartRows.length; i++) {
+        var cartRow = cartRows[i]
+        var priceElement = cartRow.getElementsByClassName('cart-price')[0]
+        var itemName = cartRow.getElementsByClassName('cart-item')[0]
+        var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
+        var price = parseFloat(priceElement.innerText.replace('$', ''))
+        var quantity = quantityElement.value
+        total = total + (price * quantity)
+    }
+    //total is rounded to avoid long decimal point values
+    total = Math.round(total * 100) / 100
+    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
 
-function cartUpdate() {
-  var inputs = document.getElementsByClassName('quantity-in-down');
+//this function validate the form fields when the place order button is cliced
+function fieldsValidation(){
+    var firstName = document.forms["details"]["fname"].value;
+    var lastName = document.forms["details"]["lname"].value;
+    var address = document.forms["details"]["address"].value;
+    var city = document.forms["details"]["city"].value;
+    var province = document.forms["details"]["province"].value;
+    var country = document.forms["details"]["country"].value;
+    //console.log(firstName,lastName,address,city,province,country)
+    if (firstName == "") {
+        alert("Please fill the First Name");
+    }else if(lastName == ""){
+        alert("Please fill the Last Name");
+    }else if(address == ""){
+        alert("Please fill the Address");
+    }else if(city == ""){
+        alert("Please fill the City");
+    }else if(province == ""){
+        alert("Please fill the Province");
+    }else if(country == ""){
+        alert("Please fill the Country");
+    }else{
+        for(var i =0 ;i < itemNames.length;i++){
+            alert("you have borught " + itemNames[i])
+        }
+        alert("yor total $ " + total )
+    }
 
-  for(var i = 0; i < inputs.length; i++) {
-    // //console.log(inputs[i].value);
-    // count = inputs[i].value
-    // console.log(count);
-    // total = parseInt(count);
-    // //total = Math.round(total * 100) / 100
-  }
-  
-  // var inputValue = document.getElementsByClassName("quantity-in-down").value;
-  // console.log("dsfsdfsdf"+inputValue)
 }
+var cartRow = document.createElement('div')
+    cartRow.classList.add('Product-header');
+    var cartItems = document.getElementsByClassName('car')
