@@ -1,53 +1,229 @@
-.container1{
+
+
+.Student-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #000000 0%, #14000a 76%)
+    
+}
+
+
+
+.Student-container{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
+    height:600px
+
+
+
+
 }   
 
-.item1{
+.Student-item1{
+    margin: 0;
     order: 1;
-    position: relative;
+    /* position: relative; */
     top: 2cm;
     justify-content: center;
     text-align: center;
     color: rgb(235, 224, 224);
+    font-family: roboto;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+
+.Student-item2{
+    display: flex;
+    /* position: relative; */
+    top: 2cm;
+    order: 2;
+    text-align:center;
+    color: rgb(241, 226, 226);
     font-family: roboto;
     font-size: 20px;
     font-weight: normal;
     letter-spacing: 0;
 }
 
-.item2{
+.Student-item3{
+    padding-left: 2%;
     display: flex;
-    position: relative;
-    top: 2cm;
-    order: 2;
-    text-align:center;
-    color: rgb(241, 226, 226);
-    font-family: roboto;
-    font-size: 30px;
-    font-weight: normal;
-    letter-spacing: 0;
+    color: white;
+    
 }
 
-.item3{
-    display: flex;
-    order: 3;
-    position: relative;
-    top: 2cm;
-}
-.item4{
+.student-footer{
     padding-top: 100px;
     display: flex;
     order: 4;
     position: relative;
     top: 2cm;
+    width: 100%;
 }
 
-.title{
+.Student-title{
 
-    font-size: 48px;
+    font-size: 38px;
     font-family: Roboto;
     
 }
+
+
+.Student-glassContainer{
+    /* padding-left: 50px; */
+    /* padding-top: 100px; */
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    width: 800px;
+    height:500px;
+    /* align-items: center; */
+    border-radius: 20px;
+    margin-top:150px;
+    background: linear-gradient(
+    25.6deg,
+    rgba(255, 255, 255, 0.192) 28.69%,
+    rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 20px 10px rgba(182, 182, 182, 0.1);
+
+    
+}
+
+
+.GlassContainer-Student{
+       /* padding-left: 50px;
+    padding-top: 100px; */
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    width: 1250px;
+    height:520px;
+    /* align-items: center; */
+    border-radius: 20px;
+    margin-top:120px;
+    background: linear-gradient(
+    25.6deg,
+    rgba(255, 255, 255, 0.192) 28.69%,
+    rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 20px 10px rgba(182, 182, 182, 0.1);
+}
+
+.Student-our-team{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size:50px;
+    color:aliceblue;
+    font-family: Roboto;
+    font-weight: bolder;
+}
+
+.hovering-box{
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    
+}
+
+.hovering-box  .student-image{
+    max-width: 100%;
+}
+
+.hovering-box:hover{
+    transform: translateY(0)
+}
+
+.Student-infomation{
+    padding: absolute;
+    height:100%;
+    transform: translateY(-100%);
+    transition:.5%;
+    background: linear-gradient(
+        25.6deg,
+        rgba(14, 207, 255, 0.192) 28.69%,
+        rgba(82, 106, 245, 0) 100%);
+}
+
+.Student-infomation .about-Student{
+    line-height: 20px;
+    padding: 10px;
+    color:white;
+}
+
+.Student-infomation .Student-role{
+    position: absolute;
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+    background-color: #000000;
+    width: 90%;
+    color:white;
+    margin:0;
+    padding: 10px 0;
+    bottom: 0;
+
+}
+
+.Student-infomation .hovering-box{
+    transform: translateX(0);
+}
+
+
+#go-to-editor{
+
+    margin-left: 5px;
+    background-color:darkblue; 
+    align-items: center;
+    border-radius: 20px;
+    height:35px;
+    width:150px;
+    font-size:20px;
+    color:greenyellow;
+    cursor: pointer;
+}
+
+#go-to-editor:hover{
+    margin-left: 5px;
+    background-color: greenyellow; 
+    align-items: center;
+    border-radius: 20px;
+    height:35px;
+    width:150px;
+    font-size:20px;
+    color:black;
+    font-weight: bold;
+}
+
+
+
+
+/* ------------footer try to fix a bug--------------*/
+
+.fpart2{
+    padding-left: 39%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    /* display: flex; */
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  /* margin-top: 10px; */
+    
+}
+
+.fpart3{
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
