@@ -19,212 +19,51 @@ html {
   flex-direction: row;
   justify-content: space-around;
 }
-
-.mainpage_image {
+.gradient_image{
+  position: absolute;
   max-width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: contain; 
+}
+.gradient1_image{
+  position: absolute;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; 
+}
+.ball_image{
+  padding-top: 370px;
+  padding-right: 60px;
+  position: absolute;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; 
+}
+.mainpage_image {
+  position: relative;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; 
 }
 
+.mainImg{
+  display: flex;
+  justify-content: center; 
+  width: 100%;
+}
 .main-product-topic {
   font-size: 44px;
   color: white;
   text-align: center;
 }
 
-.FPLabels,
-.TPLabels {
-  font-size: 24px;
-  display: inline;
-  color: white;
-}
-
 .footer {
   background-color: black;
 }
-
-/* -------------------------------------------------------------------------------------------------- */
-.container {
-  position: relative;
-}
-
-.container .card {
-  position: relative;
-  width: 320px;
-  height: 450px;
-  background: #232323;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.container .card:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #e9c31b;
-  clip-path: circle(150px at 80% 20%);
-  transition: 0.5s ease-in-out;
-}
-
-.container .card:hover:before {
-  clip-path: circle(300px at 80% -20%);
-}
-
-.container .card:after {
-  content: "Nike";
-  position: absolute;
-  top: 30%;
-  left: -20%;
-  font-size: 10em;
-  font-weight: 800;
-  font-style: italic;
-  color: rgba(255, 255, 255, 0.04);
-}
-
-.container .card .imgBx {
-  position: absolute;
-  top: 30%;
-  transform: translateY(-30%);
-  z-index: 1000;
-  width: 100%;
-  height: 100%;
-  transition: 0.5s;
-}
-
-.container .card:hover .imgBx {
-  top: 0%;
-  transform: translateY(-25%);
-  /* bug  */
-}
-
-.container .card .imgBx img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 270px;
-}
-
-.container .card .contentBx {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  text-align: center;
-  transition: 1s;
-  z-index: 90;
-}
-
-.container .card:hover .contentBx {
-  height: 210px;
-}
-
-.container .card .contentBx h2 {
-  position: relative;
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: #fff;
-}
-
-.container .card .contentBx .size,
-.container .card .contentBx .color {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 20px;
-  transition: 0.5s;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.container .card:hover .contentBx .size {
-  opacity: 1;
-  visibility: visible;
-  transition-delay: 0.5s;
-}
-
-.container .card:hover .contentBx .color {
-  opacity: 1;
-  visibility: visible;
-  transition-delay: 0.6s;
-}
-
-.container .card .contentBx .size h3,
-.container .card .contentBx .color h3 {
-  color: white;
-  font-weight: 300;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-right: 10px;
-}
-
-.container .card .contentBx .size span {
-  width: 26px;
-  height: 26px;
-  text-align: center;
-  line-height: 26px;
-  font-size: 14px;
-  display: inline-block;
-  color: #111;
-  background: #fff;
-  margin: 0 5px;
-  transition: 0.5s;
-  color: #111;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.container .card .contentBx .size span:hover {
-  /* other bug */
-  background: #b90000;
-}
-
-.container .card .contentBx .color span {
-  width: 20px;
-  height: 20px;
-  background: #ff0;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.container .card .contentBx .color span:nth-child(2) {
-  background: #1bbfe9;
-}
-
-.container .card .contentBx .color span:nth-child(3) {
-  background: #1b2fe9;
-}
-
-.container .card .contentBx .color span:nth-child(4) {
-  background: #080481;
-}
-
-.container .card .contentBx a {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #fff;
-  border-radius: 4px;
-  margin-top: 10px;
-  text-decoration: none;
-  font-weight: 600;
-  color: #111;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: 0.2s;
-}
-
-.container .card:hover .contentBx a {
-  opacity: 1;
-  transform: translateY(0px);
-  transition-delay: 0.2s;
-}
-/* ---------------------------------------------------------------------------------------------------------------*/
 
 @keyframes scroll {
   0% {
@@ -296,105 +135,6 @@ html {
   font-size: 30px;
 }
 
-/* Footer Styling Start Here ------------------------------------------------------------------- */
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: white;
-  height: 240px;
-  width: 100%;
-  background-color: black;
-}
-
-.fPart1 {
-  display: flex;
-  flex-direction: row;
-  gap: 25px;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.fPart2,
-.fPart3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.fPart1 > .hqa,
-.pfg {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: center;
-}
-
-.hqa > a,
-.pfg > a,
-.ftext > a {
-  color: white;
-  text-decoration: none;
-}
-
-.hqa {
-  width: 128px;
-}
-
-.fPart1 > .fLogo {
-  height: 100%;
-}
-
-.fPart2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 30px;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.fLogo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: auto;
-}
-
-#footer-logo {
-  width: 10%;
-  height: auto;
-}
-
-#insta {
-  width: 30px;
-  height: auto;
-}
-
-#facebook {
-  width: 30px;
-  height: auto;
-}
-
-#github {
-  width: 50px;
-  height: auto;
-}
-
-#whatsapp {
-  width: 30px;
-  height: auto;
-}
-
-#twitter {
-  width: 30px;
-  height: auto;
-}
-
-.footerLine {
-  width: 90%;
-}
-/* Footer Styling End Here ------------------------------------------------------------------- */
 
 /* Back to Top Button Style Start Here -------------------------------------------------------- */
 #myBtn {
@@ -457,6 +197,7 @@ footer {
   padding-top: 30px;
   display: flex;
   flex-direction: column;
+  height: 100%;
   /* width: 250px; */
 }
 
