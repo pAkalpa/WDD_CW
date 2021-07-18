@@ -1186,6 +1186,7 @@ width:100%
   transform: translateY(0px);
   transition-delay: .2s;
 }
+<<<<<<< HEAD
 /* Back to Top Button Style Start Here -------------------------------------------------------- */
 #myBtn {
   display: none;
@@ -1309,3 +1310,6 @@ width:100%
   width: 90%;
 }
 /* Footer Styling End Here ------------------------------------------------------------------- */    
+=======
+
+>>>>>>> 69d33798ed74bcfb2967a2b2f7d5e1edbdc4e99c

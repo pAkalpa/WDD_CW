@@ -99,6 +99,7 @@ let score = 0;
 let timeSecond = 60;
 
 const  times = document.querySelector("h4")
+// const times = document.getElementById("display-time");
 
 loadQuestions();
 
@@ -174,7 +175,7 @@ submitButton.addEventListener('click',()=>{
                 /${quizData.length} questions </h2>
                 <h3>Finale Score = ${score}</h3>
 
-                <button onclick="location.reload()">Reload</button>
+                <button id="submit" onclick="location.reload()">Reload</button>
             `
         }
 
@@ -217,11 +218,11 @@ function endCount(){
 
     }else{
         quiz.innerHTML =`
-            <h2> You answered correctly at ${correct}
+            <h2 class="Quiz-final-h2"> You answered correctly at ${correct}
             /${quizData.length} questions </h2>
-            <h3>Finale Score = ${score}</h3>
+            <h3 class="Quiz-final-h3">Finale Score = ${score}</h3>
 
-            <button onclick="location.reload()">Reload</button>
+            <button class="submit" onclick="location.reload()">Reload</button>
         `
     }
 }
