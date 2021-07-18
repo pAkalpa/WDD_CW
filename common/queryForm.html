@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="SHORTCUT ICON" href="../img/favicon/favicon.ico" />
     <link rel="icon" href="../img/favicon/favicon.ico" type="image/ico" />
-    <link rel="stylesheet" href="../css/queryPage.css">
     <link rel="stylesheet" href="../css/ProductPage.css">
     <link rel="stylesheet" href="../css/mainPage.css">
+    <link rel="stylesheet" href="../css/queryPage.css">
     <title>GoalIN</title>
 </head>
-
 <body>
+    <!-- Start of Navbar -->
     <nav id="start" class="navbar navbar-light  fixed-top fill">
         <div class="container-fluid">
             <div class="navImg">
@@ -44,22 +44,17 @@
                 </ul>
             </div>
         </div>
-        </nav>
-        <!-- Start of Background Images -->
-        <img src="../img/queryForm/top.png" alt="top image" class="img_top">
-        <img src="../img/queryForm/bottom.png" alt="bottom image" class="img_bottom">
-        <!-- End of Background Images -->
-
-        <div class="form_container">
-
-            <div class="row">
-
-                <form action="mailto:pasindu.20200608@iit.ac.lk" method="post" enctype="text/plain">
-
-                    <h1 id="queryHeader" class="qHead">Customer Query Form</h1>
+    </nav>
+    <!-- End of Navbar -->
+    <img src="../img/queryForm/top.png" alt="top image" class="img_top">
+    <div class="query-form-container">
+        <div class="query-form-background">
+            <div id="post_stage"></div>
+            <form id="q_form" name="QueryFORM" class="query_form" action="mailto:pasindu.20200608@iit.ac.lk" method="post" enctype="text/plain">
+                <h1 id="queryHeader" class="qHead">Customer Query Form</h1>
 
 
-                    <legend><span class="number">1</span>Contact Details</legend>
+                    <legend class="q-legend"><span class="number">1</span>Contact Details</legend>
                     <div Style="display:flex; flex-direction: column; align-items: center;">
 
                         <div class="l_label">
@@ -78,7 +73,7 @@
 
                     </div>
 
-                    <legend><span class="number">2</span>Query Info</legend>
+                    <legend class="q-legend"><span class="number">2</span>Query Info</legend>
 
                     <div class="qa_label">
                         <label>Query About:</label>
@@ -99,16 +94,42 @@
                     </div>
 
 
-                    <input class="check_button" type="button" value="check" name="Check">
-
-                </form>
-            </div>
+                    <input id="c_button" class="check_button" type="button" value="check" name="Check">
+            </form>
         </div>
-        <script src="/js/queryForm.js"></script>
-
+    </div>
+    <img src="../img/queryForm/bottom.png" alt="bottom image" class="img_bottom">
+    <!-- Start of Background Images -->
+        <!-- End of Background Images -->
+        <!-- Start of the footer -->
         <footer>
+            <div class="fPart1">
+                <div class="hqa">
+                    <a href="mainPage.html">HOME</a>
+                    <a href="Quiz.html">QUIZ</a>
+                    <a href="Student Page.html">ABOUT</a>
+                </div>
+                <img src="../img/icons/logo.png" alt="logo" id="footer-logo">
+                <div class="pfg">
+                    <a href="ProductPage.html">PRODUCTS PAGE</a>
+                    <a href="snaps.html">SNAPS</a>
+                    <a href="queryForm.html">GET SUPPORT</a>
+                </div>
+            </div>
+            <div class="fpart2" style="display:flex;flex-direction:row;justify-content: center;gap:30px;align-items: center;margin: 10px 0px 10px 0px;">
+                <a href="#"><img src="../img/icons/INSTA.png" alt="Instagram" id="insta"></a>
+                <a href="#"><img src="../img/icons/facebook.png" alt="facebook" id="facebook"></a>
+                <a href="https://github.com/pAkalpa/WDD_CW"><img src="../img/icons/github.png" alt="GitHUB" id="github"></a>
+                <a href="#"><img src="../img/icons/whatsapp.png" alt="whatsapp" id="whatsapp"></a>
+                <a href="#"><img src="../img/icons/Twitter.png" alt="twitter" id="twitter"></a>
+            </div>
+            <hr class="footerLine">
+            <div class="fpart3" style="display:flex;flex-direction:row;justify-content: center;align-items: center;height: 30px;">
+                <p class="ftext">Page by <a href="">Kraken</a></p>
+            </div>
         </footer>
-
-</body>
-
-</html>
+        <!-- End of the footer -->
+        <script src="../js/queryForm.js"></script>
+    </body>
+    
+    </html>
