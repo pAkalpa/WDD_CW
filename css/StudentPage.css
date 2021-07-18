@@ -56,14 +56,6 @@
     
 }
 
-.student-footer{
-    padding-top: 100px;
-    display: flex;
-    order: 4;
-    position: relative;
-    top: 2cm;
-    width: 100%;
-}
 
 .Student-title{
 
@@ -201,29 +193,7 @@
     font-weight: bold;
 }
 
-
-
-
-/* ------------footer try to fix a bug--------------*/
-
-.fpart2{
-    padding-left: 39%;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-
-    /* display: flex; */
-  /* flex-direction: row; */
-  flex-wrap: wrap;
-  gap: 30px;
-  align-items: center;
-  /* margin-top: 10px; */
-    
+.StudentFooter{
+    width: 100%;
+    margin-top: 4%;
 }
-
-.fpart3{
-    display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
