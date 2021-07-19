@@ -86,10 +86,10 @@ const  quizData = [
 const quiz = document.getElementById('quiz');
 const answerElements = document.querySelectorAll('.answer');
 const questionElements = document.getElementById('question');
-const a_text = document.getElementById('a_text');
-const b_text = document.getElementById('b_text');
-const c_text = document.getElementById('c_text');
-const d_text = document.getElementById('d_text');
+const a_quiz = document.getElementById('a_quiz');
+const b_quiz = document.getElementById('b_quiz');
+const c_quiz = document.getElementById('c_quiz');
+const d_quiz = document.getElementById('d_quiz');
 const submitButton = document.getElementById('submit');
 
 
@@ -101,22 +101,23 @@ let timeSecond = 60;
 const  times = document.querySelector("h4")
 // const times = document.getElementById("display-time");
 
-loadQuestions();
+load_Quiz();
 
 
-function loadQuestions(){
+function load_Quiz(){
     deselectAnswers();
     timeSecond = 60;
     showTime(60);
     document.getElementById("quiz").classList.remove("quiz-container-wrong");
     document.getElementById("quiz").classList.remove("quiz-container-right");
     document.getElementById("quiz").classList.add("quiz-container");
+
     const currentQuestionData = quizData[currentQuestion]
     questionElements.innerText = currentQuestionData.question
-    a_text.innerText = currentQuestionData.a
-    b_text.innerText = currentQuestionData.b
-    c_text.innerText = currentQuestionData.c
-    d_text.innerText = currentQuestionData.d
+    a_quiz.innerText = currentQuestionData.a
+    b_quiz.innerText = currentQuestionData.b
+    c_quiz.innerText = currentQuestionData.c
+    d_quiz.innerText = currentQuestionData.d
 }
 
 
@@ -168,7 +169,7 @@ submitButton.addEventListener('click',()=>{
         currentQuestion++
 
         if(currentQuestion < quizData.length){
-            loadQuestions();
+            load_Quiz();
         }else{
             quiz.innerHTML =`
                 <h2> You answered correctly at ${correct}
@@ -213,7 +214,7 @@ function endCount(){
     currentQuestion++;
     checkScore();
     if(currentQuestion < quizData.length){
-        loadQuestions();
+        load_Quiz();
         timeSecond = 60;
 
     }else{

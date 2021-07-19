@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(to bottom, #000000 0%, #14000a 76%)
+    background: linear-gradient(to bottom, #000000 0%, #14000a 76%);
     
 }
 
@@ -16,11 +16,9 @@
     align-items: center;
     justify-content: center;
     height:600px
-
-
-
-
 }   
+
+
 
 .Student-item1{
     margin: 0;
