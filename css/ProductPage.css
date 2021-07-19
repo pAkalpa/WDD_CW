@@ -9,6 +9,8 @@
   opacity: 0.5;
   position: relative;
   margin-top: 75px;
+  height:900px; 
+  width:100%;
 }
 .Image1withSneakers{
   position: absolute;
@@ -187,8 +189,23 @@
   font-size: 3vmin;
 }
 
-/* //////////////// */
-
+/* ////////////////////   adding css to all main images ///////// */
+.prodPageIMG1{
+  height: 1000px;
+  width: 1500px;
+}
+.prodPageIMG2{
+  height: 800px;
+  width: 1500px;
+}
+.prodPageIMG3{
+  height: 900px;
+  width: 1500px;
+}
+.prodPageIMG4{
+  height: 800px;
+  width: 1500px;
+}
 
 /* allingning the boxes */
 .SneakersRow{ 
