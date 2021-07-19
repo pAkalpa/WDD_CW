@@ -54,6 +54,7 @@ html {
   display: flex;
   justify-content: center; 
   width: 100%;
+  margin-top: 100px;
 }
 .main-product-topic {
   font-size: 44px;
@@ -203,7 +204,7 @@ html {
 
 .promotion-discription{
   position: absolute;
-  padding-top: 15%;
+  padding-top: 13%;
   padding-left: 25%;
   text-align: center;
   font-size: 24px;
