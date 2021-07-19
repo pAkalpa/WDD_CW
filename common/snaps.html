@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -17,7 +18,7 @@
         <div class="container-fluid">
             <div class="navImg">
                 <a href="mainPage.html">
-                    <img src="../img/mainLogo.png" class="nav-logo">
+                    <img src="../img/mainLogo.png" alt="main logo" class="nav-logo">
                 </a>
             </div>
             <div class="links">
@@ -77,9 +78,9 @@
         <!--Color Selector-->
         <div class="controllerContainer">
             <div class="propertyController">
-                <form id="color_controller" action="">
+                <form id="color_controller">
                     <!--Font Color selector-->
-                    <label for="fontColor">Choose Font Color:</label>
+                    <label for="fontColour">Choose Font Color :</label>
                     <select name="fontColour" id="fontColour" onchange="setFontColour(this.form)">
                         <option value="pleaseSelect" disabled selected hidden>Select Font Colour</option>
                         <option value="Color#1">Orange</option>
@@ -89,7 +90,7 @@
                         <option value="Color#5">Pink</option>
                     </select>
                     <!--Background Color selector-->
-                    <label for="backgroundColor">Choose Background Color:</label>
+                    <label for="backgroundColour">Choose Background Color :</label>
                     <select name="backgroundColour" id="backgroundColour" onchange="setBackgroundColour(this.form)">
                         <option value="pleaseSelect" disabled selected hidden>Select Background Colour</option>
                         <option value="Color#1">Blue</option>
