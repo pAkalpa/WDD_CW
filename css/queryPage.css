@@ -1,3 +1,7 @@
+body {
+  background-color: rgba(160, 160, 160, 0.623);
+}
+
 .query-form-container {
   display: flex;
   flex-direction: column;
@@ -39,7 +43,7 @@
   width: 100%;
   height: auto;
   left: 0%;
-  top: 295px;
+  top: 30rem;
   z-index: -1;
 }
 
