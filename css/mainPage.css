@@ -42,12 +42,21 @@ html {
   background-position: center;
   background-size: contain; 
 }
+
+.zoom_ball {
+  animation: bigandsmall 5s infinite linear;
+}
+
+.rotate_ball {
+  animation: rotation 20s infinite linear;
+}
+
 .mainpage_image {
   position: relative;
   max-width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain; 
+  background-size: contain;
 }
 
 .mainImg{
@@ -66,6 +75,18 @@ html {
   background-color: black;
 }
 
+.slideDown {
+	animation-name: slideDown;
+	animation-duration: 5s;	
+	animation-timing-function: ease;		
+}
+
+.slideUp {
+  animation-name: slideUp;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -74,6 +95,67 @@ html {
     transform: translateX(calc(-250px * 7));
   }
 }
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes bigandsmall {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+	50%{
+		transform: translateY(8%);
+	}
+	65%{
+		transform: translateY(-4%);
+	}
+	80%{
+		transform: translateY(4%);
+	}
+	95%{
+		transform: translateY(-2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}		
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100);
+  }
+  50% {
+    transform: translateY(-8%);
+  }
+  65% {
+    transform: translateY(4%);
+  }
+  80% {
+    transform: translateY(-4%);
+  }
+  95% {
+    transform: translateY(2%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
 .slider {
   background: white;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
