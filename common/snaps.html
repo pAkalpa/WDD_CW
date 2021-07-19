@@ -8,15 +8,16 @@
     <link rel="icon" href="../img/favicon/favicon.ico" type="image/ico" />
     <link rel="stylesheet" href="../css/snap.css">
     <link rel="stylesheet" href="../css/Common.css">
-    <title>GoalIn</title>
+    <title>GoalIn | Snaps</title>
 </head>
 
 <body>
+    <!--Nav Bar-->
     <nav id="start" class="navbar navbar-light  fixed-top ">
         <div class="container-fluid">
             <div class="navImg">
                 <a href="mainPage.html">
-                    <img src="../img/mainLogo.png" class="nav-logo" class="">
+                    <img src="../img/mainLogo.png" class="nav-logo">
                 </a>
             </div>
             <div class="links">
@@ -44,61 +45,70 @@
         </div>
     </nav>
 
+    <!--Snaps pannel-->
     <div class="snapPageContainer">
 
         <div class="snapGallery">
-            <div class="spacer">
-            </div>
-    
     
             <div class="container">
-                <div class="panel active img1">
-                    <h3>Fifa Foot Ball World Cup</h3>
+
+                <div class="panel img1">
+                    <h3>The 2018 FIFA World Cup</h3>
                 </div>
     
                 <div class="panel img2">
-                    <h3>Fifa Foot Ball World Cup</h3>
+                    <h3>FootBall</h3>
                 </div>
     
                 <div class="panel img3">
-                    <h3>Fifa Foot Ball World Cup</h3>
+                    <h3>Football stadium</h3>
                 </div>
     
                 <div class="panel img4">
-                    <h3>Fifa Foot Ball World Cup</h3>
+                    <h3>Ronaldo</h3>
                 </div>
     
-                <div class="panel img5">
-                    <h3>Fifa Foot Ball World Cup</h3>
+                <div class="panel active img5">
+                    <h3>The 2022 FIFA World Cup</h3>
                 </div>
             </div>
         </div>
+
+        <!--Color Selector-->
         <div class="controllerContainer">
             <div class="propertyController">
                 <form id="color_controller" action="">
+                    <!--Font Color selector-->
                     <label for="fontColor">Choose Font Color:</label>
                     <select name="fontColour" id="fontColour" onchange="setFontColour(this.form)">
                         <option value="pleaseSelect" disabled selected hidden>Select Font Colour</option>
-                        <option value="Color#1">Red</option>
+                        <option value="Color#1">Orange</option>
                         <option value="Color#2">Blue</option>
-                        <option value="Color#3">Green</option>
-                        <option value="Color#4">Orange</option>
+                        <option value="Color#3">Black</option>
+                        <option value="Color#4">White</option>
+                        <option value="Color#5">Pink</option>
                     </select>
+                    <!--Background Color selector-->
                     <label for="backgroundColor">Choose Background Color:</label>
                     <select name="backgroundColour" id="backgroundColour" onchange="setBackgroundColour(this.form)">
                         <option value="pleaseSelect" disabled selected hidden>Select Background Colour</option>
-                        <option value="Color#1">Red</option>
-                        <option value="Color#2">Blue</option>
+                        <option value="Color#1">Blue</option>
+                        <option value="Color#2">pink</option>
                         <option value="Color#3">Green</option>
-                        <option value="Color#4">Orange</option>
+                        <option value="Color#4">Yellow</option>
+                        <option value="Color#5">Orange</option>
                     </select>
                 </form>
             </div>
         </div>
     
+        <!--Selected Image and discription will apear here-->
         <div id="showSnap">
         </div>
+
     </div>
+
+    <!--Footer-->
     <div class="SnapFooter">
         <footer class="footermain">
             <div class="fPart1">
@@ -115,7 +125,7 @@
                 </div>
             </div>
             <div class="sitemapFooter">
-                <a href="">SITEMAP</a>
+                <a href="../common/SiteMap.html">SITEMAP</a>
             </div>
             <div class="fpart2">
                 <a href="https://www.instagram.com/" target="_blank"><img src="../img/icons/INSTA.png" alt="Instagram" id="insta"></a>
@@ -129,7 +139,7 @@
             </div>
             <hr class="footerLine">
             <div class="fpart3">
-                <p class="ftext">Page by <a href="">Kraken</a></p>
+                <p class="ftext">Page by <a href="">Janith Abhayarathna</a></p>
             </div>
         </footer>
     </div>
