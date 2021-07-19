@@ -26,45 +26,45 @@ function additems(event){
 //this function insert the price,name,item quantity the cart section
 function addToCart(itemName,price){
     var cartRow = document.createElement('div')
-    cartRow.classList.add('cart-row')
-    var cartItems = document.getElementsByClassName('cart-items')[0]
+    cartRow.classList.add('CartTitles')
+    var cartItems = document.getElementsByClassName('CartNewItems')[0]
     //console.log(cartItems)
 
     var cartRowdetails = `
-        <div class="cart-item cart-column">
-            <span class="cart-item-title">${itemName}</span>
+        <div class="cartItemslist cartColoum">
+            <span class="cartItemslist-title">${itemName}</span>
         </div>
-        <span class="cart-price cart-column">${price}</span>
-        <div class="cart-quantity cart-column">
-            <input class="cart-quantity-input" type="number" value="1">
+        <span class="cartPriceList cartColoum">${price}</span>
+        <div class="cartquantityList cartColoum">
+            <input class="cartquantityList-input" type="number" value="1">
         </div>`
         cartRow.innerHTML = cartRowdetails
     cartItems.append(cartRow)
 }
 //this function upadate the cart price by going through every cart row
 function cartUpdate(){
-    var cartItemContainer = document.getElementsByClassName('cart-items')[0]
-    var cartRows = cartItemContainer.getElementsByClassName('cart-row')
+    var cartItemContainer = document.getElementsByClassName('CartNewItems')[0]
+    var cartRows = cartItemContainer.getElementsByClassName('CartTitles')
     
     total = 0
     for (var i = 0; i < cartRows.length; i++) {
         var cartRow = cartRows[i]
-        var priceElement = cartRow.getElementsByClassName('cart-price')[0]
-        var itemName = cartRow.getElementsByClassName('cart-item')[0]
-        var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
+        var priceElement = cartRow.getElementsByClassName('cartPriceList')[0]
+        var itemName = cartRow.getElementsByClassName('cartItemslist')[0]
+        var quantityElement = cartRow.getElementsByClassName('cartquantityList-input')[0]
         var price = parseFloat(priceElement.innerText.replace('$', ''))
         var quantity = quantityElement.value
         total = total + (price * quantity)
     }
     //total is rounded to avoid long decimal point values
     total = Math.round(total * 100) / 100
-    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+    document.getElementsByClassName('cartTotMain-price')[0].innerText = '$' + total
 }
 
 //this function validate the form fields when the place order button is cliced
 function fieldsValidation(){
-    var firstName = document.forms["details"]["fname"].value;
-    var lastName = document.forms["details"]["lname"].value;
+    var firstName = document.forms["details"]["cartFirstName"].value;
+    var lastName = document.forms["details"]["cartLastName"].value;
     var address = document.forms["details"]["address"].value;
     var city = document.forms["details"]["city"].value;
     var province = document.forms["details"]["province"].value;
