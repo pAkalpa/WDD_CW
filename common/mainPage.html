@@ -21,7 +21,7 @@
         <div class="container-fluid">
             <div class="navImg">
                 <a href="mainPage.html">
-                    <img src="../img/mainLogo.png" class="nav-logo" class="">
+                    <img src="../img/mainLogo.png" class="nav-logo">
                 </a>
             </div>
             <div class="links">
@@ -53,11 +53,17 @@
     <div class="mPageContainer">
         <!-- Start of Main Image -->
         <div class="mainImg">
-            
+
             <img src="../img/mainPage/Gradient-1.png" class="gradient_image">
             <img src="../img/mainPage/Gradient.png" class="gradient1_image">
-            <img src="../img/mainPage/mainImg.png" class="mainpage_image">
-            <img src="../img/mainPage/a-2.png" class="ball_image">
+            <img src="../img/mainPage/mainImg.png" class="mainpage_image" id="manwithlogo">
+            <div class="ball_image">
+                <div id="fb_con">
+                    <div id="zoom_ball">
+                        <img src="../img/mainPage/a-2.png" id="football">
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- End of Main Image -->
 
@@ -77,11 +83,12 @@
 
                                 <h2>Nike Shoes</h2>
 
-                                <a href="#">Buy Now</a>
+                                <a href="ProductPage.html">Buy Now</a>
                             </div>
 
                         </div>
                     </div>
+                    <!-- Product Cards Container -->
                     <div class="container">
                         <div class="card">
                             <div class="imgBx">
@@ -132,6 +139,7 @@
         </div>
         <!-- End of Featured Products -->
 
+        <!-- 30% Off Poster Container -->
         <div class="main-poster">
             <img src="../img/mainPage/mainPoster.png" class="main-poster-image">
             <div class="promotion-discription">
@@ -139,140 +147,146 @@
                 <h3 class="topic-promotion">BEST PRODUCT FOR SOCCER PLAYER.</h3>
                 <h3 class="topic-promotion">IT IS IMPORTANT TO</h3>
                 <h3 class="topic-promotion">DRESS FOR SUCCESS.</h3>
-                <button  class="go-to-productPage" id="main-to-productPage">Shop Now</button>
+                <button onclick="location.href='ProductPage.html'" class="go-to-productPage"
+                    id="main-to-productPage">Shop Now</button>
             </div>
         </div>
- 
-        <!-- <div class="main-poster">
-            <div class="promotion-details">
-                <h3 class="promotion-discription">30% OFF</h3>
-                <h3 class="promotion-discription">BEST PRODUCT FOR SOCCER PLAYER.</h3>
-                <h3 class="promotion-discription">IT IS IMPORTANT TO</h3>
-                <h3 class="promotion-discription">DRESS FOR SUCCESS.</h3>
-            </div>
-        </div> -->
 
-            <!-- Start Trending Products -->
-            <div class="treandiv">
-                <h3 class="main-product-topic">Tranding Products</h3>
-                <div class="fPImageCollection">
-                    <div class="container">
-                        <div class="card">
-                            <div class="imgBx">
-                                <img src="../img/maleCloth.png" alt="nike-air-shoe">
-                            </div>
-
-                            <div class="contentBx">
-
-                                <h2>Goalin Black-Cap</h2>
-
-                                <a href="#">Buy Now</a>
-                            </div>
-
+        <!-- Start Trending Products -->
+        <div class="treandiv">
+            <h3 class="main-product-topic">Tranding Products</h3>
+            <div class="fPImageCollection">
+                <!-- Product Cards Container -->
+                <div class="container">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="../img/maleCloth.png" alt="nike-air-shoe">
                         </div>
-                    </div>
-                    <div class="container">
-                        <div class="card">
-                            <div class="imgBx">
-                                <img src="../img/maleCloth.png" alt="nike-air-shoe">
-                            </div>
 
-                            <div class="contentBx">
+                        <div class="contentBx">
 
-                                <h2>Goalin Blue-Sneakers</h2>
+                            <h2>Goalin Black-Cap</h2>
 
-                                <a href="#">Buy Now</a>
-                            </div>
-
+                            <a href="#">Buy Now</a>
                         </div>
+
                     </div>
-                    <div class="container">
-                        <div class="card">
-                            <div class="imgBx">
-                                <img src="../img/maleCloth.png" alt="nike-air-shoe">
-                            </div>
+                </div>
+                <div class="container">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="../img/maleCloth.png" alt="nike-air-shoe">
+                        </div>
 
-                            <div class="contentBx">
+                        <div class="contentBx">
 
-                                <h2>NIKE T-Shirts</h2>
+                            <h2>Goalin Blue-Sneakers</h2>
 
-                                <a href="#">Buy Now</a>
-                            </div>
+                            <a href="#">Buy Now</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="../img/maleCloth.png" alt="nike-air-shoe">
+                        </div>
+
+                        <div class="contentBx">
+
+                            <h2>NIKE T-Shirts</h2>
+
+                            <a href="ProductPage.html">Buy Now</a>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-        <!-- End of Trending Products -->
+
+    </div>
+    <!-- End of Trending Products -->
 
 
-        <!-- start of the about -->
-        <div class="about">
-            <h3 id="mainAbout">About us</h3>
-            <p id="aboutDiscription">
-                In Goalin, your online football shop, you will find everything to complete your soccer gear and also the most famous football boots in the world as Nike, Adidas, Puma, Diadora, Lotto, for different pitches and artificial turf, natural grass, earth, concrete, flooring, synthetic. 
-                We also offer a wide selection for your football training equipment as; soccer jerseys, soccer shoes and goalie gloves, clothing for training and more.
-                Are you a fan of a football team? We all official kits clubs the Liga Santander, Liga 123, Ligue 1, Premier League, Bundesliga, Serie A, Europe League, Champions League as Real Madrid, FC Barcelona, Manchester United, Arsenal, Chelsea, AC Milan, Juventus, Bayern Munich, Paris Saint Germain. 
-                Check out the T-shirts and professional equipment teams in Goalin. Look for garments from Spain, England, France, Brazil, Argentina, Italy and even more. 
-                On our football boots selection, we´ll help you find the model that best suits your game. Buy the adidas NEMEZIZ used mainly by Lionel Messi or Nike Mercurial , whose figure is Cristiano Ronaldo. 
-                With a dedicated team of staff, Goalin will continue to push our user experience in a highly competitive marketplace, but nonetheless we always open to suggestions and feedback from our customers. 
-                Our team is continually expanding to improve the efficiency of our order processing. We aim to turn around each order as quickly as possible, paying special attention to any customer special requests or birthday deadlines. 
-                While such requests cannot always be met due to circumstances, we will always, where possible, seek to deliver your order in time for your requested deadline. 
-                If you want to play good football and avoid injury, it is important to choose a suitable pair of football boots. So…What are you waiting for? Click on our website, put on your new football gear and hit the ball to the victory, Goalin will make the rest for you.
-            </p>
-        </div>
-        <!-- End of the about -->
+    <!-- start of the about -->
+    <div class="about">
+        <h3 id="mainAbout">About us</h3>
+        <p id="aboutDiscription">
+            In Goalin, your online football shop, you will find everything to complete your soccer gear and also the
+            most famous football boots in the world as Nike, Adidas, Puma, Diadora, Lotto, for different pitches and
+            artificial turf, natural grass, earth, concrete, flooring, synthetic.
+            We also offer a wide selection for your football training equipment as; soccer jerseys, soccer shoes and
+            goalie gloves, clothing for training and more.
+            Are you a fan of a football team? We all official kits clubs the Liga Santander, Liga 123, Ligue 1, Premier
+            League, Bundesliga, Serie A, Europe League, Champions League as Real Madrid, FC Barcelona, Manchester
+            United, Arsenal, Chelsea, AC Milan, Juventus, Bayern Munich, Paris Saint Germain.
+            Check out the T-shirts and professional equipment teams in Goalin. Look for garments from Spain, England,
+            France, Brazil, Argentina, Italy and even more.
+            On our football boots selection, we´ll help you find the model that best suits your game. Buy the adidas
+            NEMEZIZ used mainly by Lionel Messi or Nike Mercurial , whose figure is Cristiano Ronaldo.
+            With a dedicated team of staff, Goalin will continue to push our user experience in a highly competitive
+            marketplace, but nonetheless we always open to suggestions and feedback from our customers.
+            Our team is continually expanding to improve the efficiency of our order processing. We aim to turn around
+            each order as quickly as possible, paying special attention to any customer special requests or birthday
+            deadlines.
+            While such requests cannot always be met due to circumstances, we will always, where possible, seek to
+            deliver your order in time for your requested deadline.
+            If you want to play good football and avoid injury, it is important to choose a suitable pair of football
+            boots. So…What are you waiting for? Click on our website, put on your new football gear and hit the ball to
+            the victory, Goalin will make the rest for you.
+        </p>
+    </div>
+    <!-- End of the about -->
 
 
-        <!-- Start of the image slider -->
-        <div class="slider">
-            <div class="slide-track">
-                <div class="slide">
-                    <img src="../img/mainPage/diadora.jpg" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../img/mainPage/reebok.png" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../img/mainPage/adidas.jpg" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../img/mainPage/ayro.jpg" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../img/mainPage/goalin.png" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../img/mainPage/ereke.jpg" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../img/mainPage/fila.png" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../img/mainPage/nb.jpg" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../img/mainPage/nike.jpg" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../img/mainPage/puma.jpg" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../img/mainPage/ufc.jpg" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../img/mainPage/under.jpg" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../img/mainPage/wilson.jpg" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="../img/mainPage/easton.jpg" height="100" width="250" alt="" />
-                </div>
+    <!-- Start of the image slider -->
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img src="../img/mainPage/diadora.jpg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="../img/mainPage/reebok.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="../img/mainPage/adidas.jpg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="../img/mainPage/ayro.jpg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="../img/mainPage/goalin.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="../img/mainPage/ereke.jpg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="../img/mainPage/fila.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="../img/mainPage/nb.jpg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="../img/mainPage/nike.jpg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="../img/mainPage/puma.jpg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="../img/mainPage/ufc.jpg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="../img/mainPage/under.jpg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="../img/mainPage/wilson.jpg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="../img/mainPage/easton.jpg" height="100" width="250" alt="" />
             </div>
         </div>
-        <!-- End of the image slider -->
+    </div>
+    <!-- End of the image slider -->
     </div>
 
     <!-- Start of the footer -->
@@ -295,21 +309,35 @@
                 <a href="">SITEMAP</a>
             </div>
             <div class="fpart2">
-                <a href="https://www.instagram.com/"><img src="../img/icons/INSTA.png" alt="Instagram" id="insta"></a>
-                <a href="https://www.facebook.com/"><img src="../img/icons/facebook.png" alt="facebook" id="facebook"></a>
-                <a href="https://github.com/"><img src="../img/icons/github.png" alt="GitHUB" id="github"></a>
-                <a href="https://www.whatsapp.com/"><img src="../img/icons/whatsapp.png" alt="whatsapp" id="whatsapp"></a>
-                <a href="https://twitter.com/?lang=en"><img src="../img/icons/Twitter.png" alt="twitter" id="twitter"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../img/icons/INSTA.png" alt="Instagram"
+                        id="insta"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../img/icons/facebook.png" alt="facebook"
+                        id="facebook"></a>
+                <a href="https://github.com/pAkalpa/WDD_CW" target="_blank"><img src="../img/icons/github.png"
+                        alt="GitHUB" id="github"></a>
+                <a href="https://www.whatsapp.com/" target="_blank"><img src="../img/icons/whatsapp.png" alt="whatsapp"
+                        id="whatsapp"></a>
+                <a href="https://twitter.com/?lang=en" target="_blank"><img src="../img/icons/Twitter.png" alt="twitter"
+                        id="twitter"></a>
             </div>
             <hr class="footerLine">
-            <div class="fpart3">        
+            <div class="fpart3">
                 <p class="ftext">Page by <a href="">Kraken</a></p>
             </div>
         </footer>
-    </div>    
+    </div>
 
     <!-- End of the footer -->
     <script src="../js/backtotop.js"></script>
+    <!-- Js Main Image Animations     -->
+    <script>
+        window.onload = function () {
+            document.getElementById("manwithlogo").classList.add("slideDown");
+            document.getElementById("fb_con").classList.add("slideUp");
+            document.getElementById("zoom_ball").classList.add("zoom_ball");
+            document.getElementById("football").classList.add("rotate_ball");
+        }
+    </script>
 </body>
 
 </html>
