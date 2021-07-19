@@ -9,26 +9,24 @@
   <link rel="icon" href="../img/favicon/favicon.ico" type="image/ico" />
   <title>GoalIn | Site map</title>
 
-  <!------------------ Ading Css ----------------------->
-  <link rel="stylesheet" href="../css/Common.css">
+  <!-- Ading CSS -->
+  <link rel="stylesheet" href="../css/ProductPage.css">
+  <link rel="stylesheet" href="../css/mainPage.css">
   <link rel="stylesheet" href="../css/svg.css">
-  <!---------------------------------------------------->
 
-  <!------- To change colour when hovering -------------->
+  <!-- To change colour when hovering in SVG -->
   <script>
     function mouseOut(a) {
       var x = document.getElementsByTagName("rect");
       x[a].style.fill = "black";
     }
-
     function mouseIn(a) {
       var x = document.getElementsByTagName("rect");
       x[a].style.fill = "#3799df";
     }
   </script>
-  <!-------------------------------------------------------->
 
-  <!--------------- svg CSS ------------>
+  <!-- svg CSS -->
   <style>
     rect {
       fill: black;
@@ -38,47 +36,45 @@
       fill: rgb(248, 248, 248);
     }
   </style>
-  <!------------------------------------->
 
 </head>
 
 <body>
 
-  <!-- Start of Navbar -->
-  <nav id="start" class="navbar navbar-light  fixed-top fill">
+  <!-- Navigation bar -->
+  <nav id="start" class="navbar navbar-light  fixed-top ">
     <div class="container-fluid">
-        <div class="navImg">
-            <a href="mainPage.html">
-                <img src="../img/mainLogo.png" class="nav-logo" class="">
-            </a>
-        </div>
-        <div class="links">
-            <ul class="navbar-nav">
-                <li>
-                    <a href="mainPage.html">HOME</a>
-                </li>
-                <li>
-                    <a href="ProductPage.html">PRODUCTS</a>
-                </li>
-                <li>
-                    <a href="Quiz.html">QUIZ</a>
-                </li>
-                <li>
-                    <a href="snaps.html">SNAPS</a>
-                </li>
-                <li>
-                    <a href="Student Page.html">ABOUT</a>
-                </li>
-                <li>
-                    <a href="queryForm.html">CONTACT US</a>
-                </li>
-            </ul>
-        </div>
+      <div class="navImg">
+        <a href="mainPage.html">
+          <img src="../img/mainLogo.png" alt="MainLogo" class="nav-logo">
+        </a>
+      </div>
+      <div class="links">
+        <ul class="navbar-nav">
+          <li>
+            <a href="mainPage.html">HOME</a>
+          </li>
+          <li>
+            <a href="ProductPage.html">PRODUCTS</a>
+          </li>
+          <li>
+            <a href="Quiz.html">QUIZ</a>
+          </li>
+          <li>
+            <a href="snaps.html">Snaps</a>
+          </li>
+          <li>
+            <a href="Student Page.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="queryForm.html">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
     </div>
-</nav>
-<!-- End of Navbar -->
+  </nav>
 
-  <!---------------------------------------------------Site Map---------------------------------------------->
+  <!--Site Map-->
   <div class="svg-1">
     <svg width="1000" height="500" aria-label="Site Map">
       <a href="mainPage.html">
@@ -126,15 +122,20 @@
           <text x="810" y="375" onmouseover="mouseIn(5)" onmouseout="mouseOut(5)">Contact Us</text>
         </a>
       </g>
+
+      <!-- Site Map Path-->
       <g>
         <path
           d="M 150 350 Q 150 300 200 300 L 300 300 L 300 350 L 300 300 L 450 300 L 450 350 L 450 300 L 500 300 L 500 250 L 500 300 L 550 300 L 550 350 L 550 300 L 700 300 L 700 350 L 700 300 L 800 300 M 800 300 Q 850 300 850 350"
           stroke="white" stroke-width="3" fill="none" />
+      </g>
+
     </svg>
   </div>
-  <!--------------------------------------- Footer ------------------------------------------ -->
-  <div>
-    <footer class="footermain">
+
+  <!-- Footer -->
+  <div class="item4">
+    <footer>
       <div class="fPart1">
         <div class="hqa">
           <a href="mainPage.html">HOME</a>
@@ -148,23 +149,23 @@
           <a href="queryForm.html">GET SUPPORT</a>
         </div>
       </div>
-      <div class="sitemapFooter">
-        <a href="">SITEMAP</a>
-      </div>
       <div class="fpart2">
-        <a href="https://www.instagram.com/"><img src="../img/icons/INSTA.png" alt="Instagram" id="insta"></a>
-        <a href="https://www.facebook.com/"><img src="../img/icons/facebook.png" alt="facebook" id="facebook"></a>
-        <a href="https://github.com/"><img src="../img/icons/github.png" alt="GitHUB" id="github"></a>
-        <a href="https://www.whatsapp.com/"><img src="../img/icons/whatsapp.png" alt="whatsapp" id="whatsapp"></a>
-        <a href="https://twitter.com/?lang=en"><img src="../img/icons/Twitter.png" alt="twitter" id="twitter"></a>
+        <a href="#"><img src="../img/icons/INSTA.png" alt="Instagram" id="insta"></a>
+        <a href="#"><img src="../img/icons/facebook.png" alt="facebook" id="facebook"></a>
+        <a href="https://github.com/pAkalpa/WDD_CW"><img src="../img/icons/github.png" alt="GitHUB" id="github"></a>
+        <a href="#"><img src="../img/icons/whatsapp.png" alt="whatsapp" id="whatsapp"></a>
+        <a href="#"><img src="../img/icons/Twitter.png" alt="twitter" id="twitter"></a>
       </div>
       <hr class="footerLine">
       <div class="fpart3">
+
         <p class="ftext">Page by <a href="">Kraken</a></p>
       </div>
     </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../js/backtotop.js"></script>
   </div>
-  <!-- ---------------------------------------------------------------------------------------------- -->
 </body>
 
 </html>
