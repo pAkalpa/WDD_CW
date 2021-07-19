@@ -1,7 +1,4 @@
-*{
-    box-sizing: border-box;
-    
-}
+
 
 .Quiz-items{
     display: flex;
@@ -9,13 +6,6 @@
 }
 .Quiz-body{
     background-image: url("../img/quiz/quizBack.jpg");
-    /* background-image: radial-gradient(
-        47.62% 46.65% at 45.15% 63.61%,
-        rgba(0, 0, 0, 0.42) 0%,
-        rgba(7, 1, 1, 0) 100%
-      ); */
-
-    
 
     font-family: 'Roboto',sans-serif;
     display: flex;
@@ -106,12 +96,11 @@
 }
 
 .Quiz-main-list, .Quiz-sub-list .quiz-answer{
-    cursor: pointer;
+    cursor: grab;
 }
 
 
 #submit{
-    /* background-color:#8e44ad; */
     background-color: rgb(201, 41, 41);
     border-radius: 30px;
     color: white;
@@ -119,15 +108,9 @@
     cursor: pointer;
     font-size: 2rem;
     font-family: 'Roboto';
-    /* padding: 1.3rem; */
-    /* width:100%; */
     margin-left: 25%;
     margin-bottom: 30px;
     width:50%;
-
-
-
-   
 }
 
  #submit:hover{
