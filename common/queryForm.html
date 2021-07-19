@@ -22,7 +22,7 @@
         <div class="container-fluid">
             <div class="navImg">
                 <a href="mainPage.html">
-                    <img src="../img/mainLogo.png" class="nav-logo" class="" />
+                    <img src="../img/mainLogo.png" class="nav-logo" alt="main logo" />
                 </a>
             </div>
             <div class="links">
@@ -40,7 +40,7 @@
                         <a href="snaps.html">SNAPS</a>
                     </li>
                     <li>
-                        <a href="Student Page.html">ABOUT</a>
+                        <a href="StudentPage.html">ABOUT</a>
                     </li>
                     <li>
                         <a href="queryForm.html">CONTACT US</a>
@@ -62,47 +62,48 @@
                 method="post" enctype="text/plain">
                 <h1 id="queryHeader" class="qHead">Customer Query Form</h1>
 
-                <legend class="q-legend">
-                    <span class="number">1</span>Contact Details
-                </legend>
-                <div style="display: flex; flex-direction: column; align-items: center">
-                    <div class="l_label">
-                        <label for="name">Full Name:</label>
+                    <div class="q-legend">
+                        <span class="number">1</span>Contact Details
                     </div>
-                    <div class="cd_container">
-                        <input type="text" id="nameField" name="user_name" placeholder="Enter Your Full Name" />
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <div class="l_label">
+                            <label for="nameField">Full Name:</label>
+                        </div>
+                        <div class="cd_container">
+                            <input type="text" id="nameField" name="user_name" placeholder="Enter Your Full Name" />
+                        </div>
+
+                        <div class="l_label">
+                            <label for="mailField">Email:</label>
+                        </div>
+                        <div class="cd_container">
+                            <input type="email" id="mailField" name="user_email" placeholder="Enter Your Email" />
+                        </div>
                     </div>
 
-                    <div class="l_label">
-                        <label for="email">Email:</label>
-                    </div>
-                    <div class="cd_container">
-                        <input type="email" id="mailField" name="user_email" placeholder="Enter Your Email" />
-                    </div>
-                </div>
 
-                <legend class="q-legend">
-                    <span class="number">2</span>Query Info
-                </legend>
-
-                <div class="qa_label">
-                    <label>Query About:</label>
-                </div>
-                <div class="qa_container">
-                    <input type="radio" id="sub1" value="sub1" name="query_subject" /><label for="sub1"
-                        class="radButtons">Send Overseas</label><br />
-                    <input type="radio" id="sub2" value="sub2" name="query_subject" /><label for="sub2"
-                        class="radButtons">Package & Postal Cost</label><br />
-                    <input type="radio" id="sub3" value="sub3" name="query_subject" /><label for="sub3"
-                        class="radButtons">Taxes and Laws</label>
-                </div>
-                <div class="qa_label">
-                    <label for="details">Details:</label>
-                </div>
-                <div>
-                    <textarea name="query_details" id="details" cols="30" rows="10"
-                        placeholder="What do you need to know?"></textarea>
-                </div>
+                    <div class="q-legend">
+                        <span class="number">2</span>Query Info
+                    </div>
+    
+                    <div class="qa_label">
+                        <label>Query About:</label>
+                    </div>
+                    <div class="qa_container">
+                        <input type="radio" id="sub1" value="sub1" name="query_subject" /><label for="sub1"
+                            class="radButtons">Send Overseas</label><br />
+                        <input type="radio" id="sub2" value="sub2" name="query_subject" /><label for="sub2"
+                            class="radButtons">Package & Postal Cost</label><br />
+                        <input type="radio" id="sub3" value="sub3" name="query_subject" /><label for="sub3"
+                            class="radButtons">Taxes and Laws</label>
+                    </div>
+                    <div class="qa_label">
+                        <label for="details">Details:</label>
+                    </div>
+                    <div>
+                        <textarea name="query_details" id="details" cols="30" rows="10"
+                            placeholder="What do you need to know?"></textarea>
+                    </div>
 
                 <input id="c_button" class="check_button" type="button" value="check" name="Check" />
             </form>
@@ -118,7 +119,7 @@
                 <div class="hqa">
                     <a href="mainPage.html">HOME</a>
                     <a href="Quiz.html">QUIZ</a>
-                    <a href="Student Page.html">ABOUT</a>
+                    <a href="StudentPage.html">ABOUT</a>
                 </div>
                 <img src="../img/icons/logo.png" alt="logo" id="footer-logo" />
                 <div class="pfg">
@@ -131,10 +132,12 @@
                 <a href="">SITEMAP</a>
             </div>
             <div class="fpart2">
-                <a href="https://www.instagram.com/" target="_blank"><img src="../img/icons/INSTA.png" alt="Instagram" id="insta" /></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../img/icons/INSTA.png" alt="Instagram"
+                        id="insta" /></a>
                 <a href="https://www.facebook.com/" target="_blank"><img src="../img/icons/facebook.png" alt="facebook"
                         id="facebook" /></a>
-                <a href="https://github.com/pAkalpa/WDD_CW" target="_blank"><img src="../img/icons/github.png" alt="GitHUB" id="github" /></a>
+                <a href="https://github.com/pAkalpa/WDD_CW" target="_blank"><img src="../img/icons/github.png"
+                        alt="GitHUB" id="github" /></a>
                 <a href="https://www.whatsapp.com/" target="_blank"><img src="../img/icons/whatsapp.png" alt="whatsapp"
                         id="whatsapp" /></a>
                 <a href="https://twitter.com/?lang=en" target="_blank"><img src="../img/icons/Twitter.png" alt="twitter"
