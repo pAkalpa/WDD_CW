@@ -105,16 +105,15 @@
 .item1{
     margin-left: 25%;
     margin-top: 25px;
-    align-items: center;
     align-content: center;
 }
 
 .item2{
     text-align: center;
-    color: white;
-    margin-left: auto;
     font-size: 18px;
-    margin: 50 50 50 50;
+    margin: 50px 50px 50px 50px;
+    background-color: rgb(126, 121, 75);
+    border-radius:40px;
 }
 
 /* To the options */
