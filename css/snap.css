@@ -1,30 +1,22 @@
 *{
     box-sizing: border-box;
 }
+/* Footer CSS */
 .SnapFooter{
     width: 100%;
     margin-top: 10px;
 }
 
-body {
-    font-family:'Roboto', sans-serif;
+/* For the whole body */
+.container{
     display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content:center;
-    height:100vh;
-    overflow: hidden;
-    margin: 0;
+    flex-direction: row;
+    margin-top: 120px;
+    font-family: 'Roboto', sans-serif;
     background-color: #373737;
 }
 
-.container{
-    display: flex;
-    margin-top: 80px;
-    width: 90vw;
-
-}
-
+/* For the image pannel */
 .panel{
     background-size: auto 100%;
     background-position: center;
@@ -40,7 +32,7 @@ body {
     cursor: url("../img/snap/mg.png"), auto;
 }
 
-
+/* For h3 tags inside the pannel class */
 .panel h3{
     font-size: 24px;
     position: absolute;
@@ -50,7 +42,6 @@ body {
     opacity: 0;
 
 }
-
 
 .panel.active{
     flex:5;
@@ -62,15 +53,14 @@ body {
     transition:opacity 0.3s ease-in 0.4s
 }
 
-
-
+/* Images */
 .img1{background-image: url('../img/snap/cup.jpg')}
 
 
-.img2{background-image: url('../img/snap/black.jpg')}
+.img2{background-image: url('../img/snap/soccer-488700.jpg')}
 
 
-.img3{background-image: url('../img/snap/car.jpg')}
+.img3{background-image: url('../img/snap/pexels-tom-fisk-3448250.jpg')}
 
 
 .img4{background-image: url('../img/snap/ronaldo.jpg')}
@@ -78,8 +68,64 @@ body {
 
 .img5{background-image: url('../img/snap/win.jpg')}
 
-
+/* Discription */
 .discription{
     text-align: justify;
 }
-    
+
+.controllerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* To the selection bar */
+.propertyController{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    height: auto;
+    width: 90%;
+    background-color: black;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom:30px;
+	border-radius: 40px;
+    color: whitesmoke;
+}    
+
+/*To selected image and description */
+.showSnap {
+    display: flex;
+    flex-direction: column;
+}
+
+.item1{
+    margin-left: 25%;
+    margin-top: 25px;
+    align-items: center;
+    align-content: center;
+}
+
+.item2{
+    text-align: center;
+    color: white;
+    margin-left: auto;
+    font-size: 18px;
+    margin: 50 50 50 50;
+}
+
+/* To the options */
+option{
+    background-color: #050213;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+}
+select{
+    border-radius:30px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
