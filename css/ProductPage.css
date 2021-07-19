@@ -242,7 +242,7 @@
 .add-to-cart {
   cursor: pointer;
 }
-.AddtoCartMain{
+.ProdCartMain{
   background-color: #56CCF2;
   display: flex;
   width: 100%;
@@ -275,13 +275,13 @@
   left: 300px;
   bottom: 120px;
 }
-#provincelbl{
+#cartProvincelbl{
   left: 300px;
   bottom: 160px;
 }
 
 /*consider the postion*/
-.section-add-2{
+.CartMain2{
   display: flex;
   justify-content: space-between;
   
@@ -293,7 +293,7 @@
   padding-right: 130px;
   color: white;
 }
-#countrylbl{
+#cartCountrylbl{
   bottom: 95px;
   color: white;
 }
@@ -310,7 +310,7 @@
   color: #111;
 }
 
-.cart-section{
+.CartMainSec1{
   position: relative;
   padding-left: 5%;
   padding-top: 4%;
@@ -319,13 +319,13 @@
 
 /* ///////////////// */
 
-.cart-header {
+.cartHeadText {
   font-weight: bold;
   font-size: 1.25em;
   color: rgb(0, 0, 0);
 }
 
-.cart-column {
+.cartColoum {
   display: flex;
   align-items: center;
   border-bottom: 1px solid black;
@@ -334,31 +334,31 @@
   margin-top: 10px;
 }
 
-.cart-row {
+.CartTitles {
   display: flex;
 }
 
-.cart-item {
+.cartItemslist {
   width: 20vmax;
 }
 
-.cart-price {
+.cartPriceList {
   width:15vmax;
   font-size: 1.2em;
   color: rgb(0, 0, 0);
 }
 
-.cart-quantity {
+.cartquantityList {
   width: 15vmax;
 }
 
-.cart-item-title {
+.cartItemslist-title {
   color: rgb(0, 0, 0);
   margin-left: .5em;
   font-size: 1.2em;
 }
 
-.cart-quantity-input {
+.cartquantityList-input {
   height: 34px;
   width: 5vmax;
   border-radius: 5px;
@@ -371,15 +371,15 @@
   margin-right: 25px;
 }
 
-.cart-row:last-child {
+.CartTitles:last-child {
   border-bottom: 1px solid rgb(255, 0, 0);
 }
 
-.cart-row:last-child .cart-column {
+.CartTitles:last-child .cartColoum {
   border: none;
 }
 
-.cart-total {
+.cartTotMain {
   text-align: end;
   margin-top: 10px;
   margin-right: 10px;
@@ -390,14 +390,14 @@
 width:100%
 }
 
-.cart-total-title {
+.cartTotMain-title {
   font-weight: bold;
   font-size: 1.5em;
   color: rgb(0, 0, 0);
   margin-right: 20px;
 }
 
-.cart-total-price {
+.cartTotMain-price {
   color: rgb(255, 0, 0);
   font-size: 1.1em;
 }

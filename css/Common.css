@@ -23,7 +23,6 @@
 	color: white;
 	text-decoration: none;
 	font-size: 1.2vmax;
-	font-weight: bold;
 }
 
 .fPart1 {
@@ -71,6 +70,10 @@
 	text-decoration: none;
 }
 
+.hqa>a:hover, .pfg>a:hover, .ftext>a:hover, .sitemapFooter>a:hover {
+	color: #E75C17;
+}
+
 .hqa {
 	width: 128px;
 }
@@ -106,6 +109,22 @@
 
 .footerLine {
 	width: 90%;
+}
+
+#insta:hover, #facebook:hover, #github:hover, #whatsapp:hover, #twitter:hover {
+	animation: Zoom 1s ease infinite;
+}
+
+@keyframes Zoom {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
 /* Footer Styling End Here ------------------------------------------------------------------- */
