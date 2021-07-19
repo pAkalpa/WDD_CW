@@ -6,6 +6,8 @@
     padding-top: 10%;
     padding-bottom: 1%;
 }
+
+/* body of the question page */
 .Quiz-body{
     background-image: url("../img/quiz/quizBack.jpg");
 
@@ -20,6 +22,7 @@
     height: 800px;
 }
 
+/* glass container of the question background  */
 .quiz-container{
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(8px);
@@ -38,6 +41,7 @@
   );   
 }
 
+/* color change when answer is correct */
 .quiz-container-right{
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(8px);
@@ -56,7 +60,7 @@
   );  
 }
 
-
+/* color change when answer is incorrect */
 .quiz-container-wrong{
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(8px);
@@ -80,8 +84,8 @@
 
 }
 
+/* styling of the questions */
 .question{
-    /* padding: 1rem; */
     text-align: center;
     margin: 0;
     padding-bottom: 10px;
@@ -97,11 +101,12 @@
     margin: 1rem 0;
 }
 
+/* changing the cursor when choosing the answes */
 .Quiz-main-list, .Quiz-sub-list .quiz-answer{
     cursor: grab;
 }
 
-
+/* styling of the submit bottom */
 #submit{
     background-color: rgb(201, 41, 41);
     border-radius: 30px;
@@ -115,20 +120,24 @@
     width:50%;
 }
 
+/* styling of the submit bottom  when hovering*/
  #submit:hover{
     background-color:#ad66cc;
 }
 
+/* styling of the submit bottom  when focus */
 #submit:focus{
     outline: none;
     background-color: #5e3370;
 }
 
+/* ------------------------------- styling of displaying timer ----------------------------- */
 #display-time{
     padding-left: 10px;
     margin:0;
     display:flex;
 }
+
 
 #time-Left{
     display: flex;
@@ -152,6 +161,7 @@ h3{
     text-align: center;
     font-size: 40px;
 }
+
 .QuizFooter{
     width: 100%;
     margin-top: 10px;

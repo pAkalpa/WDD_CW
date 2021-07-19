@@ -1,3 +1,6 @@
+// array of questions and answers fore the quiz  questions
+
+// referance: udamy video tutorials
 const  quizData = [
     {
         question: "Who won the last 'copa america'?",
@@ -103,7 +106,7 @@ const  times = document.querySelector("h4")
 
 load_Quiz();
 
-
+// loading questions
 function load_Quiz(){
     deselectAnswers();
     timeSecond = 60;
@@ -121,10 +124,12 @@ function load_Quiz(){
 }
 
 
+// deselecting the default selector
 function deselectAnswers(){
     answerElements.forEach(answerElements => answerElements.checked = false)
 }
 
+// sellecting the ansers
 function select(){
     let answer
 
@@ -136,6 +141,8 @@ function select(){
     return answer
 }
 
+
+// changeing the background 
 submitButton.addEventListener('mouseover',()=>{
     const answer = select()
 
@@ -153,13 +160,14 @@ submitButton.addEventListener('mouseover',()=>{
 })
 
 
+//  change the question when clicking the reload button, and if the number of questions are greater the index of the last question in the arry user will get the final marks
 submitButton.addEventListener('click',()=>{
     const answer = select()
 
     if (answer){
         if (answer === quizData[currentQuestion].correct){
             correct++   
-            score += 2   // chech here if you want to change the background color
+            score += 2   
     
         } else{
             score -= 1
@@ -183,7 +191,7 @@ submitButton.addEventListener('click',()=>{
     }
 })
 
-
+// checking the score
 function checkScore(){
     if (score < 0){
         score = 0;
@@ -191,6 +199,8 @@ function checkScore(){
 }
 
 
+// --------------------------------------------- timer --------------------------------
+// referance: github.com
 
 const countDown = setInterval(()=>{
     timeSecond--;
@@ -201,6 +211,7 @@ const countDown = setInterval(()=>{
     }
 },1000);
  
+// display the time to the user 
 function showTime(second) {
     const min = Math.floor(second / 60);
     const sec = Math.floor(second % 60);
@@ -209,6 +220,7 @@ function showTime(second) {
     `;
 }
 
+// load the next question if the time limit ends 
 function endCount(){
     score-=1;
     currentQuestion++;
