@@ -1,14 +1,16 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="SHORTCUT ICON" href="../img/favicon/favicon.ico" />
     <link rel="icon" href="../img/favicon/favicon.ico" type="image/ico" />
-	<link rel="stylesheet" href="../css/snap.css">
-    <link rel="stylesheet" href="../css/ProductPage.css">
+    <link rel="stylesheet" href="../css/snap.css">
+    <link rel="stylesheet" href="../css/Common.css">
     <title>GoalIn</title>
 </head>
+
 <body>
     <nav id="start" class="navbar navbar-light  fixed-top ">
         <div class="container-fluid">
@@ -42,44 +44,97 @@
         </div>
     </nav>
 
-    <div>
-        <div class="spacer">
+    <div class="snapPageContainer">
+
+        <div class="snapGallery">
+            <div class="spacer">
+            </div>
+    
+    
+            <div class="container">
+                <div class="panel active img1">
+                    <h3>Fifa Foot Ball World Cup</h3>
+                </div>
+    
+                <div class="panel img2">
+                    <h3>Fifa Foot Ball World Cup</h3>
+                </div>
+    
+                <div class="panel img3">
+                    <h3>Fifa Foot Ball World Cup</h3>
+                </div>
+    
+                <div class="panel img4">
+                    <h3>Fifa Foot Ball World Cup</h3>
+                </div>
+    
+                <div class="panel img5">
+                    <h3>Fifa Foot Ball World Cup</h3>
+                </div>
+            </div>
         </div>
-
-
-        <div class="container">
-            <div class="panel active img1" >
-                <h3>Fifa Foot Ball World Cup</h3>
+        <div class="controllerContainer">
+            <div class="propertyController">
+                <form id="color_controller" action="">
+                    <label for="fontColor">Choose Font Color:</label>
+                    <select name="fontColour" id="fontColour" onchange="setFontColour(this.form)">
+                        <option value="pleaseSelect" disabled selected hidden>Select Font Colour</option>
+                        <option value="Color#1">Red</option>
+                        <option value="Color#2">Blue</option>
+                        <option value="Color#3">Green</option>
+                        <option value="Color#4">Orange</option>
+                    </select>
+                    <label for="backgroundColor">Choose Background Color:</label>
+                    <select name="backgroundColour" id="backgroundColour" onchange="setBackgroundColour(this.form)">
+                        <option value="pleaseSelect" disabled selected hidden>Select Background Colour</option>
+                        <option value="Color#1">Red</option>
+                        <option value="Color#2">Blue</option>
+                        <option value="Color#3">Green</option>
+                        <option value="Color#4">Orange</option>
+                    </select>
+                </form>
             </div>
-
-            <div class="panel img2" >
-                <h3>Fifa Foot Ball World Cup</h3>
-            </div>
-
-            <div class="panel img3" >
-                <h3>Fifa Foot Ball World Cup</h3>
-            </div>
-
-            <div class="panel img4" >
-                <h3>Fifa Foot Ball World Cup</h3>
-            </div>
-
-            <div class="panel img5" >
-                <h3>Fifa Foot Ball World Cup</h3>
-            </div>
+        </div>
+    
+        <div id="showSnap">
         </div>
     </div>
-
-    <div id="showSnap">
-        <div id="discriptionImage">
-            <img id="relativeImage" alt="Above-selected-image" width=85% role="img" aria-label="Above selected image">
-        </div>
-        <div id="relativeImageDiscription">
-            <p id="discription"><p>
-        </div>   
+    <div class="SnapFooter">
+        <footer class="footermain">
+            <div class="fPart1">
+                <div class="hqa">
+                    <a href="mainPage.html">HOME</a>
+                    <a href="Quiz.html">QUIZ</a>
+                    <a href="Student Page.html">ABOUT</a>
+                </div>
+                <img src="../img/icons/logo.png" alt="logo" id="footer-logo">
+                <div class="pfg">
+                    <a href="ProductPage.html">PRODUCTS PAGE</a>
+                    <a href="snaps.html">SNAPS</a>
+                    <a href="queryForm.html">GET SUPPORT</a>
+                </div>
+            </div>
+            <div class="sitemapFooter">
+                <a href="">SITEMAP</a>
+            </div>
+            <div class="fpart2">
+                <a href="https://www.instagram.com/" target="_blank"><img src="../img/icons/INSTA.png" alt="Instagram" id="insta"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../img/icons/facebook.png" alt="facebook"
+                        id="facebook"></a>
+                <a href="https://github.com/pAkalpa/WDD_CW" target="_blank"><img src="../img/icons/github.png" alt="GitHUB" id="github"></a>
+                <a href="https://www.whatsapp.com/" target="_blank"><img src="../img/icons/whatsapp.png" alt="whatsapp"
+                        id="whatsapp"></a>
+                <a href="https://twitter.com/?lang=en" target="_blank"><img src="../img/icons/Twitter.png" alt="twitter"
+                        id="twitter"></a>
+            </div>
+            <hr class="footerLine">
+            <div class="fpart3">
+                <p class="ftext">Page by <a href="">Kraken</a></p>
+            </div>
+        </footer>
     </div>
-      
 
-     <script src="../js//snap.js"></script> 
+    <script src="../js//snap.js"></script>
 </body>
+
 </html>

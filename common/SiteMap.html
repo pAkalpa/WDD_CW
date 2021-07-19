@@ -2,174 +2,170 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <!-----------Css---------------->
-    <link rel="stylesheet" href="../css/ProductPage.css">
-    <link rel="stylesheet" href="../css/mainPage.css">
-    <link rel="stylesheet" href="../css/svg.css">
-    <!-------------------------------------------->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="SHORTCUT ICON" href="../img/favicon/favicon.ico" />
+  <link rel="icon" href="../img/favicon/favicon.ico" type="image/ico" />
+  <title>GoalIn | Site map</title>
 
-    <!------- To change colour when hovering -------------->
-    <script>
-        function mouseOver(a){
-            var rects=document.getElementsByTagName("rect");
-            rects[a].style.fill="#3799df";
-        }
-        
-        function mouseOut(a){
-            var rects=document.getElementsByTagName("rect");
-            rects[a].style.fill="black";
-        }
-    </script>
-      <!--------- svg CSS ------------>
-      <style>
-        rect{
-        fill: black;
-        }
-        text{
-        fill: rgb(248, 248, 248);
-        }
-      </style>
-    <!------------------------------------------>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="SHORTCUT ICON" href="../img/favicon/favicon.ico" />
-    <link rel="icon" href="../img/favicon/favicon.ico" type="image/ico" />
-    <title>GoalIn | Site map</title>
+  <!-- Ading CSS -->
+  <link rel="stylesheet" href="../css/ProductPage.css">
+  <link rel="stylesheet" href="../css/mainPage.css">
+  <link rel="stylesheet" href="../css/svg.css">
+
+  <!-- To change colour when hovering in SVG -->
+  <script>
+    function mouseOut(a) {
+      var x = document.getElementsByTagName("rect");
+      x[a].style.fill = "black";
+    }
+    function mouseIn(a) {
+      var x = document.getElementsByTagName("rect");
+      x[a].style.fill = "#3799df";
+    }
+  </script>
+
+  <!-- svg CSS -->
+  <style>
+    rect {
+      fill: black;
+    }
+
+    text {
+      fill: rgb(248, 248, 248);
+    }
+  </style>
+
 </head>
 
 <body>
-    <!--Navigation bar-->
 
-    <nav id="start" class="navbar navbar-light  fixed-top ">
-        <div class="container-fluid">
-            <div class="navImg">
-                <a href="mainPage.html">
-                    <img src="../img/mainLogo.png" class="nav-logo" class="">
-                </a>
-            </div>
-            <div class="links">
-                <ul class="navbar-nav">
-                    <li>
-                        <a href="mainPage.html">HOME</a>
-                    </li>
-                    <li>
-                        <a href="ProductPage.html">PRODUCTS</a>
-                    </li>
-                    <li>
-                        <a href="Quiz.html">QUIZ</a>
-                    </li>
-                    <li>
-                        <a href="snaps.html">Snaps</a>
-                    </li>
-                    <li>
-                        <a href="Student Page.html">ABOUT</a>
-                    </li>
-                    <li>
-                        <a href="queryForm.html">CONTACT US</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!---------------------------------------------------Site Map---------------------------------------------->
-    
-    <div class="svg-1">
-        <svg width="1000" height="500"  aria-label="sitemap">
-          <a href="mainPage.html">
-            <image x="395" y="100" href="../img/mainLogo.png" width="150" height="150" 
-              role="img" aria-label="link to home page"/>
-          </a>
-
-            <g>
-              <a href="mainPage.html">
-                <rect x="100"  
-                  y="350" width="100" height="40" rx="20" ry="20" 
-                  onmouseover="mouseOver(0)" onmouseout="mouseOut(0)"/>
-                <text x="125" y="376" onmouseover="mouseOver(0)" onmouseout="mouseOut(0)" >HOME	</text>
-              </a>
-            </g>
-            
-            <g>
-              <a href="ProductPage.html">
-                <rect x="230" 
-                  y="350" width="120" height="40" rx="20" ry="20" 
-                  onmouseover="mouseOver(1)" onmouseout="mouseOut(1)"/>
-                <text x="250" y="376"  onmouseover="mouseOver(1)" onmouseout="mouseOut(1)" >PRODUCTS	</text>
-              </a>
-            </g>
-            <g>
-              <a href="Quiz.html">
-                <rect x="390" 
-                  y="350" width="100" height="40" rx="20" ry="20" 
-                  onmouseover="mouseOver(2)" onmouseout="mouseOut(2)"/>
-                <text x="420" y="376"  onmouseover="mouseOver(2)" onmouseout="mouseOut(2)" >QUIZ</text>
-              </a>
-            </g>
-            <g>
-              <a href="snaps.html">
-                <rect x="500" 
-                  y="350" width="100" height="40" rx="20" ry="20" 
-                  onmouseover="mouseOver(3)" onmouseout="mouseOut(3)"/>
-                <text x="530" y="376"  onmouseover="mouseOver(3)" onmouseout="mouseOut(3)" >Snaps</text>
-              </a>
-            </g>
-            
-            <g>
-              <a href="Student Page.html">
-                <rect x="635" 
-                  y="350" width="120" height="40" rx="20" ry="20" 
-                  onmouseover="mouseOver(4)" onmouseout="mouseOut(4)"/>
-                <text x="670" y="375"  onmouseover="mouseOver(4)" onmouseout="mouseOut(4)" >ABOUT </text>
-              </a>
-            </g>
-            <g>
-              <a href="queryForm.html">
-                <rect x="790" 
-                  y="350" width="120" height="40" rx="20" ry="20" 
-                  onmouseover="mouseOver(5)" onmouseout="mouseOut(5)"/>
-                <text x="810" y="375"  onmouseover="mouseOver(5)" onmouseout="mouseOut(5)" >Contact Us</text>
-              </a>
-            </g>
-
-          <g> 
-          <path d="M 150 350 Q 150 300 200 300 L 300 300 L 300 350 L 300 300 L 450 300 L 450 350 L 450 300 L 500 300 L 500 250 L 500 300 L 550 300 L 550 350 L 550 300 L 700 300 L 700 350 L 700 300 L 800 300 M 800 300 Q 850 300 850 350    "stroke="white" stroke-width="3" fill="none"/>
-        </svg>
+  <!-- Navigation bar -->
+  <nav id="start" class="navbar navbar-light  fixed-top ">
+    <div class="container-fluid">
+      <div class="navImg">
+        <a href="mainPage.html">
+          <img src="../img/mainLogo.png" alt="MainLogo" class="nav-logo">
+        </a>
       </div>
-    <!-- Footer ---------------------------------------------------------------- -->
-    <div class="item4">
+      <div class="links">
+        <ul class="navbar-nav">
+          <li>
+            <a href="mainPage.html">HOME</a>
+          </li>
+          <li>
+            <a href="ProductPage.html">PRODUCTS</a>
+          </li>
+          <li>
+            <a href="Quiz.html">QUIZ</a>
+          </li>
+          <li>
+            <a href="snaps.html">Snaps</a>
+          </li>
+          <li>
+            <a href="Student Page.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="queryForm.html">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Site Map-->
+  <div class="svg-1">
+    <svg width="1000" height="500" aria-label="Site Map">
+      <a href="mainPage.html">
+        <image x="395" y="100" href="../img/mainLogo.png" width="150" height="150" aria-label="link to home page" />
+      </a>
+      <g>
+        <a href="mainPage.html">
+          <rect x="100" y="350" width="100" height="40" rx="20" ry="20" onmouseover="mouseIn(0)"
+            onmouseout="mouseOut(0)" />
+          <text x="125" y="376" onmouseover="mouseIn(0)" onmouseout="mouseOut(0)">HOME</text>
+        </a>
+      </g>
+      <g>
+        <a href="ProductPage.html">
+          <rect x="230" y="350" width="120" height="40" rx="20" ry="20" onmouseover="mouseIn(1)"
+            onmouseout="mouseOut(1)" />
+          <text x="250" y="376" onmouseover="mouseIn(1)" onmouseout="mouseOut(1)">PRODUCTS</text>
+        </a>
+      </g>
+      <g>
+        <a href="Quiz.html">
+          <rect x="390" y="350" width="100" height="40" rx="20" ry="20" onmouseover="mouseIn(2)"
+            onmouseout="mouseOut(2)" />
+          <text x="420" y="376" onmouseover="mouseIn(2)" onmouseout="mouseOut(2)">QUIZ</text>
+        </a>
+      </g>
+      <g>
+        <a href="snaps.html">
+          <rect x="500" y="350" width="100" height="40" rx="20" ry="20" onmouseover="mouseIn(3)"
+            onmouseout="mouseOut(3)" />
+          <text x="530" y="376" onmouseover="mouseIn(3)" onmouseout="mouseOut(3)">Snaps</text>
+        </a>
+      </g>
+      <g>
+        <a href="Student Page.html">
+          <rect x="635" y="350" width="120" height="40" rx="20" ry="20" onmouseover="mouseIn(4)"
+            onmouseout="mouseOut(4)" />
+          <text x="670" y="375" onmouseover="mouseOver(4)" onmouseout="mouseOut(4)">ABOUT</text>
+        </a>
+      </g>
+      <g>
+        <a href="queryForm.html">
+          <rect x="790" y="350" width="120" height="40" rx="20" ry="20" onmouseover="mouseIn(5)"
+            onmouseout="mouseOut(5)" />
+          <text x="810" y="375" onmouseover="mouseIn(5)" onmouseout="mouseOut(5)">Contact Us</text>
+        </a>
+      </g>
+
+      <!-- Site Map Path-->
+      <g>
+        <path
+          d="M 150 350 Q 150 300 200 300 L 300 300 L 300 350 L 300 300 L 450 300 L 450 350 L 450 300 L 500 300 L 500 250 L 500 300 L 550 300 L 550 350 L 550 300 L 700 300 L 700 350 L 700 300 L 800 300 M 800 300 Q 850 300 850 350"
+          stroke="white" stroke-width="3" fill="none" />
+      </g>
+
+    </svg>
+  </div>
+
+  <!-- Footer -->
+  <div class="item4">
     <footer>
-        <div class="fPart1">
-            <div class="hqa">
-                <a href="mainPage.html">HOME</a>
-                <a href="Quiz.html">QUIZ</a>
-                <a href="Student Page.html">ABOUT</a>
-            </div>
-            <img src="../img/icons/logo.png" alt="logo" id="footer-logo">
-            <div class="pfg">
-                <a href="ProductPage.html">PRODUCTS PAGE</a>
-                <a href="snaps.html">SNAPS</a>
-                <a href="queryForm.html">GET SUPPORT</a>
-            </div>
+      <div class="fPart1">
+        <div class="hqa">
+          <a href="mainPage.html">HOME</a>
+          <a href="Quiz.html">QUIZ</a>
+          <a href="Student Page.html">ABOUT</a>
         </div>
-        <div class="fpart2">
-            <a href="#"><img src="../img/icons/INSTA.png" alt="Instagram" id="insta"></a>
-            <a href="#"><img src="../img/icons/facebook.png" alt="facebook" id="facebook"></a>
-            <a href="https://github.com/pAkalpa/WDD_CW"><img src="../img/icons/github.png" alt="GitHUB" id="github"></a>
-            <a href="#"><img src="../img/icons/whatsapp.png" alt="whatsapp" id="whatsapp"></a>
-            <a href="#"><img src="../img/icons/Twitter.png" alt="twitter" id="twitter"></a>
+        <img src="../img/icons/logo.png" alt="logo" id="footer-logo">
+        <div class="pfg">
+          <a href="ProductPage.html">PRODUCTS PAGE</a>
+          <a href="snaps.html">SNAPS</a>
+          <a href="queryForm.html">GET SUPPORT</a>
         </div>
-        <hr class="footerLine">
-        <div class="fpart3">
-            
-            <p class="ftext">Page by <a href="">Kraken</a></p>
-        </div>
+      </div>
+      <div class="fpart2">
+        <a href="#"><img src="../img/icons/INSTA.png" alt="Instagram" id="insta"></a>
+        <a href="#"><img src="../img/icons/facebook.png" alt="facebook" id="facebook"></a>
+        <a href="https://github.com/pAkalpa/WDD_CW"><img src="../img/icons/github.png" alt="GitHUB" id="github"></a>
+        <a href="#"><img src="../img/icons/whatsapp.png" alt="whatsapp" id="whatsapp"></a>
+        <a href="#"><img src="../img/icons/Twitter.png" alt="twitter" id="twitter"></a>
+      </div>
+      <hr class="footerLine">
+      <div class="fpart3">
+
+        <p class="ftext">Page by <a href="">Kraken</a></p>
+      </div>
     </footer>
-    <!-- End of the footer -->
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="../js/backtotop.js"></script>
-    </div>
+  </div>
 </body>
 
 </html>

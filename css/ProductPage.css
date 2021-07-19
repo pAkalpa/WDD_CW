@@ -1,142 +1,3 @@
-/* ----------------------------------------------------------------------------Start of Nav Bar */
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
-body {
-  margin: auto 0;
-  background-color: #373737;
-}
-/* navbar starts here */
-.navbar {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-
-.container-fluid {
-  display: flex;
-  flex-wrap: inherit;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
-  margin-right: auto;
-  margin-left: auto;
-}
-
-nav.fill ul li a {
-  position: relative;
-}
-
-nav.fill ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: ".";
-  color: transparent;
-  background: #aaa;
-  height: 1px;
-}
-
-nav.fill ul li a {
-  transition: all 2s;
-}
-
-nav.fill ul li a:after {
-  text-align: left;
-  content: ".";
-  margin: 0;
-  opacity: 0;
-}
-nav.fill ul li a:hover {
-  color: #fff;
-  z-index: 1;
-}
-nav.fill ul li a:hover:after {
-  z-index: -10;
-  animation: fill 1s forwards;
-  -webkit-animation: fill 1s forwards;
-  -moz-animation: fill 1s forwards;
-  opacity: 1;
-}
-
-nav {
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  border-width: 2px;
-  max-width: 100%;
-  border-radius: 0 0 30px 30px;
-  padding-right: 2.5%;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  border-width: 2px;
-  /* border-color: white; */
-  background: linear-gradient(
-    25.6deg,
-    rgba(255, 255, 255, 0.192) 28.69%,
-    rgba(255, 255, 255, 0) 100%
-  );
-}
-
-.links {
-  display: flex;
-  flex-flow: column-reverse nowrap;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.links li {
-  display: inline-block;
-  padding-right: 30px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
-  color: white;
-  padding: 15px;
-}
-.navImg {
-  padding-left: 1.5%;
-}
-.nav-logo {
-  max-width: 65%;
-  height: auto;
-}
-
-/* Keyframes */
-@-webkit-keyframes fill {
-  0% {
-    width: 0%;
-    height: 1px;
-  }
-  50% {
-    width: 100%;
-    height: 1px;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    background: rgba(115, 195, 219, 0.486);
-  }
-}
 
 /* ////////////////////////////////////////////////////////// */
 /* slimy catogory part */
@@ -171,7 +32,16 @@ nav ul li a {
 }
 .Catogoriestxt >li{
   padding-bottom: 50px;
-  
+}
+.Catogoriestxt >li>a{
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+.Catogoriestxt >li>a:link{
+  color: rgb(0, 0, 0);
+}
+.Catogoriestxt >li>a:visited{
+  color: rgb(0, 0, 0);
 }
 /* height is set to 100% for the whole window */
 .productpagecoloums{
@@ -233,6 +103,10 @@ nav ul li a {
 }
 .DsicriptionSneakers >li{
   font-size: 3vmin;
+  color: white;
+}
+.SneakermainText{
+  color: white;
 }
 
 /* ////////  SOCKS   /////// */
@@ -271,6 +145,10 @@ nav ul li a {
 }
 .DsicriptionTBottom >li{
   font-size: 3vmin;
+  color: white;
+}
+.TBottommainText{
+  color: white;
 }
 .TextTshirtandBottom{
   display: flex;
@@ -360,18 +238,29 @@ nav ul li a {
 }
 
 /* //////////////////FORM PRODUCT PAGE///////////////// */
-.FormProductPage{
+
+.add-to-cart {
+  cursor: pointer;
+}
+.AddtoCartMain{
+  background-color: #56CCF2;
   display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  
-  background-color: #9dedfc;
+  width: 100%;
+  /* height: 2000px; */
 }
 
+/* ///////////////////// */
+.details-form label{
+  margin: 5px 10px 5px 0;
+}
+
+.details-form input{
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  width: 250px;
+  background-color: rgb(13, 243, 232);
+  border: 1px solid #ddd;
+}
 #address{
   width: 300px;
 }
@@ -383,91 +272,64 @@ nav ul li a {
 }
 #province{
   width: 120px;
-  left: 170px;
+  left: 300px;
   bottom: 120px;
 }
 #provincelbl{
-  left: 170px;
+  left: 300px;
   bottom: 160px;
 }
+
+/*consider the postion*/
+.section-add-2{
+  display: flex;
+  justify-content: space-between;
+  
+}
+#form{
+  position: relative;
+  padding-left: 130px;
+  background-color: rgb(56, 56, 56);
+  padding-right: 130px;
+  color: white;
+}
+#countrylbl{
+  bottom: 95px;
+  color: white;
+}
+#country{
+  bottom: 55px;
+  
+}
 #submit{
-  background-color:#7e9dc4;
+  background-color:#444444;
+  color: white;
 }
 #submit:hover{
-  background-color: #ffcf0d;
+  background-color: #00d9ff;
+  color: #111;
 }
+
+.cart-section{
+  position: relative;
+  padding-left: 5%;
+  padding-top: 4%;
+  padding-right: 4%;
+}
+
+/* ///////////////// */
+
 .cart-header {
   font-weight: bold;
   font-size: 1.25em;
-  color: #333;
+  color: rgb(0, 0, 0);
 }
-/* ------------------------------ CART SECTION ------------------------- */
-.Products-Container{
-  width: 70%;
-  justify-content: space-around;
-  margin: 0 auto;
-}
-.Product-header{
-  width: 100%;
-  max-width: 1000px;
-  display: flex;
-  justify-content: flex-start;
-  border-bottom: 4px solid lightgrey;
-  margin: 0 auto;
-}
-.Product-title{
-  width: 45%;
-}
-.Product-price{
-  width: 15%;
-  
-  /* border-bottom: 4px solid lightgrey; */
-  display: flex;
-  align-items: center;
-}
-.Product-quantity{
-  width: 15%;
-  /* border-bottom: 4px solid lightgrey; */
-  display: flex;
-  align-items: center;
-}
-.Product-total{
-  width: 15%;
-  /* border-bottom: 4px solid lightgrey; */
-  display: flex;
-  align-items: center;
-}
-.cart-item-image{
-  height: 100%;
-  width: 45%;
-}
-.products{
-  background-color: #a7f5ffc2;
-  color: #030000;
-  font-weight: bold;
-  font-size: 1.7vmin;
-}
-.cart-item-image{
-  width: 20%;
-}
-.cart-itemS{
-  width: 100px;
-}
-.cart-price{
-  width:  100px;
-  margin-left: 15%;
-}
-.cart-price-div{
-  width: 50%;
-}
-.quantity-in-down{
-  width: 100px;
-}
-/* .cart-column {
+
+.cart-column {
   display: flex;
   align-items: center;
   border-bottom: 1px solid black;
-  margin-right: 1.5em;
+  margin-right: 10px;
   padding-bottom: 10px;
   margin-top: 10px;
 }
@@ -477,33 +339,40 @@ nav ul li a {
 }
 
 .cart-item {
-  width: 45%;
+  width: 20vmax;
 }
 
 .cart-price {
-  width: 20%;
+  width:15vmax;
   font-size: 1.2em;
-  color: #333;
+  color: rgb(0, 0, 0);
 }
 
 .cart-quantity {
-  width: 35%;
+  width: 15vmax;
 }
 
 .cart-item-title {
-  color: #333;
+  color: rgb(0, 0, 0);
   margin-left: .5em;
   font-size: 1.2em;
 }
 
-.cart-item-image {
-  width: 75px;
-  height: auto;
-  border-radius: 10px;
+.cart-quantity-input {
+  height: 34px;
+  width: 5vmax;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  background-color: rgb(20, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
 }
 
 .cart-row:last-child {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(255, 0, 0);
 }
 
 .cart-row:last-child .cart-column {
@@ -516,17 +385,23 @@ nav ul li a {
   margin-right: 10px;
 }
 
+.space {
+  height: 500px;
+width:100%
+}
+
 .cart-total-title {
   font-weight: bold;
   font-size: 1.5em;
-  color: black;
+  color: rgb(0, 0, 0);
   margin-right: 20px;
 }
 
 .cart-total-price {
-  color: #333;
+  color: rgb(255, 0, 0);
   font-size: 1.1em;
-} */
+}
+
 
 /* ////////////////////////////////////////////////////////////////////////////////// */
 .container {
@@ -566,7 +441,7 @@ nav ul li a {
 }
 
 .container .card:after {
-  content: "Nike";
+  content: "GoalIN";
   position: absolute;
   top: 30%;
   left: -20%;
@@ -697,26 +572,6 @@ nav ul li a {
    background: #080481;
 }
 
-.container .card .contentBx a {
-  display: inline-block;
-  padding: 10px 20px;
-  background: rgb(255, 255, 255);
-  border-radius: 4px;
-  margin-top: 10px;
-  text-decoration: none;
-  font-weight: 600;
-  color: #111;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: .2s;
-  box-shadow: 4px 4px 8px rgba(1, 1, 1, 0.411);
-}
-
-.container .card:hover .contentBx a {
-  opacity: 1;
-  transform: translateY(0px);
-  transition-delay: .2s;
-}
 .container .card .contentBx button {
   display: inline-block;
   padding: 10px 20px;
@@ -737,19 +592,65 @@ nav ul li a {
   transform: translateY(0px);
   transition-delay: .2s;
 }
+.container .card .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: .2s;
+  box-shadow: 4px 4px 8px rgba(1, 1, 1, 0.411);
+}
+
+.container .card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: .2s;
+}
+.container .card .contentBx .product-price {
+  display: inline-block;
+  padding: 20px 30px;
+  background: rgba(251, 255, 0, 0.596);
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: .2s;
+  box-shadow: 4px 4px 8px rgba(1, 1, 1, 0.411);
+}
+
+.container .card:hover .contentBx .product-price {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: .2s;
+}
 /* //////////////////////////////////socks//////////////////////////////////////////////// */
 .containerSocks {
   position: relative;
+  border-radius: 24px;
+  box-shadow: 9px 9px 16px rgba(255, 255, 255, 0.548);
 }
 
 .containerSocks .cardSocks {
   position: relative;
   width: 280px;
   height: 400px;
-  background: #e8f8ff;
+  background: #E7EEF5;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 9px 9px 16px rgba(0.6392160058021545, 0.6941180229187012, 0.7764710187911987, 0.6000000238418579);
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 24px;
+  border-color: white;
+  box-shadow: 9px 9px 16px rgba(26, 26, 26, 0.603);
 }
 
 .containerSocks .cardSocks:before {
@@ -759,7 +660,7 @@ nav ul li a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fff4c5;
+  background: #FAC1B3;
   clip-path: circle(150px at 80% 20%);
   transition: 0.5s ease-in-out;
 }
@@ -769,20 +670,19 @@ nav ul li a {
 }
 
 .containerSocks .cardSocks:after {
-  content: "Nike";
+  content: "GoalIN";
   position: absolute;
   top: 30%;
   left: -20%;
   font-size: 10em;
   font-weight: 800;
   font-style: italic;
-  color: rgba(255, 255, 255, 0.04);
-
+  color: rgba(159, 255, 234, 0.651);
 }
 
 .containerSocks .cardSocks .imgBxSocks {
   position: absolute;
-  top: 30%;
+  top: 20%;
   transform: translateY(-30%);
   z-index: 1000;
   width: 100%;
@@ -792,7 +692,7 @@ nav ul li a {
 
 .containerSocks .cardSocks:hover .imgBxSocks {
   top: 0%;
-  transform: translateY(-25%);
+  transform: translateY(-34%);
   /* bug  */
 }
 
@@ -800,7 +700,7 @@ nav ul li a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -30%);
   width: 270px;
 }
 
@@ -899,10 +799,10 @@ nav ul li a {
    background: #080481;
 }
 
-.containerSocks .cardSocks .contentBxSocks a {
+.containerSocks .cardSocks .contentBxSocks button {
   display: inline-block;
   padding: 10px 20px;
-  background: #fff;
+  background: rgb(255, 255, 255);
   border-radius: 4px;
   margin-top: 10px;
   text-decoration: none;
@@ -911,9 +811,30 @@ nav ul li a {
   opacity: 0;
   transform: translateY(50px);
   transition: .2s;
+  box-shadow: 4px 4px 8px rgba(1, 1, 1, 0.411);
 }
 
-.containerSocks .cardSocks:hover .contentBxSocks a {
+.containerSocks .cardSocks:hover .contentBxSocks button {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: .2s;
+}
+.containerSocks .cardSocks .contentBxSocks .product-price {
+  display: inline-block;
+  padding: 20px 30px;
+  background: rgb(255, 153, 106);
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: .2s;
+  box-shadow: 4px 4px 8px rgba(1, 1, 1, 0.411);
+}
+
+.containerSocks .cardSocks:hover .contentBxSocks .product-price {
   opacity: 1;
   transform: translateY(0px);
   transition-delay: .2s;
@@ -921,16 +842,22 @@ nav ul li a {
 /* ///////////////////////////////Caps/////////////////////////////////////////////////// */
 .containerCaps {
   position: relative;
+  border-radius: 24px;
+  box-shadow: 9px 9px 16px rgba(255, 255, 255, 0.548);
 }
 
 .containerCaps .cardCaps {
   position: relative;
   width: 280px;
   height: 400px;
-  background: #00e1ff;
+  background: #E7EEF5;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 9px 9px 16px rgba(0.6392160058021545, 0.6941180229187012, 0.7764710187911987, 0.6000000238418579);
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 24px;
+  border-color: white;
+  box-shadow: 9px 9px 16px rgba(26, 26, 26, 0.603);
 }
 
 .containerCaps .cardCaps:before {
@@ -940,7 +867,7 @@ nav ul li a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fff4c5;
+  background: #5DFDFF;
   clip-path: circle(150px at 80% 20%);
   transition: 0.5s ease-in-out;
 }
@@ -950,20 +877,20 @@ nav ul li a {
 }
 
 .containerCaps .cardCaps:after {
-  content: "Nike";
+  content: "GoalIN";
   position: absolute;
   top: 30%;
   left: -20%;
   font-size: 10em;
   font-weight: 800;
   font-style: italic;
-  color: rgba(255, 255, 255, 0.04);
+  color: rgba(85, 229, 255, 0.363);
 
 }
 
 .containerCaps .cardCaps .imgBxCaps {
   position: absolute;
-  top: 30%;
+  top: 20%;
   transform: translateY(-30%);
   z-index: 1000;
   width: 100%;
@@ -973,7 +900,7 @@ nav ul li a {
 
 .containerCaps .cardCaps:hover .imgBxCaps {
   top: 0%;
-  transform: translateY(-25%);
+  transform: translateY(-34%);
   /* bug  */
 }
 
@@ -981,7 +908,7 @@ nav ul li a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -30%);
   width: 270px;
 }
 
@@ -1080,10 +1007,10 @@ nav ul li a {
    background: #080481;
 }
 
-.containerCaps .cardCaps .contentBxCaps a {
+.containerCaps .cardCaps .contentBxCaps button {
   display: inline-block;
   padding: 10px 20px;
-  background: #fff;
+  background: rgb(255, 255, 255);
   border-radius: 4px;
   margin-top: 10px;
   text-decoration: none;
@@ -1092,11 +1019,50 @@ nav ul li a {
   opacity: 0;
   transform: translateY(50px);
   transition: .2s;
+  box-shadow: 4px 4px 8px rgba(1, 1, 1, 0.411);
 }
 
-.containerCaps .cardCaps:hover .contentBxCaps a {
+.containerCaps .cardCaps:hover .contentBxCaps button {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: .2s;
+}
+.containerCaps .cardCaps .contentBxCaps .product-price {
+  display: inline-block;
+  padding: 20px 30px;
+  background: rgb(13, 255, 203);
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: .2s;
+  box-shadow: 4px 4px 8px rgba(1, 1, 1, 0.411);
+}
+
+.containerCaps .cardCaps:hover .contentBxCaps .product-price {
   opacity: 1;
   transform: translateY(0px);
   transition-delay: .2s;
 }
 
+/* Back to Top Button Style Start Here -------------------------------------------------------- */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px; 
+  right: 30px; 
+  z-index: 99; 
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+#myBtn:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+    /* Back to Top Button Stylr End Here ---------------------------------------------------------- */

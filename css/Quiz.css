@@ -3,6 +3,8 @@
 .Quiz-items{
     display: flex;
     flex-flow: column nowrap;
+    padding-top: 10%;
+    padding-bottom: 1%;
 }
 .Quiz-body{
     background-image: url("../img/quiz/quizBack.jpg");
@@ -122,11 +124,6 @@
     background-color: #5e3370;
 }
 
-.QUIZ-footer{
-    padding-top: 50px;
-    width: 100%;
-}
-
 #display-time{
     padding-left: 10px;
     margin:0;
@@ -154,4 +151,8 @@ h2{
 h3{
     text-align: center;
     font-size: 40px;
+}
+.QuizFooter{
+    width: 100%;
+    margin-top: 10px;
 }
