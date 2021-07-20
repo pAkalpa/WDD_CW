@@ -1,217 +1,317 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* ------------------ Socials ------------------------- */
-.Stud2Fixed{
-	display: flex;
-	flex-direction: column;
-	position: fixed;
-	margin-left: 2%;
+.Stud2Fixed {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  margin-left: 2%;
 }
-.Stud2Line{
-	background-color: #FFB877;
-	width: 0.5vmax;
-	height: 32vmin;
-	margin-left: 47%;
+.Stud2Line {
+  background-color: #ffb877;
+  width: 0.5vmax;
+  height: 32vmin;
+  margin-left: 47%;
 }
-.Stud2Line1{
-	background-color: #FFB877;
-	width: 0.5vmax;
-	height: 35vmin;
-	margin-left: 47%;
+.Stud2Line1 {
+  background-color: #ffb877;
+  width: 0.5vmax;
+  height: 35vmin;
+  margin-left: 47%;
 }
-.Stud2Socials{
-	display: flex;
-	flex-direction: column;
+.Stud2Socials {
+  display: flex;
+  flex-direction: column;
 }
-.Stud2Socials >a>img{
-	width: 4vmax;
+.Stud2Socials > a > img {
+  width: 4vmax;
 }
 
-.Student1Body{
-	font-family: Roboto;
+#gitlab:hover,
+#github:hover,
+#google:hover,
+#linkedin:hover,
+#wapp:hover,
+#insta:hover {
+  animation: rotatePosNeg 0.5s linear infinite;
 }
-.Student2Main{
-	display: flex;
-	flex-flow: column;
-	height: 100%;
-	align-items: center;
+
+@keyframes rotatePosNeg {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
-.Stud2DisImg{
-	width: 65%;
-	height: 25%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	color: #FFB877;
-	padding-top: 5%;
+
+.Student1Body {
+  font-family: Roboto;
 }
-.Stud2IMG{
-	width: 27vmax;
-	height: 27vmax;
+.Student2Main {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  align-items: center;
 }
-.Student2MainDis{
-	padding-top: 5%;
+.Stud2DisImg {
+  width: 65%;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #ffb877;
+  padding-top: 5%;
 }
-.Student2MainDis >h1{
-	font-size: 2vmax;
-	text-align: center;
+.Stud2IMG {
+  width: 27vmax;
+  height: 27vmax;
 }
-.Student2Discription{
-	color: aliceblue;
-	text-align: center;
-	margin-left: 5%;
-	margin-right: 5%;
-	padding-top: 5%;
-	font-size: 1.65vmax;
+.Student2MainDis {
+  padding-top: 5%;
+}
+.Student2MainDis > h1 {
+  font-size: 2vmax;
+  text-align: center;
+}
+.Student2Discription {
+  color: aliceblue;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 5%;
+  font-size: 1.65vmax;
 }
 /* ----------------------------- Compatibilities -------------------------- */
-.Stud2Cap{
-	color: #FFB877;
-	font-size: 1.3vmax;
-	margin-top: 5%;
+.Stud2Cap {
+  color: #ffb877;
+  font-size: 1.3vmax;
+  margin-top: 5%;
 }
-.Stud2Qualifications{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin-top: 1%;
+
+.skill-bars {
+  padding: 25px 30px;
+  width: 600px;
+  background: rgba(255, 255, 255, 0.116);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
-.Stud2Qualifications >img{
-	width: 10vmax;
-	padding-right: 2%;
-	padding-left: 2%;
+.skill-bars .bar {
+  margin: 20px 0;
 }
-.Stud2QualiText{
-	color: white;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;	
+.skill-bars .bar:first-child {
+  margin-top: 0px;
 }
-.Stud2QualiText >p{
-	padding-right: 20%;
-	padding-left: 20%;
+.skill-bars .bar .info {
+  margin-bottom: 5px;
 }
-.Stud2QualiText1{
-	color: white;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	padding-left: 2%;	
+.skill-bars .bar .info span {
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
 }
-.Stud2QualiText1 >p{
-	padding-right: 32%;
-	padding-left: 30%;
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
 }
-.Stud2QualiText2{
-	color: white;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	padding-right: 20%;	
+.skill-bars .bar .progress-line {
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+    0 1px rgba(255, 255, 255, 0.8);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
-.Stud2QualiText2 >p{
-	padding-right: 5%;
-	padding-left: 5%;
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
 }
-.Stud2QualiText3{
-	color: white;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	padding-left: 30%;	
+.bar .progress-line span {
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #ffb877;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
-.Stud2QualiText3 >p{
-	padding-right: 15%;
-	padding-left: 15%;
+.bar .progress-line.html span {
+  width: 90%;
+}
+.bar .progress-line.css span {
+  width: 40%;
+}
+.bar .progress-line.jquery span {
+  width: 85%;
+}
+.bar .progress-line.python span {
+  width: 50%;
+}
+.bar .progress-line.mysql span {
+  width: 75%;
+}
+.progress-line span::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after {
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+.progress-line.html span::after {
+  content: "90%";
+}
+.progress-line.css span::after {
+  content: "40%";
+}
+.progress-line.jquery span::after {
+  content: "85%";
+}
+.progress-line.python span::after {
+  content: "50%";
+}
+.progress-line.mysql span::after {
+  content: "75%";
 }
 /* ----------------------------- Line ---------------------------------- */
 
 /* ------------results for examinations---------------- */
-.Stud2Results{
-	display: flex;
-	flex-direction: row;
-	/* padding-left: 50vmax; */
-	justify-items: center;
-	padding-top: 5%;
+.Stud2Results {
+  display: flex;
+  flex-direction: row;
+  /* padding-left: 50vmax; */
+  justify-items: center;
+  padding-top: 5%;
 }
-.Stud2AL{
-	width: 30vmax;
-	height: 30vmax;
-	margin-top: 10vmax;
-	margin-right: 5vmax;
-	position: relative;
-	/* backdrop-filter: blur(8px); */
-	border-radius: 20vmax;
-	background-color: #FFB877;
-	
-	color: rgba(0, 0, 0, 0.856);
-	display: flex;
-	flex-direction: column;
-	justify-items: center;	
-	box-shadow: 9px 5px 16px rgba(197, 7, 255, 0.288);		
+.Stud2AL {
+  width: 30vmax;
+  height: 30vmax;
+  margin-top: 10vmax;
+  margin-right: 5vmax;
+  position: relative;
+  /* backdrop-filter: blur(8px); */
+  border-radius: 20vmax;
+  background-color: #ffb877;
+
+  color: rgba(0, 0, 0, 0.856);
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  box-shadow: 9px 5px 16px rgba(197, 7, 255, 0.288);
 }
-.Stud2ALTop{
-	text-align: center;
+.Stud2ALTop {
+  text-align: center;
 }
-.stud2ALres{
-	margin-left: 20%;
-	text-align: left;
-	font-size: 1vmax;
-	margin-top: 3%;	
-	padding-right: 5%;
+.stud2ALres {
+  margin-left: 20%;
+  text-align: left;
+  font-size: 1vmax;
+  margin-top: 3%;
+  padding-right: 5%;
 }
-#tab2{
-	padding-bottom: 5%;
+#tab2 {
+  padding-bottom: 5%;
 }
 /* ************************* OL BOX************************* */
-.Stud2OL{
-	width: 30vmax;
-	height: 30vmax;
-	border-radius: 20vmax;
-	background-color: #FFB877;
-	color: rgba(0, 0, 0, 0.795);
-	display: flex;
-	flex-direction: column;
-	justify-items: center;	
-	box-shadow: 9px 5px 16px rgba(255, 7, 152, 0.288);		
+.Stud2OL {
+  width: 30vmax;
+  height: 30vmax;
+  border-radius: 20vmax;
+  background-color: #ffb877;
+  color: rgba(0, 0, 0, 0.795);
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  box-shadow: 9px 5px 16px rgba(255, 7, 152, 0.288);
 }
-.Stud2OLTop{
-	text-align: center;
+.Stud2OLTop {
+  text-align: center;
 }
-.stud2OLres{
-	margin-left: 20%;
-	text-align: left;
-	font-size: 1vmax;
-	margin-top: 3%;	
-	padding-right: 5%;
+.stud2OLres {
+  margin-left: 20%;
+  text-align: left;
+  font-size: 1vmax;
+  padding-right: 5%;
 }
-#tab3{
-	padding-bottom: 3%;
+#tab3 {
+  padding-bottom: 3%;
 }
 /* ----------------- About ---------------------- */
-.Stud2About{
-	color: #FFB877;
-	margin-left: 10%;
-	margin-right: 10%;
-	text-align: center;
-	font-size: 1.3vmax;
-	padding-top: 5%;
+.Stud2About {
+  color: #ffb877;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  font-size: 1.3vmax;
+  padding-top: 5%;
 }
-.Stud2About >p{
-	color: aliceblue;
+.Stud2About > p {
+  color: aliceblue;
 }
 
 /* ********************footer text********************* */
-.Student2TasksMain{
-	padding-top: 2%;
-	color: #ffc48e;
+.Student2TasksMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding-top: 2%;
+  color: #ffc48e;
 }
-.Student2TasksMain >a{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: 10%;
-	color: aliceblue;
-	text-decoration: none;
-	font-size: 1.1vmax;
+.Student2TasksMain > a,
+p {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.3vmax;
 }
 
+.Student2TasksMain > a:hover {
+	color: #ffc48e;
+}
+
+.Student2TasksMain > p {
+  margin: 0px;
+}
+
+#o1 {
+  margin-top: 10px;
+}

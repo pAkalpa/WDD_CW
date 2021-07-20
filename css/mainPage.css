@@ -20,6 +20,7 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 10px;
 }
 .gradient_image {
   position: absolute;
@@ -57,7 +58,7 @@ html {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 110px;
 }
 .main-product-topic {
   font-size: 44px;
@@ -122,12 +123,19 @@ html {
   width: 250px;
 }
 
+.about_container {
+  display: flex;
+  justify-content: center;
+}
+
 .about {
   background-color: white;
-  height: 300px;
+  height: 330px;
+  width: 90%;
   margin-bottom: 10px;
   padding-left: 30px;
   padding-right: 30px;
+  border-radius: 20px;
 }
 #aboutDiscription {
   color: #808080;
@@ -135,7 +143,7 @@ html {
 }
 
 #mainAbout {
-  padding-top: 10px;
+  padding-top: 5px;
   padding-left: 45%;
   color: #808080;
   margin-bottom: none;
