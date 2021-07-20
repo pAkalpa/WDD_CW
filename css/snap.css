@@ -123,8 +123,15 @@ option{
     font-size: 14px;
     border-radius: 10px;
 }
+
 select{
     border-radius:30px;
     margin-right: 50px;
     margin-left: 50px;
+}
+
+.image{
+    border-radius:20px;
+    width: 650px;
+    height: auto;
 }

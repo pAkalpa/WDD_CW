@@ -1,0 +1,146 @@
+body{
+    /*radient glass effect */
+    backdrop-filter: blur(20px);
+    
+    -webkit-backdrop-filter: blur(30px);
+    background: linear-gradient(
+
+        25.6deg,
+    
+        rgb(255, 168, 142) 28.69%,
+    
+        rgb(182, 185, 176) 100%);
+    
+        box-shadow: 0 0 20px 10px rgba(182, 182, 182, 0.1);
+}
+
+/* CSS for the page content */
+.content{
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 15%;
+    padding-right: 15%;  
+}
+
+/* CSS for the upper part of the page */
+.top{
+    padding: 50px 20px 20px 20px;
+}
+
+/* CSS for the student image */
+.myImage{
+    display: block;
+    width: 30%;
+    float: left;
+    padding-bottom: 40px;	
+}
+
+/* CSS for the student name */
+.name{
+    display: block;
+    width: 70%;
+    float: right;
+	padding-top: 50px;
+	text-align: right;
+}
+
+/* CSS for the hr */
+hr{
+	background-color: black;
+	clear: both;
+	height: 2px;
+}
+
+/* CSS for the role part */
+.role{
+	text-align:center;
+	font-size: 18px;
+}
+
+/* CSS for the tasks area */
+.work{
+	padding: 0;
+	list-style-type:none;
+    font-size: 20px;
+}
+
+/* CSS for the links */
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* Css for the profile part */
+.profile{
+    text-align: center;
+    font-size:20px;
+}
+
+/* CSS for h2 part */
+h2{
+    color: #23639b;
+    margin-top: 0;
+} 
+
+/* CSS for the hover of links */
+a:hover{
+	color: #025aa8;
+}
+
+/* CSS to split the screen in education part */
+.split-screen{
+    display: flex;
+    flex-direction: row;
+    color: rgb(5, 39, 49);
+}
+
+/* Left side of the education part */
+.item1{
+    width:50%;
+    border-right: 12px dotted #757c83;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+/* Riht side of the education part */
+.item2{
+    width: 50%;
+    
+}
+
+/* CSS for the table headings and content */
+.th,td{
+    font-size:18px;
+    text-align: center;
+    padding-left: 20px;
+}
+
+/* CSS for table 1 */
+.table1{
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+/* CSS for table 2 */
+.table2{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+/* CSS for the contact details part */
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+/* To remove the style of the ul tag */
+ul{
+    list-style-type: none;
+}
+.special-h2{
+    text-align:center; 
+    padding-top: 30px;
+    font-size: 30px;
+}

@@ -42,7 +42,7 @@ function displayDescription(number) {
   console.log(number);
   let img1Description = `
     <div class="item1">
-            <img class="image" src="../img/snap/cup.jpg" alt="2018 Fifa cup" width="650" height="550" >
+            <img class="image" src="../img/snap/cup.jpg" alt="2018 Fifa cup"  >
     </div>
     <div class="item2">
         <P><h1>The 2018 FIFA World Cup</h1> <br>
@@ -168,6 +168,7 @@ function setBackgroundColour(form) {
   }
 }
 
+// Changes the color according to the selection
 function colorChanger(number, color) {
   if (number === 1) {
     let allElements = document.getElementsByClassName("snapPageContainer");
