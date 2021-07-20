@@ -157,6 +157,7 @@ body {
 	height: auto;
 	border-radius: 10px;
 	padding: 10px;
+  word-wrap: break-word;
 }
 
 #post_stage > .buttonContainer {

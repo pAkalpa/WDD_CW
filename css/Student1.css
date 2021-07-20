@@ -44,21 +44,54 @@
 .Stud1CapImg{
 	width: 50vmax;
 }
+
 .Student1Socials{
-	display: flex;
-	flex-direction: column;
+	z-index: 10;
+	/* display: flex; */
+	/* flex-direction: row; */
 	padding-top: 28%;
-	align-items: center;
+	/* align-items: center; */
 }
-.Student1Socials > a{
+.Student1Socials >li> a{
+	display: flex;
+	flex-direction: row;
 	z-index: 10;
 	color: aliceblue;
 	text-decoration: none;
 	font-size: 1.1vmax;
 }
-.Student1Socials > a >img{
+.Student1Socials >li> a >img{
+	z-index: 10;
 	width: 3vmax;
 	padding-top: 15%;
+}
+/* *********************** CAPABILITIES2 ************************* */
+.stud1graphictxt{
+	color: white;
+	text-align: center;
+}
+
+.Stud1Qualifications{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 1%;
+}
+.Stud1Qualifications >img{
+	width: 10vmax;
+	padding-right: 2%;
+	padding-left: 2%;
+}
+.Stud1QualiText{
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-left: 4%;	
+}
+.Stud1QualiText >p{
+	padding-right: 23%;
+	padding-bottom: 10%;
 }
 /* ***************** Responsive********************** */
 .Stud1Responsive{
@@ -105,7 +138,7 @@
 	margin-top: 3%;	
 	padding-right: 5%;
 }
-#tab1{
+.tab1{
 	padding-bottom: 5%;
 }
 /* ************************* OL BOX************************* */
@@ -132,7 +165,7 @@
 	margin-top: 3%;	
 	padding-right: 5%;
 }
-#tab2{
+.tab2{
 	padding-bottom: 3%;
 }
 
@@ -140,7 +173,7 @@
 .Student1TasksMain{
 	padding-top: 5%;
 }
-.Student1Tasks >a{
+.Student1Tasks >li>a{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -152,7 +185,7 @@
 .Student1address{
 	padding-top: 5%;
 }
-.Student1address >a{
+.Student1address >li>a{
 	display: flex;
 	flex-direction: column;
 	align-items: center;

@@ -111,7 +111,7 @@
 	width: 90%;
 }
 
-#insta:hover, #facebook:hover, #github:hover, #whatsapp:hover, #twitter:hover {
+#insta:hover, #facebook:hover, #github:hover, #whatsapp:hover, #twitter:hover,#heart {
 	animation: Zoom 1s ease infinite;
 }
 
