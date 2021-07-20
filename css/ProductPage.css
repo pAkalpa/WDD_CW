@@ -9,6 +9,8 @@
   opacity: 0.5;
   position: relative;
   margin-top: 75px;
+  height:900px; 
+  width:100%;
 }
 .Image1withSneakers{
   position: absolute;
@@ -187,8 +189,23 @@
   font-size: 3vmin;
 }
 
-/* //////////////// */
-
+/* ////////////////////   adding css to all main images ///////// */
+.prodPageIMG1{
+  height: 1000px;
+  width: 1500px;
+}
+.prodPageIMG2{
+  height: 800px;
+  width: 1500px;
+}
+.prodPageIMG3{
+  height: 900px;
+  width: 1500px;
+}
+.prodPageIMG4{
+  height: 800px;
+  width: 1500px;
+}
 
 /* allingning the boxes */
 .SneakersRow{ 
@@ -1047,22 +1064,3 @@ width:100%
   transform: translateY(0px);
   transition-delay: .2s;
 }
-
-/* Back to Top Button Style Start Here -------------------------------------------------------- */
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 30px; 
-  right: 30px; 
-  z-index: 99; 
-  background-color: rgb(255, 255, 255);
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-}
-
-#myBtn:hover {
-  background-color: rgba(255, 255, 255, 0);
-}
-    /* Back to Top Button Stylr End Here ---------------------------------------------------------- */

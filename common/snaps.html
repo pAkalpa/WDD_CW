@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="SHORTCUT ICON" href="../img/favicon/favicon.ico" />
     <link rel="icon" href="../img/favicon/favicon.ico" type="image/ico" />
+    <!-- Linking external CSS -->
     <link rel="stylesheet" href="../css/snap.css">
     <link rel="stylesheet" href="../css/Common.css">
     <title>GoalIn | Snaps</title>
@@ -17,7 +19,7 @@
         <div class="container-fluid">
             <div class="navImg">
                 <a href="mainPage.html">
-                    <img src="../img/mainLogo.png" class="nav-logo">
+                    <img src="../img/mainLogo.png" alt="main logo" class="nav-logo">
                 </a>
             </div>
             <div class="links">
@@ -77,9 +79,9 @@
         <!--Color Selector-->
         <div class="controllerContainer">
             <div class="propertyController">
-                <form id="color_controller" action="">
+                <form id="color_controller">
                     <!--Font Color selector-->
-                    <label for="fontColor">Choose Font Color:</label>
+                    <label for="fontColour">Choose Font Color :</label>
                     <select name="fontColour" id="fontColour" onchange="setFontColour(this.form)">
                         <option value="pleaseSelect" disabled selected hidden>Select Font Colour</option>
                         <option value="Color#1">Orange</option>
@@ -89,7 +91,7 @@
                         <option value="Color#5">Pink</option>
                     </select>
                     <!--Background Color selector-->
-                    <label for="backgroundColor">Choose Background Color:</label>
+                    <label for="backgroundColour">Choose Background Color :</label>
                     <select name="backgroundColour" id="backgroundColour" onchange="setBackgroundColour(this.form)">
                         <option value="pleaseSelect" disabled selected hidden>Select Background Colour</option>
                         <option value="Color#1">Blue</option>
@@ -139,11 +141,12 @@
             </div>
             <hr class="footerLine">
             <div class="fpart3">
-                <p class="ftext">Page by <a href="">Janith Abhayarathna</a></p>
+                <p class="ftext">Page by <a href="../common/Student4-Janith.html">Janith Abhayarathna</a></p>
             </div>
         </footer>
     </div>
 
+    <!-- Linking the external Java Script -->
     <script src="../js//snap.js"></script>
 </body>
 

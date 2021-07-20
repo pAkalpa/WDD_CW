@@ -42,7 +42,7 @@ function displayDescription(number) {
   console.log(number);
   let img1Description = `
     <div class="item1">
-            <img class="image" src="../img/snap/cup.jpg" alt="2018 Fifa cup" width="650" height="550" >
+            <img class="image" src="../img/snap/cup.jpg" alt="2018 Fifa cup"  >
     </div>
     <div class="item2">
         <P><h1>The 2018 FIFA World Cup</h1> <br>
@@ -129,7 +129,7 @@ function setFontColour(form) {
   console.log(selectedColor);
   switch (selectedColor) {
     case "Color#1":
-      colorChanger(1, "#ff6f06");
+      colorChanger(1, "#ad5921");
       break;
     case "Color#2":
       colorChanger(1, "#3b009d");
@@ -141,7 +141,8 @@ function setFontColour(form) {
       colorChanger(1, "#ffffff");
       break;
     case "Color#5":
-      colorChanger(1, "#510028")  
+      colorChanger(1, "#510028");
+      break;  
   }
 }
 
@@ -162,10 +163,12 @@ function setBackgroundColour(form) {
       colorChanger(2, "#f9ffa1");
       break;
     case "Color#5":
-      colorChanger(2, "#ffb7a1")  
+      colorChanger(2, "#ffb7a1");
+      break;  
   }
 }
 
+// Changes the color according to the selection
 function colorChanger(number, color) {
   if (number === 1) {
     let allElements = document.getElementsByClassName("snapPageContainer");

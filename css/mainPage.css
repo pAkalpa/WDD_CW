@@ -20,6 +20,7 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 10px;
 }
 .gradient_image {
   position: absolute;
@@ -57,7 +58,7 @@ html {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 110px;
 }
 .main-product-topic {
   font-size: 44px;
@@ -122,12 +123,19 @@ html {
   width: 250px;
 }
 
+.about_container {
+  display: flex;
+  justify-content: center;
+}
+
 .about {
   background-color: white;
-  height: 300px;
+  height: 330px;
+  width: 90%;
   margin-bottom: 10px;
   padding-left: 30px;
   padding-right: 30px;
+  border-radius: 20px;
 }
 #aboutDiscription {
   color: #808080;
@@ -135,29 +143,11 @@ html {
 }
 
 #mainAbout {
-  padding-top: 10px;
+  padding-top: 5px;
   padding-left: 45%;
   color: #808080;
   margin-bottom: none;
   font-size: 30px;
-}
-
-
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  z-index: 99;
-  background-color: rgb(255, 255, 255);
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-}
-
-#myBtn:hover {
-  background-color: rgba(255, 255, 255, 0);
 }
 
 .main-poster {
@@ -216,8 +206,11 @@ html {
   0% {
     transform: scale(1);
   }
-  100% {
+  50% {
     transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
