@@ -1,0 +1,283 @@
+*{
+    text-decoration: none;
+}
+
+/* styling of the boady */
+.Student3-body{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #000000 0%, #14000a 76%);
+    color:antiquewhite;
+}
+
+
+/* styling of links */
+a:link{
+    color: dimgrey;
+}
+
+a:visited{
+    color: dimgrey;
+}
+
+a:hover{
+    color: gold;
+}
+
+/* removing the bullet points in each and every list item */
+ul{
+    list-style-type: none;
+}
+
+/* styling of the main container */
+.main-glass-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    width: 920px;
+    height: auto;
+    margin-left: 18%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+    background: linear-gradient(
+    25.6deg,
+    rgba(255, 255, 255, 0.192) 28.69%,
+    rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 20px 10px rgba(182, 182, 182, 0.1);
+  
+}
+
+/* hover effect of the main container */
+.main-glass-container:hover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    width: 920px;
+    height: auto;
+    margin-left: 18%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+    background: linear-gradient(
+    25.6deg,
+    rgba(218, 196, 196, 0.192) 28.69%,
+    rgba(53, 51, 51, 0) 100%);
+    box-shadow: 0 0 20px 10px rgba(182, 182, 182, 0.1);
+    color:gold;
+  
+}
+
+
+/* styling of the main image */
+#Student3-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:300px;
+    margin-top: 20px;
+    margin-left: 50px;
+    border-radius: 150px;
+}
+
+
+/* styling of the student3 name */
+.Student3-main-name{
+    width:380px;
+    border-bottom: solid;
+    border-left: solid;
+    padding-left: 10px;
+
+}
+/* hover effect of the student3 name */
+.Student3-main-name:hover{
+    width:380px;
+    border-bottom: solid;
+    transform: scale(1.1);
+    color:antiquewhite
+
+}
+
+
+/* styling of task list */
+.Student3-tasks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:380px;
+    border-bottom: solid;
+}
+
+
+/* hover effect of the task list */
+.Student3-tasks:hover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:380px;
+    border-bottom: solid;
+    transform: scale(1.1);
+    color:antiquewhite
+}
+
+
+/* styling of task list items */
+.tasks-list{
+    margin-left: 50px;
+}
+
+/* styling of the left side in the page */
+.Student3-left{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    width:50%;
+}
+
+
+/* styling of the right side in the page */
+.Student3-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: left 100px;
+    width:45%;
+    height:auto;
+    background:#420222;
+    border-radius:20px;
+}
+
+/* hover effectof the right side of the page */
+.Student3-right:hover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: left 100px;
+    width:45%;
+    height:auto;
+    background:#420222;
+    border-radius:20px;
+    transform: scale(1.1);
+}
+
+
+/* styling of the main topics */
+.main-items{
+    border-bottom: solid;
+    width: 200px;
+    padding:25px;
+    margin-right: 50px;
+    border-left: solid;
+
+}
+
+/* hover effect of the main topics*/
+.main-items:hover{
+    border-bottom: solid;
+    width: 200px;
+    padding:25px;
+    margin-right: 50px;
+    transform: scale(1.1);
+    color:antiquewhite;
+}
+
+/* styling of the sub topics */
+.sub-items{
+    border-bottom: solid;
+    padding:25px 25px 25px 0;
+}
+
+/* hover effect of the sub topics */
+.sub-items:hover{
+    border-bottom: solid;
+    padding:25px 25px 25px 0;
+    transform: scale(1.1);
+    color:antiquewhite;
+}
+
+
+
+.social-icon{
+    width: 50px;
+}
+
+.sub-topic{
+    width:500px;
+
+}
+.Student3-education{
+    font-size:32px;
+}
+.Student3-education:hover{
+    font-size:32px;
+    transform: scale(1.1);
+    color:antiquewhite;
+}
+
+.education-list{
+    margin:0;
+    padding:0;
+}
+
+.education-main{
+    padding:25px;
+}
+
+.edu-name{
+    font-size:28px;
+}
+
+
+#mainlogo{
+    margin: 50px 50px;
+}
+
+#mainlogo:hover{
+    margin: 50px 50px;
+    transform: scale(1.1);
+}
+
+
+
+
+.Student3-social-contact{
+    display: flex;
+    flex-direction:column;
+    align-items:left;
+    margin-right: 50px;
+    
+
+}
+
+.social-list{
+    display: flex;
+    justify-content:space-evenly;
+    margin-bottom: 15px;
+}
+
+.social-list:hover{
+    display: flex;
+    justify-content:space-evenly;
+    margin-bottom: 15px;
+    transform: scale(1.1);
+}
+
+.username{
+    margin-bottom:20px;
+    margin-left: 50px;
+   
+    
+}
+
+.Student3-contact{
+    margin-right: 50px;
+}
+
+.contact-details{
+    color: dimgrey;
+}
