@@ -17,7 +17,7 @@ function additems(event){
     var button = event.target
     var product = button.parentElement.parentElement
     var itemName = product.getElementsByClassName('product-title')[0].innerText
-    //all the names and inserted into itemnames array to be used after place order button is clicked
+    //all the names and inserted into itemnames array to be used after add to cart button is clicked
     itemNames.push(itemName)
     var price = product.getElementsByClassName('product-price')[0].innerText
     addToCart(itemName,price);
@@ -83,6 +83,7 @@ function fieldsValidation(){
     }else if(country == ""){
         alert("Please fill the Country");
     }else{
+        
         for(var i =0 ;i < itemNames.length;i++){
             alert("you have borught " + itemNames[i])
         }
@@ -93,3 +94,4 @@ function fieldsValidation(){
 var cartRow = document.createElement('div')
     cartRow.classList.add('Product-header');
     var cartItems = document.getElementsByClassName('car')
+
