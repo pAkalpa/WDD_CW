@@ -37,11 +37,11 @@ html {
 }
 
 #gitlab:hover,
-#github:hover,
+#Github:hover,
 #google:hover,
 #linkedin:hover,
 #wapp:hover,
-#insta:hover {
+#Insta:hover {
   animation: rotatePosNeg 0.5s linear infinite;
 }
 
