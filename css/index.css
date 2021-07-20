@@ -69,5 +69,18 @@ body {
   justify-items: center;
   align-items: center;
 }
-
-
+.StudentImages{
+  width: 12vmax;
+}
+.ftext >a{
+  color: white;
+	text-decoration: none;
+}
+.ftext{
+  color: white;
+}
+.indexeditor{
+  height: 10%;
+	display: flex;
+	justify-content: center;
+}

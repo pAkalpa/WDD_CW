@@ -7,9 +7,9 @@ body{
 
         25.6deg,
     
-        rgb(255, 168, 142) 28.69%,
+        rgb(87, 58, 255) 28.69%,
     
-        rgb(182, 185, 176) 100%);
+        rgb(255, 87, 110) 100%);
     
         box-shadow: 0 0 20px 10px rgba(182, 182, 182, 0.1);
 }
@@ -45,9 +45,10 @@ body{
 
 /* CSS for the hr */
 hr{
-	background-color: black;
+	background-color: rgb(0, 0, 0);
 	clear: both;
 	height: 2px;
+    border: none;
 }
 
 /* CSS for the role part */
@@ -61,11 +62,15 @@ hr{
 	padding: 0;
 	list-style-type:none;
     font-size: 20px;
+    color: rgb(228, 228, 228);
+}
+.Stud4dis{
+    color: rgb(228, 228, 228);
 }
 
 /* CSS for the links */
 a{
-    color: black;
+    color: rgb(231, 231, 231);
     text-decoration: none;
 }
 
@@ -77,26 +82,28 @@ a{
 
 /* CSS for h2 part */
 h2{
-    color: #23639b;
+    color: #000000;
     margin-top: 0;
 } 
 
 /* CSS for the hover of links */
 a:hover{
-	color: #025aa8;
+	color: #00d7fd;
 }
 
 /* CSS to split the screen in education part */
 .split-screen{
     display: flex;
     flex-direction: row;
-    color: rgb(5, 39, 49);
+}
+.split-screen >div > table{
+    color: rgb(226, 226, 226);
 }
 
 /* Left side of the education part */
 .item1{
     width:50%;
-    border-right: 12px dotted #757c83;
+    border-right: 12px dotted #000000;
     margin-bottom: 30px;
     margin-right: 30px;
 }

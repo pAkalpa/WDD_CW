@@ -83,6 +83,7 @@ function fieldsValidation(){
     }else if(country == ""){
         alert("Please fill the Country");
     }else{
+        
         for(var i =0 ;i < itemNames.length;i++){
             alert("you have borught " + itemNames[i])
         }
@@ -93,3 +94,4 @@ function fieldsValidation(){
 var cartRow = document.createElement('div')
     cartRow.classList.add('Product-header');
     var cartItems = document.getElementsByClassName('car')
+
