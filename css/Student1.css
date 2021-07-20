@@ -76,22 +76,12 @@
 	flex-direction: row;
 	justify-content: center;
 	margin-top: 1%;
+	margin-bottom: 3%;
 }
 .Stud1Qualifications >img{
 	width: 10vmax;
 	padding-right: 2%;
 	padding-left: 2%;
-}
-.Stud1QualiText{
-	color: white;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin-left: 4%;	
-}
-.Stud1QualiText >p{
-	padding-right: 23%;
-	padding-bottom: 10%;
 }
 /* ***************** Responsive********************** */
 .Stud1Responsive{
@@ -307,11 +297,13 @@
 }
 /* ******************************* HOVER *************************** */
 .Student1BackCircles >img:hover{
-	transform: scale(1.3);
-	opacity: 40%;
+	transition: all ease-in 1s;
+    transform:scale(1.3);
+	opacity: 0%;
 	/* transform: translateX(100px);*/
 } 
 .Student1BackCircles2 >img:hover{
-	transform: scale(1.3);
-	opacity: 70%;
+	transition: all ease-in 1s;
+    transform:scale(1.3);
+	opacity: 0%;
 }
