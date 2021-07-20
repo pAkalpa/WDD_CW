@@ -17,7 +17,7 @@ function additems(event){
     var button = event.target
     var product = button.parentElement.parentElement
     var itemName = product.getElementsByClassName('product-title')[0].innerText
-    //all the names and inserted into itemnames array to be used after place order button is clicked
+    //all the names and inserted into itemnames array to be used after add to cart button is clicked
     itemNames.push(itemName)
     var price = product.getElementsByClassName('product-price')[0].innerText
     addToCart(itemName,price);
