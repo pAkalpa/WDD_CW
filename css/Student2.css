@@ -41,8 +41,16 @@ html {
 #google:hover,
 #linkedin:hover,
 #wapp:hover,
-#Insta:hover {
+#Insta:hover, .zap {
   animation: rotatePosNeg 0.5s linear infinite;
+}
+
+#hand {
+  animation: wave .5s linear infinite;
+}
+
+#heart {
+  display: inline-block;
 }
 
 @keyframes rotatePosNeg {
@@ -59,9 +67,21 @@ html {
   }
 
   75% {
-    transform: rotate(-10deg);
+    transform: rotate(-20deg);
   }
 
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
   100% {
     transform: rotate(0deg);
   }
@@ -97,12 +117,15 @@ html {
   padding-top: 5%;
 }
 
-.Student2MainDis>h1 {
+.greet_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 2vmax;
   text-align: center;
 }
 
-.Student2Discription {
+.Student2Description {
   color: aliceblue;
   text-align: center;
   margin-left: 5%;
@@ -122,15 +145,21 @@ html {
 
 /* ----------------------------- Compatibilities -------------------------- */
 .Stud2Cap {
-  color: #ffb877;
+  color: #ffa958;
   font-size: 1.3vmax;
   margin-top: 5%;
+}
+
+.languages_i_know {
+  display: flex;
+  font-size: 2.0vmax;
+  margin-bottom: 1%;
 }
 
 .skill-bars {
   padding: 25px 30px;
   width: 600px;
-  background: rgba(255, 255, 255, 0.116);
+  background: rgba(255, 255, 255, 0.308);
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
@@ -185,7 +214,7 @@ html {
   border-radius: 10px;
   transform: scaleX(0);
   transform-origin: left;
-  background: #ffb877;
+  background: #ffa24b;
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
@@ -320,7 +349,7 @@ html {
   padding-right: 5%;
 }
 
-#tab2 {
+.tab2 {
   padding-bottom: 5%;
 }
 
@@ -348,7 +377,7 @@ html {
   padding-right: 5%;
 }
 
-#tab3 {
+.tab3 {
   padding-bottom: 3%;
 }
 
