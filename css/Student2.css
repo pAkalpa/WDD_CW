@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html {
+  /* Make Scroll Effect Smooth */
+  scroll-behavior: smooth; 
+}
+
 /* ------------------ Socials ------------------------- */
 .Stud2Fixed {
   display: flex;
@@ -6,23 +12,27 @@
   position: fixed;
   margin-left: 2%;
 }
+
 .Stud2Line {
   background-color: #ffb877;
   width: 0.5vmax;
   height: 32vmin;
   margin-left: 47%;
 }
+
 .Stud2Line1 {
   background-color: #ffb877;
   width: 0.5vmax;
   height: 35vmin;
   margin-left: 47%;
 }
+
 .Stud2Socials {
   display: flex;
   flex-direction: column;
 }
-.Stud2Socials > a > img {
+
+.Stud2Socials>a>img {
   width: 4vmax;
 }
 
@@ -39,15 +49,19 @@
   0% {
     transform: rotate(0deg);
   }
+
   25% {
     transform: rotate(10deg);
   }
+
   50% {
     transform: rotate(0deg);
   }
+
   75% {
     transform: rotate(-10deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -56,12 +70,14 @@
 .Student1Body {
   font-family: Roboto;
 }
+
 .Student2Main {
   display: flex;
   flex-flow: column;
   height: 100%;
   align-items: center;
 }
+
 .Stud2DisImg {
   width: 65%;
   height: 25%;
@@ -71,17 +87,21 @@
   color: #ffb877;
   padding-top: 5%;
 }
+
 .Stud2IMG {
   width: 27vmax;
   height: 27vmax;
 }
+
 .Student2MainDis {
   padding-top: 5%;
 }
-.Student2MainDis > h1 {
+
+.Student2MainDis>h1 {
   font-size: 2vmax;
   text-align: center;
 }
+
 .Student2Discription {
   color: aliceblue;
   text-align: center;
@@ -99,6 +119,7 @@
   top: 149%;
   z-index: -1;
 }
+
 /* ----------------------------- Compatibilities -------------------------- */
 .Stud2Cap {
   color: #ffb877;
@@ -113,26 +134,32 @@
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
+
 .skill-bars .bar {
   margin: 20px 0;
 }
+
 .skill-bars .bar:first-child {
   margin-top: 0px;
 }
+
 .skill-bars .bar .info {
   margin-bottom: 5px;
 }
+
 .skill-bars .bar .info span {
   font-weight: 500;
   font-size: 17px;
   opacity: 0;
   animation: showText 0.5s 1s linear forwards;
 }
+
 @keyframes showText {
   100% {
     opacity: 1;
   }
 }
+
 .skill-bars .bar .progress-line {
   height: 10px;
   width: 100%;
@@ -145,11 +172,13 @@
     0 1px rgba(255, 255, 255, 0.8);
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
+
 @keyframes animate {
   100% {
     transform: scaleX(1);
   }
 }
+
 .bar .progress-line span {
   height: 100%;
   position: absolute;
@@ -159,27 +188,35 @@
   background: #ffb877;
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
+
 .bar .progress-line.cs span {
   width: 80%;
 }
+
 .bar .progress-line.css span {
   width: 40%;
 }
+
 .bar .progress-line.java span {
   width: 85%;
 }
+
 .bar .progress-line.python span {
   width: 90%;
 }
+
 .bar .progress-line.postgressql span {
   width: 75%;
 }
+
 .bar .progress-line.cpp span {
   width: 60%;
 }
+
 .bar .progress-line.js span {
   width: 70%;
 }
+
 .progress-line span::before {
   position: absolute;
   content: "";
@@ -194,6 +231,7 @@
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
 }
+
 .progress-line span::after {
   position: absolute;
   top: -28px;
@@ -207,32 +245,41 @@
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
 }
+
 @keyframes showText2 {
   100% {
     opacity: 1;
   }
 }
+
 .progress-line.cs span::after {
   content: "80%";
 }
+
 .progress-line.css span::after {
   content: "40%";
 }
+
 .progress-line.java span::after {
   content: "85%";
 }
+
 .progress-line.python span::after {
   content: "90%";
 }
+
 .progress-line.postgressql span::after {
   content: "75%";
 }
+
 .progress-line.cpp span::after {
   content: "60%";
 }
+
 .progress-line.js span::after {
   content: "70%";
 }
+
 /* ----------------------------- Line ---------------------------------- */
 
 /* ------------results for examinations---------------- */
@@ -243,6 +290,7 @@
   padding-top: 5%;
   margin-top: 5%;
 }
+
 .Stud2AL {
   width: 30vmax;
   height: 30vmax;
@@ -258,10 +306,12 @@
   justify-items: center;
   box-shadow: 9px 5px 16px rgba(197, 7, 255, 0.288);
 }
+
 .Stud2ALTop {
   text-align: center;
   margin-top: 10%;
 }
+
 .stud2ALres {
   margin-left: 20%;
   text-align: left;
@@ -269,9 +319,11 @@
   margin-top: 5%;
   padding-right: 5%;
 }
+
 #tab2 {
   padding-bottom: 5%;
 }
+
 /* ************************* OL BOX************************* */
 .Stud2OL {
   width: 30vmax;
@@ -284,18 +336,22 @@
   justify-items: center;
   box-shadow: 9px 5px 16px rgba(255, 7, 152, 0.288);
 }
+
 .Stud2OLTop {
   text-align: center;
 }
+
 .stud2OLres {
   margin-left: 20%;
   text-align: left;
   font-size: 1vmax;
   padding-right: 5%;
 }
+
 #tab3 {
   padding-bottom: 3%;
 }
+
 /* ----------------- About ---------------------- */
 .Stud2About {
   color: #ffb877;
@@ -305,7 +361,8 @@
   font-size: 1.3vmax;
   padding-top: 5%;
 }
-.Stud2About > p {
+
+.Stud2About>p {
   color: aliceblue;
 }
 
@@ -318,18 +375,19 @@
   padding-top: 2%;
   color: #ffc48e;
 }
-.Student2TasksMain > a,
+
+.Student2TasksMain>a,
 p {
   color: aliceblue;
   text-decoration: none;
   font-size: 1.3vmax;
 }
 
-.Student2TasksMain > a:hover {
-	color: #ffc48e;
+.Student2TasksMain>a:hover {
+  color: #ffc48e;
 }
 
-.Student2TasksMain > p {
+.Student2TasksMain>p {
   margin: 0px;
 }
 
