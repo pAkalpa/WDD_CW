@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,128 +14,135 @@
     <link rel="manifest" href="../img/favicon//site.webmanifest">
     <title>Quiz</title>
 </head>
+
 <body class="Quiz-body">
     <!-- Navigation bar -->
-    <nav id="start" class="navbar navbar-light  fixed-top fill">                        
-        <div class="container-fluid">                                               
-            <div class="navImg">                                                            
-                <a href="mainPage.html">                                                                        
-                    <img src="../img/mainLogo.png" alt="mainLogo" class="nav-logo" >                       
-                </a>                                                                        
-            </div>                                                                          
-            <div class="links">                                                                         
-                <ul class="navbar-nav">                                                             
-                    <li>                                                                        
-                        <a href="mainPage.html">HOME</a>                                                
-                    </li>                                                                                       
-                    <li>                                                                        
-                        <a href="ProductPage.html">PRODUCTS</a>                                                     
-                    </li>                                                                               
-                    <li>                                                                                    
-                        <a href="Quiz.html">QUIZ</a>                                    
-                    </li>                                                       
-                    <li>                                                                        
-                        <a href="snaps.html">SNAPS</a>                                                      
-                    </li>                                                           
-                    <li>                                                                            
-                        <a href="StudentPage.html">ABOUT</a>                                                   
-                    </li>                                                               
-                    <li>                                                                                                
-                        <a href="queryForm.html">CONTACT US</a>                                                             
-                    </li>                                                                                   
-                </ul>                                                                                                   
-            </div>                                                                              
-        </div>                                                                          
-    </nav>                                                                                      
+    <nav id="start" class="navbar navbar-light  fixed-top fill">
+        <div class="container-fluid">
+            <div class="navImg">
+                <a href="mainPage.html">
+                    <img src="../img/mainLogo.png" alt="mainLogo" class="nav-logo">
+                </a>
+            </div>
+            <div class="links">
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="mainPage.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="ProductPage.html">PRODUCTS</a>
+                    </li>
+                    <li>
+                        <a href="Quiz.html">QUIZ</a>
+                    </li>
+                    <li>
+                        <a href="snaps.html">SNAPS</a>
+                    </li>
+                    <li>
+                        <a href="StudentPage.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="queryForm.html">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    
-<!-- Quiz   -->
+
+    <!-- Quiz   -->
     <div class="Quiz-items">
-    <div class="quiz-container" id="quiz">
+        <div class="quiz-container" id="quiz">
 
-        <!-- implement the timer -->
-        <div class="timer">
-            <h5 id="time-Left">Time Left : </h5>
-            <h4 id="display-time">00:00</h4>
+            <!-- implement the timer -->
+            <div class="timer">
+                <h5 id="time-Left">Time Left : </h5>
+                <h4 id="display-time">00:00</h4>
+            </div>
+
+            <!-- placeholders of the questions -->
+            <div class="quiz-header">
+                <h2 id="question">Questions</h2>
+                <ul class="Quiz-main-list">
+                    <li class="Quiz-sub-list">
+
+                        <!-- placeholder of answer one in multiplechoic answers -->
+                        <input type="radio" name="answer" id="a" class="answer">
+                        <label class="quiz-answer" for="a" id="a_quiz">Question </label>
+
+                    </li>
+
+
+                    <li class="Quiz-sub-list">
+                        <!-- placeholder of answer two in multiplechoic answers -->
+                        <input type="radio" name="answer" id="b" class="answer">
+                        <label class="quiz-answer" for="b" id="b_quiz">Question </label>
+
+                    </li>
+
+
+                    <li class="Quiz-sub-list">
+                        <!-- placeholder of answer three in multiplechoic answers -->
+                        <input type="radio" name="answer" id="c" class="answer">
+                        <label class="quiz-answer" for="c" id="c_quiz">Question </label>
+
+                    </li>
+
+
+                    <li class="Quiz-sub-list">
+                        <!-- placeholder of answer for in multiplechoic answers -->
+                        <input type="radio" name="answer" id="d" class="answer">
+                        <label class="quiz-answer" for="d" id="d_quiz">Question </label>
+
+                    </li>
+                </ul>
+            </div>
+            <!-- submit and reload button -->
+            <button id="submit" class="Quiz-button">submit</button>
         </div>
-
-        <!-- placeholders of the questions -->
-        <div class="quiz-header">
-            <h2 id="question">Questions</h2>
-            <ul class="Quiz-main-list">
-                <li class="Quiz-sub-list">
-
-                    <!-- placeholder of answer one in multiplechoic answers -->
-                    <input type="radio" name="answer" id="a" class="answer">
-                    <label class="quiz-answer" for="a" id="a_quiz">Question </label>
-
-                </li>
-
-                
-                <li class="Quiz-sub-list">
-                     <!-- placeholder of answer two in multiplechoic answers -->
-                    <input type="radio" name="answer" id="b" class="answer">
-                    <label class="quiz-answer" for="b" id="b_quiz">Question </label>
-
-                </li>
-
-                
-                <li class="Quiz-sub-list">
-                     <!-- placeholder of answer three in multiplechoic answers -->
-                    <input type="radio" name="answer" id="c" class="answer">
-                    <label class="quiz-answer" for="c" id="c_quiz">Question </label>
-
-                </li>
-
-                
-                <li class="Quiz-sub-list">
-                     <!-- placeholder of answer for in multiplechoic answers -->
-                    <input type="radio" name="answer" id="d" class="answer">
-                    <label class="quiz-answer" for="d" id="d_quiz">Question </label>
-
-                </li>
-            </ul>
-        </div>
-        <!-- submit and reload button -->
-        <button id="submit" class="Quiz-button">submit</button>
     </div>
-</div>
-<!-- Start of the footer -->
-<div class="QuizFooter">
-    <footer class="footermain">
-        <div class="fPart1">
-            <div class="hqa">
-                <a href="mainPage.html">HOME</a>
-                <a href="Quiz.html">QUIZ</a>
-                <a href="StudentPage.html">ABOUT</a>
+    <!-- Start of the footer -->
+    <div class="QuizFooter">
+        <footer class="footermain">
+            <div class="fPart1">
+                <div class="hqa">
+                    <a href="mainPage.html">HOME</a>
+                    <a href="Quiz.html">QUIZ</a>
+                    <a href="StudentPage.html">ABOUT</a>
+                </div>
+                <img src="../img/icons/logo.png" alt="logo" id="footer-logo">
+                <div class="pfg">
+                    <a href="ProductPage.html">PRODUCTS PAGE</a>
+                    <a href="snaps.html">SNAPS</a>
+                    <a href="queryForm.html">GET SUPPORT</a>
+                </div>
             </div>
-            <img src="../img/icons/logo.png" alt="logo" id="footer-logo">
-            <div class="pfg">
-                <a href="ProductPage.html">PRODUCTS PAGE</a>
-                <a href="snaps.html">SNAPS</a>
-                <a href="queryForm.html">GET SUPPORT</a>
+            <div class="sitemapFooter">
+                <a href="../common/SiteMap.html">SITEMAP</a>
             </div>
-        </div>
-        <div class="sitemapFooter">
-            <a href="../common/SiteMap.html">SITEMAP</a>
-        </div>
-        <div class="fpart2">
-            <!-- links and the images in footer -->
-            <a href="https://www.instagram.com/" target="_blank"><img src="../img/icons/INSTA.png" alt="Instagram" id="insta"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="../img/icons/facebook.png" alt="facebook" id="facebook"></a>
-            <a href="https://github.com/pAkalpa/WDD_CW" target="_blank"><img src="../img/icons/github.png" alt="GitHUB" id="github"></a>
-            <a href="https://www.whatsapp.com/" target="_blank"><img src="../img/icons/whatsapp.png" alt="whatsapp" id="whatsapp"></a>
-            <a href="https://twitter.com/?lang=en" target="_blank"><img src="../img/icons/Twitter.png" alt="twitter" id="twitter"></a>
-        </div>
-        <hr class="footerLine">
+            <div class="fpart2">
+                <!-- links and the images in footer -->
+                <a href="https://www.instagram.com/" target="_blank"><img src="../img/icons/INSTA.png" alt="Instagram"
+                        id="insta"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../img/icons/facebook.png" alt="facebook"
+                        id="facebook"></a>
+                <a href="https://github.com/pAkalpa/WDD_CW" target="_blank"><img src="../img/icons/github.png"
+                        alt="GitHUB" id="github"></a>
+                <a href="https://www.whatsapp.com/" target="_blank"><img src="../img/icons/whatsapp.png" alt="whatsapp"
+                        id="whatsapp"></a>
+                <a href="https://twitter.com/?lang=en" target="_blank"><img src="../img/icons/Twitter.png" alt="twitter"
+                        id="twitter"></a>
+            </div>
+            <hr class="footerLine">
 
-        <div class="fpart3">        
-            <p class="ftext">Page by <a href="Student3-Pramuditha.html">Pramuditha Karunarathna</a></p>
-        </div>
-    </footer>
-</div>
- 
+            <div class="fpart3">
+                <p class="ftext">Page by <a href="Student3-Pramuditha.html">Pramuditha Karunarathna</a></p>
+            </div>
+        </footer>
+    </div>
+
     <!-- End of the footer -->
     <script src="../js/Quiz.js"></script>
 </body>
+
 </html>

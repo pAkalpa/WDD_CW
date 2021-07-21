@@ -118,11 +118,11 @@ function load_Quiz() {
     document.getElementById('d').disabled = false;
 
     const currentQuestionData = quizData[currentQuestion]
-    questionElements.innerText = currentQuestionData.question
-    a_quiz.innerText = currentQuestionData.a
-    b_quiz.innerText = currentQuestionData.b
-    c_quiz.innerText = currentQuestionData.c
-    d_quiz.innerText = currentQuestionData.d
+    questionElements.innerText = currentQuestionData.question;
+    a_quiz.innerText = currentQuestionData.a;
+    b_quiz.innerText = currentQuestionData.b;
+    c_quiz.innerText = currentQuestionData.c;
+    d_quiz.innerText = currentQuestionData.d;
 
    
 }
@@ -130,16 +130,16 @@ function load_Quiz() {
 
 // deselecting the default selector
 function deselectAnswers() {
-    answerElements.forEach(answerElements => answerElements.checked = false)
+    answerElements.forEach(answerElements => answerElements.checked = false);
 }
 
 // sellecting the ansers
 function select() {
-    let answer
+    let answer;
 
     answerElements.forEach(answerElements => {
         if (answerElements.checked) {
-            answer = answerElements.id
+            answer = answerElements.id;
         }
     })
     return answer
@@ -167,10 +167,12 @@ function getRadioButton() {
                 document.getElementById("quiz").classList.remove("quiz-container-wrong");
                 document.getElementById("quiz").classList.remove("quiz-container");
                 document.getElementById("quiz").classList.add("quiz-container-right");
+            
             } else {
                 document.getElementById("quiz").classList.remove("quiz-container-right");
                 document.getElementById("quiz").classList.remove("quiz-container");
                 document.getElementById("quiz").classList.add("quiz-container-wrong");
+        
 
             }
             // console.log(event.target.id);
@@ -195,25 +197,29 @@ function getRadioButton() {
 //  change the question when clicking the reload button, and if the number of questions are greater the index of the last question in the arry user will get the final marks
 
 submitButton.addEventListener('click', () => {
-    const answer = select()
+    const answer = select();
 
     if (answer) {
         if (answer === quizData[currentQuestion].correct) {
-            correct++
+            correct++;
             score += 2;
 
         } else if (answer != quizData[currentQuestion].correct) {
             score -= 1;
 
         }
+
         if (score < 0) {
             score = 0;
         }
-        currentQuestion++
+        currentQuestion++;
+
+        
 
         if (currentQuestion < quizData.length) {
             load_Quiz();
         } else {
+
             quiz.innerHTML = `
                 <h2> You answered correctly at ${correct}
                 /${quizData.length} questions </h2>
@@ -256,6 +262,9 @@ function showTime(second) {
 // load the next question if the time limit ends 
 function endCount() {
     score -= 1;
+    if (score < 0) {
+        score = 0;
+    }
     currentQuestion++;
     if (currentQuestion < quizData.length) {
         load_Quiz();
