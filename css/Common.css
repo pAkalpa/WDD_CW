@@ -255,7 +255,7 @@ nav ul li a {
 }
 
 /* Keyframes */
-@-webkit-keyframes fill {
+@keyframes fill {
 	0% {
 		width: 0%;
 		height: 1px;
