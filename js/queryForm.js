@@ -47,7 +47,7 @@ function validateInputs() {
 		if (selections.checked) {
 			selectionCount++;
 			subjectText = selections.value;
-			console.log(subjectText);
+			// console.log(subjectText);
 		}
 	}
 
@@ -112,6 +112,6 @@ function displayForm() {
 
 // This function Execute Form Submit button
 function sendEmail() {
-	console.log("Sending Email");
+	// console.log("Sending Email");
 	document.getElementById("q_form").submit();
 }
