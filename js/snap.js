@@ -8,6 +8,7 @@ panels.forEach((panel) => {
 });
 
 // Displaying the description relavant to the image
+// Referenced from: https://www.udemy.com/course/50-projects-50-days/
 panels.forEach((panel) => {
   panel.addEventListener("click", () => {
     console.log(panel.className);
