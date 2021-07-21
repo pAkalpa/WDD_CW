@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-html {
-  /* Make Scroll Effect Smooth */
-  scroll-behavior: smooth; 
-}
-
 /* ------------------ Socials ------------------------- */
 .Stud2Fixed {
   display: flex;
