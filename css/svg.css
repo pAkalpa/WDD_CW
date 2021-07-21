@@ -3,4 +3,13 @@
     flex-flow: column nowrap;
 	align-items: center;
 	padding-top: 4%;
-}    
+} 
+
+/* svg CSS  */
+rect {
+  fill: black;
+}
+
+text {
+    fill: rgb(248, 248, 248);
+}

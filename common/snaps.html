@@ -12,12 +12,13 @@
     <!-- Linking external CSS -->
     <link rel="stylesheet" href="../css/snap.css">
     <link rel="stylesheet" href="../css/Common.css">
-    <title>GoalIn | Snaps</title>
+    <title>GoalIN | Snaps</title>
 </head>
 
 <body>
     <!-- Back to top button -->
     <img src="../img/cUP.png" onclick=topFunction() alt="Back to Top" id="myBtn">
+
     <!--Nav Bar-->
     <nav id="start" class="navbar navbar-light  fixed-top ">
         <div class="container-fluid">
@@ -52,28 +53,30 @@
     </nav>
 
     <!--Snaps pannel-->
+    <!-- Referenced from: https://www.udemy.com/course/50-projects-50-days/ -->
+
     <div class="snapPageContainer">
 
         <div class="snapGallery">
-    
+
             <div class="container">
 
                 <div class="panel img1">
                     <h3>The 2018 FIFA World Cup</h3>
                 </div>
-    
+
                 <div class="panel img2">
                     <h3>FootBall</h3>
                 </div>
-    
+
                 <div class="panel img3">
                     <h3>Football stadium</h3>
                 </div>
-    
+
                 <div class="panel img4">
                     <h3>Ronaldo</h3>
                 </div>
-    
+
                 <div class="panel active img5">
                     <h3>The 2022 FIFA World Cup</h3>
                 </div>
@@ -92,30 +95,30 @@
                         <option value="Color#2">Blue</option>
                         <option value="Color#3">Black</option>
                         <option value="Color#4">White</option>
-                        <option value="Color#5">Pink</option>
+                        <option value="Color#5">Brown</option>
                     </select>
                     <!--Background Color selector-->
                     <label for="backgroundColour">Choose Background Color :</label>
                     <select name="backgroundColour" id="backgroundColour" onchange="setBackgroundColour(this.form)">
                         <option value="pleaseSelect" disabled selected hidden>Select Background Colour</option>
                         <option value="Color#1">Blue</option>
-                        <option value="Color#2">pink</option>
+                        <option value="Color#2">Purple</option>
                         <option value="Color#3">Green</option>
                         <option value="Color#4">Yellow</option>
-                        <option value="Color#5">Orange</option>
+                        <option value="Color#5">Pink</option>
                     </select>
                 </form>
             </div>
         </div>
-    
+
         <!--Selected Image and discription will apear here-->
         <div id="showSnap">
         </div>
 
     </div>
 
-    <!--Footer-->
-    <div class="SnapFooter">
+    <!-- Start of the footer -->
+    <div>
         <footer class="footermain">
             <div class="fPart1">
                 <div class="hqa">
@@ -134,10 +137,12 @@
                 <a href="../common/SiteMap.html">SITEMAP</a>
             </div>
             <div class="fpart2">
-                <a href="https://www.instagram.com/" target="_blank"><img src="../img/icons/INSTA.png" alt="Instagram" id="insta"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../img/icons/INSTA.png" alt="Instagram"
+                        id="insta"></a>
                 <a href="https://www.facebook.com/" target="_blank"><img src="../img/icons/facebook.png" alt="facebook"
                         id="facebook"></a>
-                <a href="https://github.com/pAkalpa/WDD_CW" target="_blank"><img src="../img/icons/github.png" alt="GitHUB" id="github"></a>
+                <a href="https://github.com/pAkalpa/WDD_CW" target="_blank"><img src="../img/icons/github.png"
+                        alt="GitHUB" id="github"></a>
                 <a href="https://www.whatsapp.com/" target="_blank"><img src="../img/icons/whatsapp.png" alt="whatsapp"
                         id="whatsapp"></a>
                 <a href="https://twitter.com/?lang=en" target="_blank"><img src="../img/icons/Twitter.png" alt="twitter"
@@ -145,10 +150,11 @@
             </div>
             <hr class="footerLine">
             <div class="fpart3">
-                <p class="ftext">Page by <a href="../common/Student4-Janith.html">Janith Abhayarathna</a></p>
+                <p class="ftext">Page by <a href="Student4-Janith.html" target="_blank">Janith Abhayarathna</a></p>
             </div>
         </footer>
     </div>
+    <!-- End of the footer -->
 
     <!-- Linking the external Java Script -->
     <script src="../js//snap.js"></script>

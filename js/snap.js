@@ -8,9 +8,10 @@ panels.forEach((panel) => {
 });
 
 // Displaying the description relavant to the image
+// Referenced from: https://www.udemy.com/course/50-projects-50-days/
 panels.forEach((panel) => {
   panel.addEventListener("click", () => {
-    console.log(panel.className);
+    // console.log(panel.className);
     switch (panel.className) {
       case "panel img1 active":
         displayDescription(1);
@@ -39,7 +40,7 @@ function removeActiveClasses() {
 
 /*To display Description*/
 function displayDescription(number) {
-  console.log(number);
+  // console.log(number);
   let img1Description = `
     <div class="item1">
             <img class="image" src="../img/snap/cup.jpg" alt="2018 Fifa cup"  >
@@ -126,7 +127,7 @@ function displayDescription(number) {
 /*To set font colour*/
 function setFontColour(form) {
   let selectedColor = fontColour[fontColour.selectedIndex].value;
-  console.log(selectedColor);
+  // console.log(selectedColor);
   switch (selectedColor) {
     case "Color#1":
       colorChanger(1, "#ad5921");
