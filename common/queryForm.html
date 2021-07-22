@@ -14,7 +14,7 @@
     <title>GoalIN | Contact Us</title>
 </head>
 
-<body>
+<body id="gn_queryform">
     <!-- Back to top button -->
     <img src="../img/cUP.png" onclick=topFunction() alt="Back to Top" id="myBtn">
 
@@ -29,22 +29,22 @@
             <div class="links">
                 <ul class="navbar-nav">
                     <li>
-                        <a href="mainPage.html">HOME</a>
+                        <a href="mainPage.html" id="homenav">HOME</a>
                     </li>
                     <li>
-                        <a href="ProductPage.html">PRODUCTS</a>
+                        <a href="ProductPage.html" id="productnav">PRODUCTS</a>
                     </li>
                     <li>
-                        <a href="Quiz.html">QUIZ</a>
+                        <a href="Quiz.html" id="quiznav">QUIZ</a>
                     </li>
                     <li>
-                        <a href="snaps.html">SNAPS</a>
+                        <a href="snaps.html" id="snapsnav">SNAPS</a>
                     </li>
                     <li>
-                        <a href="StudentPage.html">ABOUT</a>
+                        <a href="StudentPage.html" id="aboutnav">ABOUT</a>
                     </li>
                     <li>
-                        <a href="queryForm.html">CONTACT US</a>
+                        <a href="queryForm.html" id="querynav">CONTACT US</a>
                     </li>
                 </ul>
             </div>
@@ -63,48 +63,48 @@
                 method="post" enctype="text/plain">
                 <h1 id="queryHeader" class="qHead">Customer Query Form</h1>
 
-                    <div class="q-legend">
-                        <span class="number">1</span>Contact Details
+                <div class="q-legend">
+                    <span class="number">1</span>Contact Details
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: center">
+                    <div class="l_label">
+                        <label for="nameField">Full Name:</label>
                     </div>
-                    <div style="display: flex; flex-direction: column; align-items: center">
-                        <div class="l_label">
-                            <label for="nameField">Full Name:</label>
-                        </div>
-                        <div class="cd_container">
-                            <input type="text" id="nameField" name="user_name" placeholder="Enter Your Full Name" />
-                        </div>
-
-                        <div class="l_label">
-                            <label for="mailField">Email:</label>
-                        </div>
-                        <div class="cd_container">
-                            <input type="email" id="mailField" name="user_email" placeholder="Enter Your Email" />
-                        </div>
+                    <div class="cd_container">
+                        <input type="text" id="nameField" name="user_name" placeholder="Enter Your Full Name" />
                     </div>
 
+                    <div class="l_label">
+                        <label for="mailField">Email:</label>
+                    </div>
+                    <div class="cd_container">
+                        <input type="email" id="mailField" name="user_email" placeholder="Enter Your Email" />
+                    </div>
+                </div>
 
-                    <div class="q-legend">
-                        <span class="number">2</span>Query Info
-                    </div>
-    
-                    <div class="qa_label">
-                        <label>Query About:</label>
-                    </div>
-                    <div class="qa_container">
-                        <input type="radio" id="sub1" value="sub1" name="query_subject" /><label for="sub1"
-                            class="radButtons">Send Overseas</label><br />
-                        <input type="radio" id="sub2" value="sub2" name="query_subject" /><label for="sub2"
-                            class="radButtons">Package & Postal Cost</label><br />
-                        <input type="radio" id="sub3" value="sub3" name="query_subject" /><label for="sub3"
-                            class="radButtons">Taxes and Laws</label>
-                    </div>
-                    <div class="qa_label">
-                        <label for="details">Details:</label>
-                    </div>
-                    <div>
-                        <textarea name="query_details" id="details" cols="30" rows="10"
-                            placeholder="What do you need to know?"></textarea>
-                    </div>
+
+                <div class="q-legend">
+                    <span class="number">2</span>Query Info
+                </div>
+
+                <div class="qa_label">
+                    <label>Query About:</label>
+                </div>
+                <div class="qa_container">
+                    <input type="radio" id="sub1" value="sub1" name="query_subject" /><label for="sub1"
+                        class="radButtons">Send Overseas</label><br />
+                    <input type="radio" id="sub2" value="sub2" name="query_subject" /><label for="sub2"
+                        class="radButtons">Package & Postal Cost</label><br />
+                    <input type="radio" id="sub3" value="sub3" name="query_subject" /><label for="sub3"
+                        class="radButtons">Taxes and Laws</label>
+                </div>
+                <div class="qa_label">
+                    <label for="details">Details:</label>
+                </div>
+                <div>
+                    <textarea name="query_details" id="details" cols="30" rows="10"
+                        placeholder="What do you need to know?"></textarea>
+                </div>
 
                 <input id="c_button" class="check_button" type="button" value="check" name="Check" />
             </form>

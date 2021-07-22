@@ -213,6 +213,16 @@ nav.fill ul li a:hover:after {
 	opacity: 1;
 }
 
+body#gn_mainpage a#homenav,
+body#gn_productpage a#productnav,
+body#gn_queryform a#querynav,
+body#gn_quizpage a#quiznav,
+body#gn_snaps a#snapsnav,
+body#gn_studentpage a#aboutnav {
+	padding: 15px;
+	background: rgba(115, 195, 219, 0.219);
+}
+
 nav {
 	position: fixed;
 	display: flex;
